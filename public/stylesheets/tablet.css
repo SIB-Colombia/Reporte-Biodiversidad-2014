@@ -1,0 +1,409 @@
+/*
+------------------------------------------------------------
+	Humboldt v1.0 - Joomla template 3x
+	Copyright: (C)iF Creative Studio. All Rights Reserved.
+	Website:  http://www.if-cs.com
+------------------------------------------------------------
+ */
+
+html {
+	
+}
+html.lightbg {
+	background-position: center top;
+}
+body {
+	background: transparent!important;
+}
+
+#humboldtTopBg{height: 500px !important;}
+
+#humboldtLogoText{
+	width: 300px !important;
+	margin-top: 17px !important;
+	
+}
+
+h3{font-size: 21px !important; line-height: 22px !important;}
+#humboldtLogoText b{line-height: 17px !important;}
+
+#humboldtSocial{margin-top: 11px !important;}
+
+/*---- Search ----*/
+form#mod-finder-searchform{width: 180px !important;}
+
+form#mod-finder-searchform input{width: 135px !important;}
+
+
+/*----  Gallery Home ----*/
+.wk-gallery{background-position: 0 280px !important; background-size: 700px auto !important;}
+
+.wk-gallery-wall.polaroid {width: 700px !important; height: 299px !important;}
+
+.wk-gallery-wall.polaroid p.title{font-size: 11.9px !important; font-weight: normal !important; line-height: 17px !important;}
+
+.wk-gallery-wall.polaroid a:nth-child(1) div{ width:390px !important; height:280px !important;}
+.wk-gallery-wall.polaroid a:nth-child(1) p.title{margin-top: 247px !important;}
+.wk-gallery-wall.polaroid a:nth-child(2) div{ width:310px !important; height:147px !important;}
+.wk-gallery-wall.polaroid a:nth-child(2) p.title{margin-top: 125px !important;}
+.wk-gallery-wall.polaroid a:nth-child(3), .wk-gallery-wall.polaroid a:nth-child(4){width:155px !important; height:131px !important;}
+.wk-gallery-wall.polaroid a:nth-child(3) div, .wk-gallery-wall.polaroid a:nth-child(4) div{width:155px !important; height:131px !important; }
+.wk-gallery-wall.polaroid a:nth-child(3) p.title, .wk-gallery-wall.polaroid a:nth-child(4) p.title{margin-top: -8px !important;}
+
+
+/*---- Featured ----*/
+
+#humboldtFeatured1 div.moduletable{margin-bottom: 22px;}
+
+.centro_analisis_contenedor{width: 100% !important;}
+div.centro_analisis_contenedor h1{width:100% !important;}
+div.centro_analisis ul{max-width:100% !important}
+div.centro_analisis{max-width: 100% !important;}
+
+div.proyectos_curso{max-width: 100% !important;}
+.proyectos_curso_contenedor{width: 100% !important;}
+.proyectos_curso_contenedor h1{	width:100% !important;}
+div.proyectos_curso_contenedor p .ver_todos {position: relative; width: 100% !important; height: 53px !important; padding-right: 0 !important;}  
+div.proyectos_curso_contenedor p .ver_todos a{padding-right: 0 !important; padding-top: 14px !important; margin-left: -123px !important;}
+
+/*---- Newsletter ----*/
+
+.newsletter{width: 100% !important;margin-right: 22px; margin-bottom: 11px !important;}
+.newsletter #jnews_module1{;width: 100% !important;max-width: 100% !important;height: auto !important; padding: 0 !important;}
+.newsletter .jNewsRT{width: 90% !important;padding-top: 85px !important;margin-left: 50px !important;}
+#wz_12{width: 299px !important; max-width: 299px !important;}
+.subscriptionButton {float: left !important;} 
+
+/*---- Multimedia module home ----*/
+.multimedia{margin-left: 0 !important;}
+
+/*---- Twitter module ----*/
+.twitter{width: 370px !important;}
+
+/*--- Page background ----*/
+#pageBg {width: 759px !important; height: 599px !important; background-size: 750px 1211px !important;}
+
+
+/*---- Tabs ----*/
+
+
+.nav-tabs li{width: 100% !important;}
+.nav-tabs li a{width: 95% !important;}
+
+.noPageBg .nav-tabs li:first-child{margin-left: 359px !important;}
+.noPageBg .nn_tabs li{margin-right: 35px !important; float: left !important;}
+
+div #k2ModuleBox140 ul li, div #k2ModuleBox146 ul li {width: 31% !important;margin-right: 2% !important;}
+.noPageBg .nav-tabs li{width: 85.9px !important;}
+div #k2ModuleBox140 ul li ul li, div #k2ModuleBox146 ul li ul li{width: 59% !important;}
+.allpub{margin-left: 599px !important;}
+
+/*-- Boxes --*/
+
+.men_investigacion .itemFullText div.custom{ margin-bottom: 25px;}
+.men_investigacion .itemFullText div.custom:last-child{ margin-bottom: 0px;}
+
+div.proyectos_programas{width:100% !important;max-width:100% !important;}
+.proyectos_programas_contenedor{width: 100% !important;margin-top:0 !important;}
+div.proyectos_programas_contenedor h1{width:100% !important;}
+div.proyectos_programas ul{width:100% !important;max-width:100% !important;}
+
+
+
+#humboldtContent, #humboldtSidebar, div.itemListCategoriesBlock, div#newRightContent, div#pagesPublik{width: 100% !important;}
+
+#humboldtSidebar {
+	padding: 16px 0 0 0!important;
+}
+#humboldtSidebar > div > .box {
+	float: left;
+	margin-top: 0!important;
+	margin-bottom: 12px!important;
+	width: 50%;
+}
+#humboldtSidebar > div > .box:nth-child(2n+1) {
+	clear: both!important;
+}
+#humboldtSidebar > div > .box:nth-child(odd) {
+	padding-right: 10px;	
+}
+#humboldtSidebar > div > .box:nth-child(even) {
+	padding-left: 10px;
+}
+
+body.men_servicios #humboldtSidebar{display: none;}
+
+.lab_1_con, .lab_2_con, .lab_3_con{width:100% !important;}
+.lab_1_con h1, .lab_2_con h1, .lab_3_con h1{height: 35px;}
+
+/*---- BOTTOM ---*/
+
+#humboldtFooterBg{height: 500px !important;}
+
+
+/*---- Bottom 1 ----*/
+
+section#humboldtBottom1 div div.gkmod-2{width: 100% !important;}
+
+section#humboldtBottom1 div div.gkmod-2 div:first-child{width: 100% !important;}
+
+section#humboldtBottom1 div div.gkmod-2 div div p{margin-left: 155px !important;}
+
+#humboldtBottom1 .gkmod-2 #k2ModuleBox166{margin-top:-70px !important; margin-bottom: 35px;} 
+
+
+/*---- Bottom 2 ----*/
+.link_externos img{height:70px !important; margin:0 11px !important;}
+
+/*----- SERVICIOS -----*/
+.men_servicios #humboldtMainbody article#K2Container header{display: none;}
+
+div.colecciones_biologicas,div.geoinformacion,div.sib_colombia,div.observatorio{margin:11px 22px 0 10px !important;}
+
+div.colecciones_biologicas, div.colecciones_biologicas > p{max-width:100% !important; margin: 0 11px 10px;}
+div.geoinformacion, div.geoinformacion > p{max-width: 100% !important;}
+div.sib_colombia, div.sib_colombia ul{max-width: 100% !important;}
+div.observatorio, div.observatorio ul{max-width: 100% !important;}
+
+/*----Alert ---*/
+#system-message-container{top: 225px;margin-left:-100px !important;}
+
+/**/
+
+
+
+
+@media only screen and (max-width : 647px){
+	#humboldtLogoText{width: 280px !important;}
+}
+@media only screen and (max-width : 627px){
+	#humboldtLogoText{width: 200px !important;}
+}
+@media only screen and (max-width : 547px){
+	#humboldtLogoText{width: 180px !important;}
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 664px){
+	ul.nav li.item-109{display: none;}
+}
+
+@media only screen and (max-width : 734px){
+	.twitter, div.twitter iframe{width: 100% !important; max-width: 100%;}
+}
+
+
+
+@media only screen and (max-device-width : 600px) and (max-device-height : 1024px) and (-webkit-min-device-pixel-ratio: 1)  {
+
+ 	#humboldtLogoText b, #humboldtQuickLinks, #humboldtTopLinks{display: none !important;}
+
+ 	#humboldtLogoText{width: 235px !important;}
+
+ 	/*----  Gallery Home ----*/
+	.wk-gallery{background-position: 0 196px !important; background-size: 555px auto !important;}
+
+	.wk-gallery-wall.polaroid {width: 555px !important; height: 250px !important;}
+
+	.wk-gallery-wall.polaroid a:nth-child(1) div{ width:309px !important; height:196px !important;}
+	.wk-gallery-wall.polaroid a:nth-child(1) p.title{margin-top: 196px !important;}
+	.wk-gallery-wall.polaroid a:nth-child(2) div{ width:246px !important; height:106px !important;}
+	.wk-gallery-wall.polaroid a:nth-child(2) p.title{margin-top: 96px !important;}
+	.wk-gallery-wall.polaroid a:nth-child(3), .wk-gallery-wall.polaroid a:nth-child(4){width:123px !important; height:101px !important;}
+	.wk-gallery-wall.polaroid a:nth-child(3) div, .wk-gallery-wall.polaroid a:nth-child(4) div{width:123px !important; height:101px !important; }
+	.wk-gallery-wall.polaroid a:nth-child(3) p.title, .wk-gallery-wall.polaroid a:nth-child(4) p.title{margin-top: 1px !important;}
+
+	/*---- Twitter module ----*/
+	.twitter{width: 225px !important;}
+
+	/*---- Bottom 1 ----*/
+	section#humboldtBottom1 div div.gkmod-2 div div p{margin-left: 55px !important;}
+
+	/*---- Bottom 2 ----*/
+	.link_externos img{height:55px !important; margin:0 5px !important;}
+
+	/*---- Tabs ----*/
+
+	.noPageBg .nav-tabs li:first-child{margin-left: 225px !important;}
+	.allpub{margin-left: 459px !important;}
+
+	/*---- Articles -----*/
+	article#k2Container div.itemBody p img{width:50% !important; height: auto; !important;}
+ 
+	/*--- Page background ----*/
+	#pageBg {width: 585px !important; height: 599px !important; background-size: 575px 1111px !important;}
+
+	/*----- NEWS ------*/
+	#ja-contentslider-center-196{width: 419px !important; height: 180px !important; left:50px !important;}
+	#ja-contentslider-center-196 .jsslide{}}
+
+	body.men_noticiass .itemFullText > div{width: 100% !important;margin-right: 0px !important;}
+
+	#humboldtBottom3{display: none;}
+	#humboldtFooterBg{height: 88px !important;}
+
+}
+
+/* Footer adjustments *
+.humboldtFooter {
+	text-align: center;
+}
+.humboldtFooter > * {
+	display: inline-block!important;
+	float: none!important;
+}*/
+
+/* Limitation suffixes */
+.box.notablet {
+	display: none!important;
+}
+.box.nomobile {
+	display: block!important;
+}
+.box.onlytablet {
+	display: block!important;
+}
+.box.onlymobile {
+	display: none!important;
+}
+
+/* Fix for the contact page */
+.contact .contact-image {
+	float: left !important;
+}
+.contact .contact-address {
+	clear: both !important;
+	padding-top: 20px !important;
+}
+.contact .contact-form input[type="text"],
+.contact .contact-form input[type="email"],
+.contact .contact-form textarea {
+	width: 100% !important;
+}
+
+/* Tabs */
+body .humboldtTabsWrap.vertical ol li,
+body .humboldtTabsWrap.horizontal ol li {
+	float: none !important;
+	margin-right: 0!important;
+}
+body .gkTabsWrap.vertical ol li.active,
+body .gkTabsWrap.horizontal ol li.active,
+body .gkTabsWrap.vertical ol li.active:hover,
+body .gkTabsWrap.horizontal ol li.active:hover {
+	height: 38px!important;
+	margin-bottom: 4px!important;
+}
+
+/* K2 edit popup */
+#sbox-window,
+#sbox-window iframe {
+	width: 720px!important;
+	max-width: 720px!important;
+	left: 10px!important;
+}
+
+/* top/bottom modules */
+.box.gkmod-1,
+.box.gkmod-2,
+.box.gkmod-3,
+.box.gkmod-4,
+.box.gkmod-more {
+	float: left!important;	
+}
+.box.gkmod-1 {
+	width: 100%!important;	
+}
+.box.gkmod-2 {
+	width: 50%!important;
+}
+.box.gkmod-3 {
+	width: 50%!important;
+}
+.box.gkmod-3:nth-child(3) {
+	clear: both!important;
+	width: 100%!important;
+}
+.box.gkmod-4,
+.box.gkmod-more {
+	width: 50%!important;
+}
+.box.gkmod-4:nth-child(2n+1),
+.box.gkmod-more:nth-child(2n+1) {
+	clear: both!important;
+}
+.box.gkmod-more.gkmod-last-1:last-child {
+	width: 100%!important;
+}
+.box.gkmod-more.gkmod-last-2:last-child,
+.box.gkmod-more.gkmod-last-2:nth-last-child(2) {
+	width: 50%!important;
+}
+#humboldtPageWrap .box.gkmod-more.gkmod-last-3:last-child {
+	width: 100%!important;
+}
+#humboldtPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+#humboldtPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 50%!important;
+}
+
+/* bottom2 modules */
+#gkBottom2 .box.gkmod-1,
+#gkBottom2 .box.gkmod-2,
+#gkBottom2 .box.gkmod-3,
+#gkBottom2 .box.gkmod-4,
+#gkBottom2 .box.gkmod-more {
+	border-left: none!important;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#gkBottom2 .box.gkmod-1:nth-child(even),
+#gkBottom2 .box.gkmod-2:nth-child(even),
+#gkBottom2 .box.gkmod-3:nth-child(even),
+#gkBottom2 .box.gkmod-4:nth-child(even),
+#gkBottom2 .box.gkmod-more:nth-child(even) {
+	border-left: 1px solid #c4c4c4!important;
+}
+
+/* Image Show adjustments */
+.gkIsWrapper-gk_bikestore figcaption h3 {
+	font-size: 22px!important;
+}
+
+/* VM adjustments */
+.category-view .row .category .spacer, 
+.featured-view .spacer, 
+.latest-view .spacer, 
+.topten-view .spacer, 
+.related-products-view .spacer, 
+.browse-view .row .product .spacer {
+	padding: 12px 6px!important;	
+}
+.catProductPrice {
+	margin-left: -14px!important;
+}
+.width33,
+.width25,
+.width20 {
+	width: 50%!important;
+}
+.width20:nth-child(odd),
+.width25:nth-child(odd) {
+	clear: both!important;
+	padding-left: 0!important;
+	padding-right: 10px!important;	
+}
+.width20:nth-child(even),
+.width25:nth-child(even) {
+	padding-left: 10px!important;
+	padding-right: 0!important;	
+}

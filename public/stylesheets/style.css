@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* Social Media Wizard */
+div.bookmark a {display:inline-block;width:auto;outline:none;}
+div.bookmark a img {border:none ! important;}
+div.bookmark a:hover {background:none ! important;}
+div.bookmark a:link {color: #000000 ! important; text-decoration: none ! important; }
+div.bookmark a:active {color: #000000 ! important; text-decoration: none ! important; }
+div.bookmark a:visited {color: #000000  ! important; text-decoration: none ! important; }
+div.bookmark a:hover {color: #000000  ! important; text-decoration: none  ! important; }
+.clr {clear:both;}
+	
+.contentpane .bookmark {display: none;}
+.s-box .bookmark {display: none;}	

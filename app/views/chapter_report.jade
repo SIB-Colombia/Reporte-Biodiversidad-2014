@@ -1,0 +1,25 @@
+extends layout_report
+
+block content
+  section#contenido
+        h2 CAPÍTULO #{capitulo.id_capitulo}
+        h1 #{capitulo.titulo_capitulo}
+        h3 INTRODUCCIÓN
+
+        - var strh=capitulo.texto_capitulo.split("[p]");
+        
+        each par in strh
+          p
+            | #{par}
+
+        h3 FICHAS
+
+        each fic in fichas
+          a.tema(href='/biodiversidad2014/ficha/'+'#{fic.id_ficha}')
+            img(src='#{fic.image}')
+            strong #{fic.title}
+
+        
+
+
+

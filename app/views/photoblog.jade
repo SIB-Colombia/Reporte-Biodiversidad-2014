@@ -1,0 +1,73 @@
+doctype html
+head(profile='http://gmpg.org/xfn/11')
+  meta(name='description', content='description')
+  meta(name='keywords', content='')
+  link(rel='image_src', href='')
+  title Foto Blog SIB Colombia
+
+  meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+  meta(name='title', content='')
+  meta(name='viewport', content='width=990; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;')
+  link(rel='shortcut icon', href='')
+  link(rel='stylesheet', type='text/css', media='screen', href='/stylesheets/main.css')
+
+  //script(type='text/javascript', src='/javascripts/app.min.js')
+  script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+  script(type='text/javascript', src='/javascripts/jquery-ui.js')
+  script(type='text/javascript', src='/javascripts/jquery.mousewheel.js')
+  script(type='text/javascript', src='/javascripts/supersized.2.0.js')
+  script(type='text/javascript', src='/javascripts/jquery.iviewer.js')
+  script(type='text/javascript', src='/javascripts/locals.js')
+  script.
+    var imageT='#{image.imagen_visualizador}';
+    var prev_image='#{image.prev}';
+    var next_image='#{image.next}';
+    if(prev_image == '') {
+      prev_image = null;
+      active = false;
+    }
+    if(next_image == '') {
+      next_image = null;
+      active = false;
+    }
+    var name_image='#{image.titulo_ficha}';
+    var desc_image='#{image.texto_informacion}';
+
+body(oncontextmenu='return false;')
+  .wrapper
+    #supersize
+  // Loading display while images load
+  #loading
+  // Content area that hovers on top
+  .tabmenu(style='display: none;')
+    a.shrink(href='javascript://', onclick='tab_min()', title='Minimizar') Minimizar
+  #content
+    #catalog
+    #contentframe
+      #logo
+        h2
+          a(href='/', target='_top')
+            img(src='/images/logo_sib_portal.png', alt='SIB Colombia')
+      h1#slidecaption
+
+      #imagedesc
+        .share
+      // Navigation
+      #navigation
+        if image.prev
+          a#prevslide.prev(href='/biodiversidad2014/visualizador/#{image.prev}') anterior_imagen
+        else
+          a#prevslide.prev anterior_imagen
+        a#pauseplay.play(href='javascript://', onclick='change_class(this)')
+          span Play
+        if image.next
+          a#nextslide.next(href='/biodiversidad2014/visualizador/#{image.next}') siguiente_imagen
+        else
+          a#nextslide.next siguiente_imagen
+      // Footer
+      #footer
+        a(href='http://www.sibcolombia.net/', target='_blank') SIB
+    .credit
+      small
+        a(href='', target='_blank')
+        | Algunos derechos reservados

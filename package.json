@@ -1,0 +1,52 @@
+{
+  "name": "report_IAVH",
+  "description":"Web portal for IAVH Reporte Biodiversidad 2014",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Oscar Duque <oduque@humboldt.org.co>",
+  "contributors": [ 
+    {
+      "name": "Valentina Grajales",
+      "email": "lgrajales@humboldt.org.co"
+    },
+    {
+      "name": "Carlos Cubillos",
+      "email": "ccubillos@humboldt.org.co"
+    }
+  ],
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon app.js"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "express": "latest",
+    "serve-favicon": "latest",
+    "morgan": "latest",
+    "cookie-parser": "latest",
+    "body-parser": "latest",
+    "debug": "latest",
+    "jade": "latest",
+    "stylus": "latest",
+    "nodemon": "latest",
+    "async": "latest",
+    "taffydb": "latest",
+    "csv-streamify": "latest",
+    "request": "latest",
+    "winston": "latest",
+    "cron": "latest",
+    "time": "latest", 
+    "method-override": "latest", 
+    "errorhandler":"latest"
+  }, 
+  "devDependencies": {
+    "nodemon": "latest"
+  },
+  "engines": {
+    "node": ">=0.10.21"
+  }
+}

@@ -1,0 +1,219 @@
+/*
+	Humboldt v1.0 - Joomla template 3x
+	Copyright: (C)iF Creative Studio. All Rights Reserved.
+	Website:  http://www.if-cs.com
+	
+ */
+ 
+/* Base elements and classes */
+html {
+	border-bottom: 1px solid transparent;
+	min-height: 100%;
+}
+body > div > footer,
+body > div > header,
+body > div > section,
+body > footer,
+body > header,
+body > section {
+	/* class used in the full template-width containers */
+	clear: both;
+	margin: 0 auto;
+}
+section#gkPageTop {
+	overflow: visible; /* Necessary to make menu working */
+	width: 100%; /* Necessary to achieve full background width */
+}
+#gkTop,
+#gkBottom {
+	/* Positions blocks -clearing */
+	clear: both;
+}
+
+/* clearfix */
+#gkPageContent:after,
+#humboldtContent:after,
+#humboldtSidebar:after,
+footer:after,
+header:after,
+section:after,
+aside:after,
+article:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/* Columns */
+section#humboldtContent,
+section#gkComponentWrap,
+aside#humboldtSidebar {
+	/* Main columns */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+}
+
+#humboldtPageContent{z-index: 0;}
+
+section#humboldtContent {
+	position: relative; 
+	z-index: 1;
+}
+
+section#humboldtBreadcrumb{
+	position: relative;
+	z-index: 1;
+	padding-top: 22px;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+section#humboldtBreadcrumb div.breadcrumbs{position: relative; margin: 0;}
+
+section#humboldtBreadcrumb ul{ width: 100%; height: 44px; margin: 0 22px;}
+
+section#humboldtBreadcrumb ul li{ float: left; margin: 0 5px;}
+
+#humboldtSidebar {
+	position: relative;
+	padding: 35px;
+	z-index: 1;
+}
+#humboldtContent + #humboldtSidebar {
+	padding-left: 16px;
+	padding-right: 0!important;
+}
+#humboldtSidebar > div > .box {
+	margin-top: 16px;
+}
+#humboldtSidebar > div > .box:first-child {
+	margin-top: 0;
+}
+#gkTop1 > div,
+#gkTop2 > div,
+#gkBottom1 > div,
+#gkBottom2 > div,
+#gkBottom3 > div {
+	/* Columns in the positions blocks */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+}
+/* Joomla columns */
+.cols-2 .column-1,
+.cols-2 .column-2 {
+	width: 50%;
+}
+.cols-3 .column-1,
+.cols-3 .column-2,
+.cols-3 .column-3 {
+	float: left;
+	width: 33.3%;
+}
+.column-1,
+.column-2,
+.column-3 {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+}
+/*
+Layout calculations
+ */
+#gkMainbody .box {
+	margin-top: 16px;
+} 
+#gkMainbody .box:first-child {
+	margin-top: 0;
+}
+/* base spaces */
+body > footer:first-child,
+body > header:first-child,
+body > section:first-child,
+section#gkPage > section:first-child,
+section#humboldtContent > section:first-child,
+section#gkComponentWrap > section:first-child {
+	margin-top: 0;
+}
+/* Joomla columns */
+.cols-2 .column-1,
+.cols-3 .column-1 {
+	padding-right: 10px;
+}
+.cols-2 .column-2,
+.cols-3 .column-3 {
+	padding-left: 10px;
+}
+.cols-3 .column-2 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/* top/bottom modules */
+.box.gkmod-1,
+.box.gkmod-2,
+.box.gkmod-3,
+.box.gkmod-4,
+.box.gkmod-more {
+	float: left;	
+}
+.box.gkmod-1 {
+	width: 100%;	
+}
+.box.gkmod-2 {
+	width: 50%;
+}
+.box.gkmod-3 {
+	width: 33.3%;
+}
+.box.gkmod-4,
+.box.gkmod-more {
+	width: 25%;
+}
+.box.gkmod-more:nth-child(4n+1) {
+	clear: both;
+}
+.box.gkmod-more.gkmod-last-1:last-child {
+	width: 100%!important;
+}
+.box.gkmod-more.gkmod-last-2:last-child,
+.box.gkmod-more.gkmod-last-2:nth-last-child(2) {
+	width: 50%!important;
+}
+.box.gkmod-more.gkmod-last-3:last-child,
+.box.gkmod-more.gkmod-last-3:nth-last-child(2),
+.box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 33.3%!important;
+}
+/* bottom2 modules */
+#gkBottom2 .box.gkmod-1,
+#gkBottom2 .box.gkmod-2,
+#gkBottom2 .box.gkmod-3,
+#gkBottom2 .box.gkmod-4,
+#gkBottom2 .box.gkmod-more {
+	border-left: 1px solid #c4c4c4;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 16px;
+}
+#gkBottom2 .box.gkmod-1:first-child,
+#gkBottom2 .box.gkmod-2:first-child,
+#gkBottom2 .box.gkmod-3:first-child,
+#gkBottom2 .box.gkmod-4:first-child,
+#gkBottom2 .box.gkmod-more:first-child {
+	border-left: none;
+}
+#gkBottom2 .box.gkmod-more:nth-child(4n+1) {
+	border-left: none!important;
+}

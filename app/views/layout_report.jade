@@ -1,0 +1,232 @@
+doctype html
+html.noPageBg(prefix='og: http://ogp.me/ns#', lang='es-es')
+  head
+    meta(property='fb:app_id', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=Edge,chrome=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=2.0')
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='title', content='noItem')
+    meta(property='og:url', content='http://humboldt.org.co/')
+    meta(property='og:title', content='Instituto Humboldt')
+    meta(property='og:type', content='article')
+    meta(property='og:description', content=' ')
+    meta(name='description', content=' ')
+    title Instituto Humboldt - #{title}
+    link(href='res/favicon.ico', rel='shortcut icon', type='image/vnd.microsoft.icon')
+    link(rel='stylesheet', href='/stylesheets/layout.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/template.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/humboldt.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/humboldtstyle.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/style1.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/default.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.css', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/jquery.bxslider.css', type='text/css')
+    script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(type='text/javascript', src='/javascripts/jquery.fitvids.js')
+    script(type='text/javascript', src='/javascripts/jquery.bxslider.js')
+    
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      $(document).ready(function(){
+        $('.slider').bxSlider({
+          video: true,
+          useCSS: false
+        });
+      });
+  
+body(data-tablet-width='940', data-mobile-width='580')
+  #humboldtPageWrap
+    section#humboldtPageTop
+        a#humboldtLogo(href='http://humboldt.org.co/ ')
+          img(src='/images/humboldtLogo.png', alt='Humboldt')
+        #humboldtLogoText
+          | REPORTE DE
+          br
+          | ESTADO DE LA
+          br
+          | BIODIVERSIDAD
+    section#humboldtHeader
+        select(onchange="if (this.value) window.location.href=this.value")
+          option(value="") Año
+          option(value="/biodiversidad2014") 2014
+        nav.bar
+          ul
+            li
+              a(href="/biodiversidad2014/") INICIO
+            span.separator
+            li
+              a(href="/biodiversidad2014/presentacion") PRESENTACIÓN
+            span.separator
+            li
+              a(href="/biodiversidad2014/resumen") RESUMEN EJECUTIVO
+            span.separator
+            li
+              a(href="/biodiversidad2014/capitulo/1")
+                span Cap&#237;tulo 1
+                | ESTADO
+            li
+              a(href="/biodiversidad2014/capitulo/2")
+                span Cap&#237;tulo 2
+                | TRANSFORMACIONES
+            li
+              a(href="/biodiversidad2014/capitulo/3")
+                span Cap&#237;tulo 3
+                | GOBERNANZA
+            span.separator
+            li
+              a AP&#201;NDICES
+              ul
+                li
+                  a(href="/biodiversidad2014/apendices/autores") &#205;NDICE DE AUTORES
+                li
+                  a(href="/biodiversidad2014/apendices/colaboradores") &#205;NDICE DE COLABORADORES
+                li
+                  a(href="/biodiversidad2014/apendices/temas") &#205;NDICE TEM&#193;TICO
+                li
+                  a(href="/biodiversidad2014/apendices/glosario") GLOSARIO
+                li
+                  a(href="/biodiversidad2014/apendices/acronimos") ACR&#211;NIMOS
+        
+          
+
+    block content
+
+    #humboldtFooterBg
+    section#humboldtBottom3
+      div
+        .gkmod-1
+          div
+            h3.header
+              span#module197
+                | Instituto de Investigación de Recursos Biológicos Alexander von Humboldt Colombia
+            .content
+              ul.nav.menu.menu_footer
+                li.current.active
+                    a(href='http://www.humboldt.org.co/')
+                      span.image-title INICIO
+                  li.deeper.parent
+                    a.no_color(href='/instituto') EL INSTITUTO
+                    ul.nav-child.unstyled.small
+                      li
+                        a(href='http://www.humboldt.org.co/instituto/quienes-somos') ¿Quiénes somos?
+                      li
+                        a(href='http://www.humboldt.org.co/instituto/que-hacemos') ¿Qué hacemos?
+                      li
+                        a(href='http://www.humboldt.org.co/instituto/organigrama-equipo') Organigrama
+                      li
+                        a(href='http://www.humboldt.org.co/instituto/junta-directiva') Junta Directiva
+                      li
+                        a(href='http://www.humboldt.org.co/instituto/documentos') Documentos
+                      li
+                        a(href='http://www.humboldt.org.co/instituto/redes-y-alianzas') Redes y Alianzas
+                      li
+                        a(href='http://humboldt.org.co/oportunidades/') Oportunidades
+                  li.deeper.parent
+                    a(href='http://www.humboldt.org.co/investigacion') INVESTIGACIÓN
+                    ul.nav-child.unstyled.small
+                      li.divider.deeper.parent
+                        span.separator Programas
+                        ul.nav-child.unstyled.small
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/programas/subdireccion-cientifica') Subdirección científica
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/programas/subdireccion-servicios-cientificos-y-proyectos-especiales') Subdirección Servicios Científicos y Proyectos Especiales
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/programas/politica-y-legislacion') Política y Legislación
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/programas/conservacion-y-uso-de-la-biodiversidad') Conservación y Uso de la Biodiversidad
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/programas/dimensiones-socioeconomicas') Dimensiones Socioeconómicas 
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/programas/gestion-de-informacion-y-conocimiento') Gestión de Información y Conocimiento
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/programas/comunicaciones') Comunicaciones
+                      li.divider.deeper.parent
+                        span.separator Proyectos
+                        ul.nav-child.unstyled.small
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/proyectos/en-desarrollo') En Desarrollo
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/proyectos/ejecutados') Ejecutados
+                      li.deeper.parent
+                        a(href='http://www.humboldt.org.co/investigacion/centro-de-analisis-y-sintesis') Centro de análisis y síntesis
+                        ul.nav-child.unstyled.small
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/centro-de-analisis-y-sintesis/laboratorio-1') Laboratorio de Análisis Espaciales
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/centro-de-analisis-y-sintesis/laboratorio-2') Laboratorio de Biogeografía Aplicada y Bioacústica
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/centro-de-analisis-y-sintesis/laboratorio-3') Laboratorio de Genética de la Conservación
+                      li.deeper.parent
+                        a(href='http://www.humboldt.org.co/investigacion/ecosistemas-estrategicos') Delimitación de ecosistemas estratégicos
+                        ul.nav-child.unstyled.small
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/ecosistemas-estrategicos/paramos') Páramos
+                          li
+                            a(href='http://www.humboldt.org.co/investigacion/ecosistemas-estrategicos/humedales') Humedales
+                  li.deeper.parent
+                    a(href='http://www.humboldt.org.co/servicios') SERVICIOS
+                    ul.nav-child.unstyled.small
+                      li.deeper.parent
+                        a(href='http://www.humboldt.org.co/servicios/colecciones-biologicas') Colecciones Biológicas
+                        ul.nav-child.unstyled.small
+                          li
+                            a(href='http://www.humboldt.org.co/servicios/colecciones-biologicas/herbario-federico-medem') Herbario Federico Medem
+                          li
+                            a(href='http://www.humboldt.org.co/servicios/colecciones-biologicas/coleccion-entomologica') Colección Entomológica
+                          li
+                            a(href='http://www.humboldt.org.co/servicios/colecciones-biologicas/escarabajos-coprofagos') Escarabajos Coprófagos
+                          li
+                            a(href='http://www.humboldt.org.co/servicios/colecciones-biologicas/invertebrados') Invertebrados
+                          li
+                            a(href='http://www.humboldt.org.co/servicios/colecciones-biologicas/vertebrados') Vertebrados
+                          li
+                            a(href='http://www.humboldt.org.co/servicios/colecciones-biologicas/tejidos') Tejidos
+                          li
+                            a(href='http://www.humboldt.org.co/servicios/colecciones-biologicas/sonidos') Sonidos
+                      li
+                        a(href='http://www.humboldt.org.co/servicios/infraestructura-institucional-de-datos') Infraestructura Institucional de Datos
+                      li
+                        a(href='http://www.humboldt.org.co/servicios/sib-colombia') SIB Colombia
+                      li
+                        a(href='http://www.humboldt.org.co/servicios/registro-unico-nacional-de-colecciones-biologicas-rnc') Registro Único Nacional de Colecciones Biológicas
+                  li.deeper.parent
+                    a(href='http://www.humboldt.org.co/noticias') NOTICIAS
+                    ul.nav-child.unstyled.small
+                      li
+                        a.actual(href='http://www.humboldt.org.co/noticias/actualidad') Actualidad
+                      li
+                        a.humboldtnotes(href='http://www.humboldt.org.co/noticias/notas') Notas Humboldt
+                      li
+                        a(href='http://www.humboldt.org.co/noticias/boletines-y-comunicados') Boletines y comunicados
+                  li.deeper.parent
+                    a(href='http://www.humboldt.org.co/biodiversidad') BIODIVERSIDAD
+                    ul.nav-child.unstyled.small
+                      li
+                        a(href='http://humboldt.org.co/biodiversidad') ¿Qué es?
+                      li
+                        a(href='http://www.humboldt.org.co/biodiversidad/sonidos') Sonidos
+                      li
+                        a(href='http://www.humboldt.org.co/biodiversidad/trivias') Trivias
+                  li.deeper.parent
+                    a(href='http://www.humboldt.org.co/bibliotecaypublicaciones') BIBLIOTECA Y PUBLICACIONES
+                    ul.nav-child.unstyled.small
+                      li
+                        a(href='http://www.humboldt.org.co/bibliotecaypublicaciones/publicaciones', title='Publicaciones Humboldt') Publicaciones Humboldt
+                      li
+                        a(href='http://www.humboldt.org.co/bibliotecaypublicaciones/biota') Revista Biota
+                      li
+                        a(href='http://www.humboldt.org.co/bibliotecaypublicaciones/biblioteca') Biblioteca Humboldt
+    footer.humboldtFooter
+      .custom
+          p
+            span(style='color: #696969; font-family: sans-serif; line-height: 10px; text-transform: uppercase;') © 2014 INSTITUTO HUMBOLDT. TODOS LOS DERECHOS RESERVADOS.
+          p(style='margin-top: -11px;')
+            span
+              | Calle 28A # 15-09 Bogotá D.C. PBX: 3202767 Horarios de atención: Lunes a viernes, 8:30a.m.-5:30p.m.
+    

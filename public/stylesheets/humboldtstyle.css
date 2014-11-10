@@ -1,0 +1,882 @@
+/*
+	Humboldt v1.0 - Joomla template 3x
+	Copyright: (C)iF Creative Studio. All Rights Reserved.
+	Website:  http://www.if-cs.com
+	
+ */
+
+ /* top bar */
+#humboldtTopBg{
+	width: 100%;
+	height: 599px;
+	background: #605951 url(bgTopMenu.jpg) repeat;
+	left: 0;
+	top:0;
+	padding: 0;
+	position: absolute;
+	z-index: -10;
+}
+
+/* Quick links */
+#humboldtQuickLinks {
+	position: relative;
+	float: left;
+	font-size: 13px;
+	line-height: 11px;
+	font-weight: bold;
+	margin:0;
+	top:0;
+	margin-top: -42px;
+	width: 60%;
+	padding: 0;
+	
+
+}
+#humboldtQuickLinks a {
+	width: 125px;
+	color: #ccc;
+	text-align: center;
+	float: left;
+	background: url(divTopMenu.png) no-repeat right;
+}
+
+/* Top links */
+#humboldtTopLinks {
+	position: relative;
+	width: 250px;
+	float: right;
+	font-size: 13px;
+	line-height: 11px;
+	font-weight: bold;
+	margin-top: -42px;
+	padding: 0;
+	top:0;
+}
+#humboldtTopLinks a {
+	width: 125px;
+	color: #ccc;
+	text-align: center;
+	float: right;
+	background: #605951 url(divTopMenu.png) no-repeat;
+}
+#humboldtTopLinks a:active,#humboldtTopLinks a:focus,#humboldtTopLinks a:hover, #humboldtQuickLinks a:active,#humboldtQuickLinks a:focus,#humboldtQuickLinks a:hover {color: #fff;}
+
+#btnCart span {
+	display: none;
+}
+
+/* Logo  */
+#humboldtLogo {
+	margin: 17px 0 0 0;
+	padding: 0;
+	text-indent: -999em;
+	text-shadow: none;
+	width: 123px;
+	height: 119px;
+	display: block;
+	float: left;
+}
+#humboldtLogo img {
+	width: 107px;
+	display: block;
+	height: 119px;
+	margin: 0;
+	
+}
+
+#humboldtLogoText{
+	width: 575px;
+	float: left;
+	margin-top: 35px;
+	
+}
+
+/*---Search --*/
+
+.btn-primary{background: red; background-color: red;}
+
+/*Tabs*/
+div #k2ModuleBox140 ul, div #k2ModuleBox146 ul {
+	margin-right: -20px;
+}
+div #k2ModuleBox140 ul li, div #k2ModuleBox146 ul li {
+	margin: 0;
+	background: none !important;
+	/*padding: 12px 20px 12px 0 !important;*/
+	list-style: none !important;
+	width: 30%;
+	float: left;
+	margin-right: 2%;
+}
+div #k2ModuleBox140 ul li:nth-child(3), div #k2ModuleBox146 ul li:nth-child(3) {
+	margin: 0;
+	margin-right: 0%;
+	
+}
+div #k2ModuleBox140 ul li ul li, div #k2ModuleBox146 ul li ul li{
+	margin: 11px 0 0 70px;
+	list-style: none !important;
+	width: 250px;
+	
+}
+
+
+
+.nn_tabs {padding-bottom: 25px; border-bottom: 1px solid #cec9c2;}
+
+.nn_tabs li{font-size: 11px; font-weight: bold; margin-right: 5px;}
+
+.nn_tabs li ul li{font-size: 11px; font-weight: bold; margin-right: 5px; font-weight: normal; line-height: 14px;
+	width: 31.5%;
+	float: left;
+	margin-right: 2%;
+	}
+
+.noPageBg .nav-tabs li:first-child{margin-left: 670px;}
+
+.noPageBg .nn_tabs{	margin-top: -35px;}
+
+.nav-tabs li a{background: #605952; color: #fff; border: 1px solid #cec9c2; width: 85.9px; height: 35px; line-height: 14px !important; text-align: left; overflow: hidden;}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #dddddd;
+
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+ 	
+  cursor: default;
+ 	
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  color: #605952;
+  cursor: default;
+  background-color: transparent;
+  border: 1px solid #cec9c2;border-bottom: 1px solid #f8f8f8;
+ 
+}
+
+#k2ModuleBox140 ul li .moduleItemExtraFields .HumboldtExtraFields li:nth-child(2), #k2ModuleBox140 ul li .moduleItemExtraFields .HumboldtExtraFields li:nth-child(3), #k2ModuleBox140 ul li .moduleItemExtraFields .HumboldtExtraFields li:nth-child(4), #k2ModuleBox140 ul li .moduleItemExtraFields .HumboldtExtraFields li:last-child,
+#k2ModuleBox146 ul li .moduleItemExtraFields .HumboldtExtraFields li:nth-child(2), #k2ModuleBox146 ul li .moduleItemExtraFields .HumboldtExtraFields li:nth-child(3), #k2ModuleBox146 ul li .moduleItemExtraFields .HumboldtExtraFields li:nth-child(4), #k2ModuleBox146 ul li .moduleItemExtraFields .HumboldtExtraFields li:last-child
+{display: none;}
+
+article.itemView .itemExtraFields ul li:nth-child(3),article.itemView .itemExtraFields ul li:nth-child(4){display:none;}
+
+.allpub{position: absolute; width: 100px; height: 50px; text-align: right; margin-top:7px;  font-size: 11px; font-weight:bold; margin-left: 900px; background: url(bt/more-green.png)no-repeat top right;}
+
+.allpub a{width: 70px; color:#17996f; margin-right: 22px;}
+.allpub a:hover{text-decoration: none; color: #f47350;}
+
+/*------ Gallery Home -------*/
+
+.wk-gallery{
+	background: transparent url(bg-galleryHome.png)no-repeat;
+	background-position: 0 354px;
+}
+
+.wk-gallery-wall.polaroid {
+	margin-top: -20px;
+	width: 1000px;
+	height: 370px;
+}
+.wk-gallery-wall.polaroid a[data-lightbox] img {
+		width:100%;
+}
+.wk-gallery-wall.polaroid a[data-lightbox] :nth-child(1){
+	float:left
+}
+.wk-gallery-wall.polaroid>*>div {
+	border:none;
+	box-shadow:none;
+	box-shadow:none;
+	background:none;
+	padding:0;
+}
+.wk-gallery-wall.polaroid>*{-webkit-transform: none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none}
+.wk-gallery-wall.polaroid>*:nth-child(even){-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none}
+.wk-gallery-wall.polaroid>*>div:before, .wk-gallery-wall.polaroid>*>div:after { box-shadow:none}
+.wk-gallery-wall.polaroid>*:hover{position:relative;z-index:10;box-shadow:none;-webkit-transform:none;-o-transform:none;-moz-transform:none;-ms-transform:none;transform:none}
+.wk-gallery-wall.polaroid a, .wk-gallery-wall.polaroid a:hover{text-decoration:none;}
+.wk-gallery-wall.polaroid a:nth-child(1) p.title{-webkit-transform-style:none; background: #de9015;margin-top: 321px;position: absolute;top: -22px;padding: 10px 0;width: 100%; line-height: 33px;}
+.wk-gallery-wall.polaroid a:nth-child(2) p.title{-webkit-transform-style:none; background: #f35333;margin-top: 150px;position: absolute;top: -22px;padding: 10px 0;width: 100%; height:25px}
+.wk-gallery-wall.polaroid a:nth-child(3) p.title{-webkit-transform-style:none; background: #3668cf; position: relative;top: -6px;padding: 10px 0;width: 100%; line-height: 17px;}
+.wk-gallery-wall.polaroid a:nth-child(4) p.title{-webkit-transform-style:none; background: #1bb5c3; position: relative;top: -6px;padding: 10px 0;width: 100%; line-height: 17px;}
+.wk-gallery-wall.polaroid p.title{color:rgba(255,255,255,1); height:35px; font-weight: bold;}
+
+
+.wk-gallery-wall.polaroid a:hover{
+	transform:scale(1.05);-webkit-transform:scale(1.05); -moz-transform: scale(1.05);-o-transform: scale(1.05); ms-transform: scale(1.05); box-shadow: 0px 0px 22px rgba(0,0,0,.35)}
+.wk-gallery-wall.polaroid a:nth-child(1) p.title:hover{background: #f29809;}
+.wk-gallery-wall.polaroid a:nth-child(2) p.title:hover{background: #f9360f;}
+.wk-gallery-wall.polaroid a:nth-child(3) p.title:hover{background: #3476ff;}
+.wk-gallery-wall.polaroid a:nth-child(4) p.title:hover{background: #0dcdde;}
+
+.wk-gallery-wall.polaroid a:nth-child(2) div{width:441px}
+
+.wk-gallery-wall.polaroid a:nth-child(3), .wk-gallery-wall.polaroid a:nth-child(4) {width:220.5px}
+
+.wk-gallery-wall.polaroid a:nth-child(1) div{ height:354px;}
+.wk-gallery-wall.polaroid a:nth-child(3) div, .wk-gallery-wall.polaroid a:nth-child(4) div{width:220.5px; height:180px;}
+
+.wk-gallery-wall.polaroid a:nth-child(1) div img{width:559px; height:323px}
+.wk-gallery-wall.polaroid a:nth-child(2) div img{width:441px; height:173px}
+.wk-gallery-wall.polaroid a:nth-child(3) div img{width:221px; height:132px}
+.wk-gallery-wall.polaroid a:nth-child(4) div img{width:221px; height:132px}
+
+/*********************			Modulo Centro de Análisis y Síntesis   		*******************************/
+
+
+div.centro_analisis .even, div.centro_analisis li.odd, div.proyectos_curso .even, div.proyectos_curso li.odd{
+	color: rgba(0,0,0,0);
+	background:url(../../humboldt/images/ui/bgs/listas.png) no-repeat; 	
+	background-position: 12px; 
+}
+div.proyectos_curso .even, div.proyectos_curso li.odd{
+	width: 84%;
+	line-height: 20px;
+	margin: 9.5px 0;
+}
+
+div.centro_analisis .uk-panel-title {
+	background:url(../../humboldt/images/ui/bgs/fondos_1_1.png) repeat;
+	color:white	;
+	padding: 20px 0 20px 47px;
+	font:21px 'Source Sans Pro', sans-serif;
+	margin-top:50px
+}
+div.centro_analisis{
+	width: 100%;
+	max-width: 490px;
+	height: 202px;
+}
+div.centro_analisis ul{
+	/*border-bottom:1px solid #168eb5;*/
+	background: url(../../humboldt/images/ui/bgs/fondos_1.png) repeat;
+	min-height:166px;
+	max-width:490px;
+	height: 202px;
+}
+div.centro_analisis ul li a{
+	color:#ffffff;
+	font: 15px 'Source Sans Pro', sans-serif;
+	margin:0;
+	line-height:14px;
+	padding-top: 15px;
+}
+div.centro_analisis ul li {
+	padding: 3.5px 22px 3.5px 59px;
+	height:59px;
+	color:rgba(153,153,153,0);
+	list-style:none;
+	border-bottom:1px solid #57AECB;
+	border-top:1px solid #A3E0F4;
+	line-height: 49px !important;
+	background-position-y: 11px !important;
+}
+
+div.centro_analisis ul li.clearList{display: none;}
+div.centro_analisis ul li:first-child{
+	border-top:none
+}
+div.centro_analisis ul li.lastItem{
+	border-bottom:none;
+}
+div.centro_analisis_contenedor h1{
+	color:#ffffff;
+	background:url(../../humboldt/images/ui/bgs/fondos_1_4.png) repeat;
+	margin:0;
+	width:490px;
+}
+div.centro_analisis_contenedor h1 img{
+	position: relative;
+	left: -5px;
+}
+div.centro_analisis_contenedor h1 span{
+	font-size: 21px;
+	position: relative;
+	top: 3px;
+	left: 22px;
+	color: #ffffff;
+}
+
+.centro_analisis_contenedor p{
+	margin:0;
+}
+
+.centro_analisis_contenedor{
+	width: 490px;
+	float: left;
+	margin-bottom: 11px;
+}
+
+
+/*********************			Modulo Proyectos en Curso   		*******************************/
+ 
+div.proyectos_curso{
+	width: 100%;
+	max-width: 490px;
+}
+
+div.proyectos_curso ul{
+	/*border-bottom:1px solid #416718;*/
+	background: url(../../humboldt/images/ui/bgs/fondos_2.png) repeat;
+	padding:8px 0 0;
+	height: 155px;
+	max-height: 155px;
+}
+div.proyectos_curso ul li a.moduleItemTitle {
+	color:#ffffff;
+	font: 15px 'Source Sans Pro', sans-serif;
+	margin:0;
+	display:run-in ;
+	float:none;	
+}
+div.proyectos_curso ul li {
+	padding-left: 59px;
+	color:rgba(153,153,153,0);
+	list-style:none;
+	margin-bottom: 0px;
+}
+.proyectos_curso_contenedor ul{
+	margin:0;
+}
+.proyectos_curso_contenedor h1{
+	color:#ffffff;
+	background:url(../../humboldt/images/ui/bgs/fondos_2_4.png) repeat;
+	margin:0;
+	width:490px;
+}
+.proyectos_curso_contenedor h1 img{
+	position:relative;
+	left:-5px;
+	margin-right: 15px;
+}
+.proyectos_curso_contenedor h1 span{
+	font-size: 21px;
+	position: relative;
+	top: -5px;
+	left: 22px;
+}
+.proyectos_curso_contenedor p{
+	margin:0;
+	height: 39px;
+}
+div.proyectos_curso_contenedor p .ver_todos {
+	background: url(../../humboldt/images/ui/bgs/fondos_3.png) repeat;
+	margin:0;
+	text-align: right;
+	padding-right: px;
+	height: 33px;
+	line-height: 32px;
+	display:block;
+	width: 490px;
+	height: 39px;
+	background-size: 100%;
+}  
+div.proyectos_curso_contenedor p .ver_todos a{
+	padding-right: 14px;
+	padding-top: 4px;
+	display: block; 
+	font-size:12px;
+	color:#ffffff;
+	border-bottom: 1px dotted white;
+	width: 74px;
+	position: relative;
+	left: 100%;
+	margin-left: -123px;
+	line-height: 16px;
+	top: 6px;
+}
+
+.proyectos_curso_contenedor{
+	width: 490px;
+	float: right;
+	position: relative;
+	margin-bottom: 11px;
+}
+
+/*********************			Modulo Proyectos Ejecutados   		*******************************/
+ 
+div.proyectos_ejecutados{
+	width: 100%;
+	max-width: 490px;
+}
+
+div.proyectos_ejecutados ul{
+	/*border-bottom:1px solid #416718;*/
+	background: url(../../humboldt/images/ui/bgs/fondos_2.png) repeat;
+	padding:8px 0 0;
+	height: 155px;
+	max-height: 155px;
+}
+div.proyectos_ejecutados ul li a.moduleItemTitle {
+	color:#ffffff;
+	font: 15px 'Source Sans Pro', sans-serif;
+	margin:0;
+	display:run-in ;
+	float:none;	
+}
+div.proyectos_ejecutados ul li {
+	padding-left: 59px;
+	color:rgba(153,153,153,0);
+	list-style:none;
+	margin-bottom: 0px;
+}
+.proyectos_ejecutados_container ul{
+	margin:0;
+}
+.proyectos_ejecutados_container h1{
+	color:#ffffff;
+	background:url(../../humboldt/images/ui/bgs/fondos_2_4.png) repeat;
+	margin:0;
+	width:490px;
+}
+.proyectos_ejecutados_container h1 img{
+	position:relative;
+	left:-5px;
+	margin-right: 15px;
+}
+.proyectos_ejecutados_container h1 span{
+	font-size: 21px;
+	position: relative;
+	top: -5px;
+	left: 22px;
+}
+.proyectos_ejecutados_container p{
+	margin:0;
+	height: 39px;
+}
+div.proyectos_ejecutados_container p .ver_todos {
+	background: url(../../humboldt/images/ui/bgs/fondos_3.png) repeat;
+	margin:0;
+	text-align: right;
+	padding-right: px;
+	height: 33px;
+	line-height: 32px;
+	display:block;
+	width: 490px;
+	height: 39px;
+	background-size: 100%;
+}  
+div.proyectos_ejecutados_container p .ver_todos a{
+	padding-right: 14px;
+	padding-top: 4px;
+	display: block; 
+	font-size:12px;
+	color:#ffffff;
+	border-bottom: 1px dotted white;
+	width: 74px;
+	position: relative;
+	left: 100%;
+	margin-left: -123px;
+	line-height: 16px;
+	top: 6px;
+}
+
+.proyectos_ejecutados_container{
+	width: 490px;
+	float: right;
+	position: relative;
+	margin-bottom: 11px;
+}
+
+/*********************			Modulo Suscripcion		*******************************/
+.newsletter{
+
+	width: 272px;
+	float: left;
+	margin-right: 22px;
+}
+
+.newsletter h3{
+	position: absolute;
+	width: 175px;
+	height: 50px;
+	color:#666666;
+	padding:  22px 0 0 50px;
+	margin-left: -5px;
+	font:22px 'Source Sans Pro', sans-serif;
+	text-shadow:2px 2px 2px rgba(255,255,255,.7);
+	background: url(../../humboldt/images/ui/icon/newsletter.png) no-repeat;
+	background-position: 0px 17px;
+
+}
+
+.newsletter #jnews_module1{
+	background: #e6e6db;
+	margin-top: -14px;
+	height: 199px;
+	max-width: 325px;
+	color:#979788	;
+	padding: 20px 0 18px 47px;
+	border: 1px solid #ccc;
+	padding-top: 99px;
+
+}
+
+
+
+.newsletter .jNewsRT{
+	
+	margin-top: 0;
+	top:0;
+	width: 250px;
+	padding-top: 35px;
+	font:17px 'Source Sans Pro', sans-serif;
+	text-shadow:2px 2px 2px rgba(255,255,255,.7);
+	background: url(../../humboldt/images/ui/bgs/divNewsletter.png)repeat-x;
+}
+
+
+
+.subscriptionField{
+	display:none
+}
+#wz_12{
+	max-width: 55px;
+	float: left;
+	font-size: 11.5px;
+	height: 35px;
+	margin-top:35px;
+	border-radius:0;
+	-webkit-border-radius: 0;
+}
+.subscriptionButton {
+	float: right;
+	margin-top: 14px;
+	right: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+} 
+.subscriptionButton input{
+	background:#059f6d;
+	border:none;
+	color:#ffffff;
+	font-size:14px;
+	padding: 0px 12px;
+	border-radius: o;
+}
+div.suscribete div.jcolorsuscribete form {
+	margin: 25px 0 24px;
+
+}
+
+/*********************			Modulo Multimedia   		*******************************/
+div.multimedia .uk-panel-title {
+	background:url(../../humboldt/images/ui/bgs/fondos_5_5.png) no-repeat;
+	color:white	;
+	font:21px 'Source Sans Pro', sans-serif;
+	background-size: 99.2%;
+}
+
+div.multimedia .uk-panel-title h3{
+	height: 39px;
+}
+div.multimedia .uk-panel-title p img{
+	width: 319px;
+	margin-left: 3px;
+}
+div.multimedia{
+	float: left;
+	width: 325px;
+	max-width: 325px;
+}
+div.multimedia h1 {
+	color:#666666;
+	font-size:21px;
+	margin:0;
+	padding-left: 46px;
+	padding-top: 9px;
+	line-height:43px
+}
+div.multimedia h3{
+	color:#666666;
+	font-size:14px;
+	margin:0;
+	padding-left: 46px;
+}
+div.multimedia a{
+
+}
+
+.multimedia{margin-left: 22px;}
+
+.multimedia .uk-panel-title p{padding: 0; margin: 0;}
+
+
+/*********************			Modulo Twitter   		*******************************/
+.twitter{
+	width: 321px;
+	max-height: 305px;
+	float: right;
+	margin-top: -7px;
+	padding: 0;
+}
+
+div.twitter iframe{
+	max-height: 320px;
+}
+div#recientes div.k2ItemsBlock ul li, div#las-mas-vistas div.k2ItemsBlock ul li {
+width: 31%;
+float: left;
+}
+
+/*********************			Modulo links externos   		*******************************/
+.link_externos img{
+	margin:0 22px;
+	height:88px;
+}
+
+/*--------  Go to top button ----------*/
+
+.itemBackToTop div{margin-top:5px; width: 32px; height: 32px; display: block; background: url(bt/gotop.png);}
+.itemBackToTop:hover div{background: url(bt/gotop-hover.png);}
+
+
+/*------ Bottom ----*/
+
+#humboldtBottom1{background: url(line.png)repeat-x; background-position: 0 42px; margin-top: 55px; border-bottom: 1px solid #cec9c2;}
+.humboldtBottom1 .content{width: 410px;}
+.humboldtBottom1 div div:first-child{width: 410px;}
+
+#humboldtBottom1 div div: {width: auto; float: left;}
+
+#humboldtBottom1 div .content{margin-top: 35px;}
+#humboldtBottom1 .gkmod-2{width: auto; float:left;}
+#humboldtBottom1 .gkmod-2 #k2ModuleBox166{margin-top:-5px; margin-left: 39px; float:right; height: 185px;}
+
+.box .content{margin-top: 25px;}
+
+#k2ModuleBox166 ul li{margin-left: 0px;}
+article.wk-content, article.wk-content a, article.wk-content a img, article.wk-content img{width: 170px; height: 166px !important; max-height: 166px !important;}
+.set{}
+
+#humboldtBottom2{margin-top: 150px; padding-bottom: 5px;}
+#humboldtBottomBg{width: 100%; position: absolute; left: 0; height: 312px; margin-top: -312px;  background: url(silhouette.png)no-repeat center; z-index: -1}
+
+#humboldtBottom3{margin-top: 35px;}
+#humboldtBottom3 h3{color: #c5baab; font-size: 22px;}
+#humboldtBottom3 a{color: #c5baab; font-size: 11.9px;}
+#humboldtBottom3 a:hover{color:#ebdfcf;}
+
+
+
+#humboldtFooterBg{width: 100%; position: absolute; left: 0; height: 699px; background: #625c54; z-index: -1; margin-top: 20px;}
+
+#module169{color: #c5baab; font-size: 20px;}
+
+/*----- NEWS -----*/
+
+#ja-contentslider-250{margin-top: 22px;}
+
+/*Articles*/
+
+.article-tools{height: 42px; border-top: 1px solid #cec9c2; border-bottom: 1px solid #cec9c2}
+.article-tools ul.right-tools{width: 217px; float: right; margin-top: 7px;}
+.article-tools ul.right-tools li{}
+.article-tools ul.right-tools li:first-child{ width: 99px; float: left; background: url(divwords.png)no-repeat 77px 7px;}
+.article-tools ul.right-tools li:last-child{}
+
+/*ul.infoBar{height: 42px; border-top: 1px solid #cec9c2;}*/
+ul.infoBar{height: 42px;}
+ul.infoBar li{float: left; margin-right: 25px; padding-top: 5px;}
+ul.infoBar li:last-child{float: right; margin-right: 0;}
+
+
+.humboldtTitle{width: 100%; margin-top: 11px;}
+
+#humboldtMainbody{padding: 0px; margin-bottom:111px;}
+#humboldtMainbody #k2Container{text-align: justify; line-height: 1.5;}
+
+.itemIntroText p img{margin-left: 22px; }
+
+#humboldtMainbodyTop img{padding-left: 22px;}
+
+#humboldtMainbodyBottom{margin-bottom:155px;}
+
+#k2Container header{
+	/*margin-top: 25px;*/
+	z-index: 1000;}
+#k2Container header h1{text-align: left;}
+
+article header{margin: 0 0 14px}
+article header h1{line-height: 29px;}
+
+#k2Container .itemHumboldt h2{font-size: 14px;}
+
+#k2Container .itemHumboldt .itemExtraFields{position: relative; margin-left: 22px; height: 70px;}
+#k2Container .itemExtraFields{position: relative; margin-left: 22px; height: 150px;}
+#k2Container .itemExtraFields ul li{line-height: 1.25;  height:25px; overflow:hidden}
+
+.itemLinks .itemTagsBlock ul {margin:0}
+
+body.humboldtpublicaciones #k2Container .itemExtraFields ul li:last-child{position: absolute; top:250px; right: 0; width: 156px;}
+body.humboldtpublicaciones #k2Container .itemHumboldt .itemExtraFields  ul li:last-child{position: absolute; top:262px; overflow:visible;}
+body.humboldtpublicaciones .itemContainerLast article{border-bottom: none;}
+
+body.humboldtpublicaciones article.itemView .itemExtraFields ul li:nth-child(3), body.humboldtpublicaciones article.itemView .itemExtraFields ul li:nth-child(4){display:block;}
+
+.itemAuthorData{position: relative; margin: 22px 0;}
+
+.itemRatingBlock{ float: right; width: 300px; margin-right: 0;}
+
+.itemTwitterButton{width: 85px; padding-left:10px;}
+
+.itemGooglePlusOneButton{margin-left: 10px;}
+
+
+.itemLeftData{width: 150px;  float: left;}
+.itemImageBlock{position: relative; width: 122px; height:170px; float: left; margin-right: 22px;}
+
+.itemAttachmentsBlock{}
+.itemAttachmentsBlock li a{width: 75px; height: 39px; margin-top: 11px; margin-bottom: 10px; background: #f47350; position: relative; margin-top: 185px; display: block; color: rgba(255,255,255,.9); font-weight: bold; padding: 10px 25px 0px; text-shadow: 1px 1px 1px rgba(0,0,0,.35); text-decoration: none;}
+.itemAttachmentsBlock li a:hover{color: #ffffff;}
+
+.itemFullText{}
+
+.genericView article time{display: none;}
+
+a.k2FeedIcon{display: none !important;}
+
+.itemList article header h2{font-size: 22px; line-height: 29px;}
+
+.itemExtraFieldsLabel, .catItemExtraFieldsLabel{font-weight: bold;}
+
+
+body.humboldtpublicaciones .itemHumboldt .itemIntroText{height: 129px; overflow: hidden; padding-top:11px;}
+
+#publink{margin-top: 25px;}
+/*tags*/
+
+.itemTags li a,.k2TagCloudBlock a,.moduleItemTags a {color:#048c51; display: block;
+	height: 21px;
+	line-height: 21px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+ul.itemTags{}
+
+ul.itemTags li{position: absolute;}
+ul.itemTags li:first-child{margin-left: 35px;}
+ul.itemTags li:last-child{margin-left: 199px;}
+
+
+ul.titleTags{ width: 100%; height: 35px; list-style: none; padding-top: 5px; border-top: 1px dotted #cec9c2; border-bottom: 1px dotted #cec9c2;z-index: -1;}
+ul.titleTags li{position: absolute;}
+ul.titleTags li:first-child{z-index: -1;}
+ul.titleTags li:last-child{padding-left: 155px; background: url(divwords.png)no-repeat 135px 7px;z-index: -1;}
+
+
+
+/* Filter )*/
+ul#jak2filter192 li:last-child{	}
+
+div.itemListCategoriesBlock{width:25%; float: left;}
+div#newSidebar{}
+div#newRightContent, div#pagesPublik{width: 70%; float: right;}
+
+
+.fullparr div.itemListCategoriesBlock{width: 100% !important;}
+
+/* HideMainbody */
+
+#pageBg {
+	position: absolute;
+	font-size: 16px;
+	margin-left: -25px;
+	width: 1035px;
+	height: 388px;
+	background: url(bg-page.png)no-repeat 12.5px 0px;
+	z-index:0;
+	overflow: hidden;
+}
+
+.noPageBg ul.set{transform: none !important;}
+
+.noPageBg #humboldtPageWrap #humboldtPageContent{display: none;}
+article#dateHumboldt, section.dateHumboldt time{display: none;}
+
+article.actual iframe.itemvideo{display: none;}
+
+
+
+/*.men_noticias article iframe{display: none;}
+*/
+
+
+/* Videogallery --*/
+
+a.magpopif h3{line-height: 1.35; color:#048c51;}
+a.magpopif:hover > h3, a.magpopif:hover{color: #0c4d38; text-decoration: none;}
+
+/*------ Calendar ------*/
+#jevents_body td.contact, #jevents_body td.hits{display:none;}
+
+#jevents_body td.contentheading h2{font-size: 22px; line-height: 29px; background-image: none; margin-left: 0; padding-left: 0; color:#615A52;}
+
+#jevents_body table{margin-bottom: 0;}
+
+#jevents_body table.contentpaneopen tr td{line-height: 1.5; font-weight: normal !important; font-family: sans-serif;}
+
+#jevents_body table.contentpaneopen tr td.ev_detail {}
+
+#jevents_body table.contentpaneopen tr td img{margin-left: 25px;}
+
+#jevents_body .nn_tabs{margin-top: 55px;}
+
+.itemSocialSharingEvent{height: 29px; border-top: 1px solid #cec9c2 !important; border-bottom: 1px solid #cec9c2 !important; padding-top: 10px;}
+
+.itemSocialSharingEvent .fb-share-button {float: left; margin-right: 10px;}
+
+
+@media (max-width : 1040px) {
+	#humboldtSocial{margin-top: 11px !important;}
+	.icemegamenu > ul > li  a.iceMenuTitle {padding: 0px 11px !important;}
+	#iceMenu_269, #iceMenu_199{float: right;}
+	form#mod-finder-searchform{width: 180px !important;}
+	form#mod-finder-searchform input{width: 135px !important;}
+	#pageBg1 {width: 1025px !important; height: 599px !important; background-size: 1000px 1211px !important;}		
+}
+
+/*tabs Home--*/
+@media only screen and (max-width : 1000px){
+	.noPageBg .nav-tabs li:first-child {margin-left: 500px !important;}
+	.allpub {margin-left: 735px !important;}	
+}
+@media only screen and (max-width : 781px){
+	.noPageBg .nav-tabs li:first-child {margin-left: 300px !important;}
+	.allpub {margin-left: 535px !important;}	
+}
+@media only screen and (max-width : 647px){
+	.noPageBg .nav-tabs li:first-child {margin-left: 150px !important;}
+	.allpub {margin-left: 380px !important;}
+}
+@media only screen and (max-width : 540px){
+	.noPageBg .nav-tabs li:first-child {margin-left: 0px !important;}
+	.allpub {margin-left: 222px !important;}
+}
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	#iceMenu_269{width: 157px !important;}
+	#iceMenu_199{width: 159px !important;}
+	ul.nav.menu.menu_footer > li { width:11.5%}
+	ul.nav.menu.menu_footer > li span { width:107%;display: block;}  
+	#humboldtBottom1 .gkmod-2{width: 50%;}
+	.wk-gallery-wall.polaroid a:nth-child(3) p.title, .wk-gallery-wall.polaroid a:nth-child(4) p.title{top: -5px !important;}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	ul.nav.menu.menu_footer {display:none}
+	#humboldtFooterBg {height: 140px !important;} 
+	.twitter {margin-top: -6px;}
+}

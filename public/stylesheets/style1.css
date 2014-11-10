@@ -1,0 +1,351 @@
+/*
+	Humboldt v1.0 - Joomla template 3x
+	Copyright: (C)iF Creative Studio. All Rights Reserved.
+	Website:  http://www.if-cs.com
+	
+ */
+ 
+/* Style 1 */
+
+.box > div, #humboldtContent > div { padding: 24px;}
+
+	#humboldtContent { width: 100%; }
+	#humboldtPageWrap { max-width: 1000px; z-index: 10; }
+	body { padding: 0px; margin: 0px; _background: url(res/bgTopMenu.jpg) repeat-x 0px -43px;}
+	.bar{ padding: 10px 0 0 0 ; border: 1px solid #c7c7c7; background-color: white; border-radius: 5px; text-align: center; font-size: 1.2em; color: #7d7d7d;}
+	nav.bar{display: block;width: 100%; margin-bottom: 25px; }
+	div.bar{display: inline-block; }
+	.bar a{color: #7d7d7d;}
+	.bar a:hover{ color: #fb5a29;}
+	.bar ul li { line-height: 1em;}
+	.bar >ul>li> a{ padding: 15px 10px; color: #7d7d7d; display: inline-block; position: relative;}
+	.bar  a > span{ font-size: 0.6em; color: #9d9d9d; text-transform: uppercase; display: block; line-height: 0.6em; letter-spacing: 1px; }
+	.bar >ul>li ul {border: 1px solid #c7c7c7; background-color: white; text-align: center; font-size: 0.8em; color: #7d7d7d; padding:6px; line-height: 1em; width: 120px; top: 40px; left: -20px;}
+	.bar > ul li{ display: inline-block; position: relative;}
+	.bar a > ul li{border-bottom: 1px solid #c7c7c7; padding: 3px; list-style: none;}
+	.bar  ul li a{line-height: 1.3em !important; padding: 10px 5;}
+	.bar >ul>li>ul{ display: none;}
+	.bar >ul>li>ul li{ margin: 5px 0;}
+	.bar >ul>li:hover>ul{  display: block; position: absolute; z-index: 1000; margin-top: 0px;}
+	.bar .separator{ border-left: solid 1px #c7c7c7; width: 1px; margin: 0 10px;}
+	#humboldtHeader select{ font-size: 1.8em; height: 50px; font-weight: bold; width: 100px; float: right; margin-top: -70px;}
+	.breadcrumb{ display: inline-block; text-transform: uppercase; }
+	.slider{width: 100%; height: 426px;background-color: white;}
+	.bx-viewport{border: 2px solid #c7c7c7; border-radius: 5px;}
+	.tema {margin: 0 5px 15px 0; display: inline-block;color: #7d7d7d !important}
+	.tema img{border: #c7c7c7; margin-bottom: 5px; display: block; }
+	h1,h2,h3,h4,h5,h6 p {color:#5c5c5c;}
+	h1{ margin: 15px 0; font-size: 2.2em; letter-spacing:-1px;}
+	h2{ margin: 0; font-size: 1.6em; letter-spacing:-1px;}
+	h2+h1{ margin: 0 0 20px 0;}
+	h4{ font-weight: 700; font-size: 1.1em; text-transform: uppercase;}
+	h5{ font-size: 1em; text-transform: uppercase; margin-top: 10px;}
+	.firma{ display: inline-block; width: 250px;}
+	a{ cursor: pointer; text-decoration: none !important;}
+	a{-webkit-transition:all 600ms ease;
+		-moz-transition:all 600ms ease;
+		-ms-transition:all 600ms ease;
+		-o-transition:all 600ms ease;
+		transition:all 600ms ease;
+	}
+	a:hover img{opacity:.75;
+		filter:alpha(opacity=75);
+		-webkit-transition:all 600ms ease;
+		-moz-transition:all 600ms ease;
+		-ms-transition:all 600ms ease;
+		-o-transition:all 600ms ease;
+		transition:all 600ms ease;
+	}
+	a:hover{-webkit-transition:all 600ms ease;
+		-moz-transition:all 600ms ease;
+		-ms-transition:all 600ms ease;
+		-o-transition:all 600ms ease;
+		transition:all 600ms ease;
+}
+	#humboldtLogoText{ font-weight: 700;
+	 font-size: 2.3em;
+	 line-height: 0.9em;
+	 color: black;
+	 margin: 35px 0 0 0; font-family: Arial; letter-spacing: -1px;}
+	.spacer{ margin: 20px 0;}
+	.rounded_box{ background: rgba(200,200,200,0.3); border-radius: 15px; -webkit-border-radius: 15px; padding: 15px 20px; margin-bottom: 20px; }
+	.rounded_box a img{ width: 40px; height: auto; display: inline-block; float: left; }
+	.link_box{ background: rgba(200,200,200,0.3); border-radius: 5px; -webkit-border-radius: 5px; padding: 10px; width: 200px; margin: 3px; display: inline-block; vertical-align: top}
+	.link_box:hover{ background: rgba(200,200,200,0.8);}
+	.link_box h5{ margin: 0px; }
+	.float_right{ float: right; margin-left: 20px;}
+
+/* template.css */
+-webkit-::selection {
+	background: #fb5a29;
+	color: #fff;
+}
+-moz-::selection {
+	background: #fb5a29;
+	color: #fff;
+}
+::selection {
+	background: #fb5a29;
+	color: #fff;
+}
+html {
+	background-image:  url(/images/bg.jpg);
+}
+body {
+	
+}
+a {
+	color: #fb5a29;
+}
+
+.box.alpha > div {
+	background-image: url('bg_alpha.png');
+}
+.box.color {
+	color: #ffe3db;
+}
+.box.color > div {
+	background: #fb5a29;
+}
+.box.color b,
+.box.color strong {
+	color: #ffdfaf;
+}
+.box.color ul li {
+	border-top: 1px solid #ff8965;
+}
+.box.colortitle h3.header {
+	background: #fb5a29;
+}
+.box.colortitle.color h3.header {
+	color: #fb5a29;
+}
+.gkUsermenu li {
+	background-image: url("typography/bullet-square2.png");
+}
+
+/* joomla.css */
+button:hover,
+input.button:hover,
+span.button:hover,
+button.button:hover,
+div.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.pagenav-prev a:hover,
+.pagenav-next a:hover {
+	background: #fb5a29;
+}
+article time {
+	background: #fb5a29;
+}
+article header h1 a:hover,
+article header h2 a:hover {
+	color: #fb5a29;
+}
+article header li a {
+	color: #FB5A29;
+}
+p.img_caption {
+	background: #fb5a29;
+}
+.tip-title {
+	background: #fb5a29;
+}
+.pagination ul li a,
+.pager ul li a {
+	background: #FB5A29;
+}
+.article-index li a:hover {
+	color: #fb5a29;
+}
+.autocompleter-queried {
+	color: #fb5a29 !important;
+}
+
+/* gk_stuff.css */
+.nspPagination li:hover,
+.nspPagination li.active {
+	background: #fb5a29;
+}
+.nspNext,
+.nspPrev {
+	background-image: url('nsp_interface.png');
+}
+.nspArt h4.nspHeader a:active,
+.nspArt h4.nspHeader a:focus,
+.nspArt h4.nspHeader a:hover {
+	color: #fb5a29;
+}
+.color .nspArt h4.nspHeader a {
+	color: #fdefef;
+}
+.color .nspArt h4.nspHeader a:active,
+.color .nspArt h4.nspHeader a:focus,
+.color .nspArt h4.nspHeader a:hover {
+	color: #fab8a4;
+}
+.color .nspArt p.nspInfo {
+	color: #fdefef;
+}
+.color .nspPagination li {
+	background: #fdefef;
+}
+.color .nspPagination li:hover,
+.color .nspPagination li.active {
+	background: #fab8a4;
+}
+.color .nspVmStore div.PricesalesPrice span {
+	color: #fff!important;
+}
+.color .nspVmStore .PricediscountAmount,
+.color .nspVmStore .PricetaxAmount {
+	color: #fdefef!important;
+}
+.color.zoom .nspArt {
+	border-left: 1px solid #fd7c4b;
+}
+.zoom .nspZoom {
+	background-image: url('nsp_zoom.png');
+}
+.nspMainPortalMode5 .nspArt:hover .nspHeader a {
+	color: #fb5a29;
+}
+.nspMainPortalMode5 .nspHeader a:active,
+.nspMainPortalMode5 .nspHeader a:focus,
+.nspMainPortalMode5 .nspHeader a:hover { 
+	color: #fb5a29; 
+}
+.nspMainPortalMode5 .nspPrev,
+.nspMainPortalMode5 .nspNext { 
+	background-image: url('nsp_portal_mode_5_interface.png'); 
+}
+.gkIsWrapper-gk_bikestore .gkIsPreloader {
+	background-image: url('loader.gif');
+}
+.gkIsWrapper-gk_bikestore figcaption h3 {
+	background-image: url('pattern.png');
+}
+.gkIsWrapper-gk_bikestore figcaption h3:hover {
+	background-image: url('pattern_hov.png');
+}
+.gkIsButtons {
+	background: #fb5a29;
+}
+.gkIsWrapper-gk_bikestore .nextSlide,
+.gkIsWrapper-gk_bikestore .prevSlide {
+	background-image: url('is_nav.png');
+}
+
+/* k2.css */
+span#formLog {
+	background: #fb5a29;
+}
+.itemRatingForm .formLogLoading {
+	background-image: url('loading.gif');
+}
+.itemTags li a,
+.k2TagCloudBlock a,
+.moduleItemTags a {
+	
+}
+.itemTags li a:hover,
+.moduleItemTags a:hover {
+	
+}
+.k2TagCloudBlock a:hover {
+	background: #fb5a29;
+}
+.userView .itemAuthorBlock {
+	background: #FEF9F7
+}
+.itemAuthorData {
+	background: #fef9f7;
+}
+.itemComments h3 {
+	background: #fb5a29;
+}
+#itemListLinks li {
+	background-image: url('typography/bullet-square2.png');
+}
+.k2CommentItem a:hover {
+	color: #fb5a29;
+}
+.k2CalendarBlock table.calendar tr td.calendarToday {
+	background: #fb5a29;
+}
+.k2TagCloudBlock a:hover {
+	background: #fb5a29 !important;
+}
+
+/* mobile.css */
+#gkMobileMenu {
+	background: transparent url('tablet_menu_btn.png') no-repeat 16px center;
+}
+
+/* vm.css */
+.general-bg,
+input.vm-default,
+a.product-details,
+a.details,
+div.details {
+	color: #FB5A29;
+}
+.category-view .row .category .spacer h2 a:hover {
+	color: #FB5A29
+}
+.terms-of-service h5 a,
+.terms-of-service h5 a:visited {
+	color: #FB5A29;
+}
+.vm-button-correct:hover {
+	background: #FB5A29;
+}
+.featured-view .spacer h3 a:hover,
+.latest-view .spacer h3 a:hover,
+.topten-view .spacer h3 a:hover,
+.related-products-view .spacer h3 a:hover,
+.browse-view .row .product .spacer h2 a:hover,
+h3.catProductTitle a:hover {
+	color: #FB5A29
+}
+input.addtoCart:hover {
+	background: #fb5a29;
+}
+.product-related-products > div a:hover,
+.product-related-categories > div a:hover {
+	color: #FB5A29
+}
+.catProductDetails:hover {
+	background: #fb5a29;
+}
+.trackMyOrder {
+	background: #FEF9F7;
+}
+ul#tabs {
+	border-bottom: 3px solid #fb5a29;
+}
+#ui-tabs ul#tabs li.current {
+	background: #fb5a29;
+}
+#ui-tabs h4 {
+	color: #FB5A29;
+}
+#facebox .popup > div > div > a:hover {
+	background: #FB5A29;
+}
+table.cart-summary a:hover {
+	color: #FB5A29;
+}
+.gkContainer a:hover {
+	color: #FB5A29;
+}
+.gkShowCart a {
+	background: #FB5A29;
+}
+.productDetails .main-image .vmZoom {
+	background-image: url('nsp_zoom.png');
+}
+.catProductPrice .PricesalesPrice {
+	background: #FB5A29;
+}

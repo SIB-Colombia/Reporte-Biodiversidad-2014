@@ -1,0 +1,1027 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*********************			Modulo servicios   		*******************************/
+section#humboldtMainbodyTop > div{
+	float:left;
+}
+/*********************			Modulo Colecciones Biológicas   		*******************************/
+div.colecciones_biologicas{
+	max-width:320px;
+	float:left;
+	text-align: left;
+}
+div.colecciones_biologicas h1{
+	background:#e48413;
+	border:1px solid #f7dab9;
+	padding: 8px 0;
+	color:rgba(255,255,255,1);
+}
+div.colecciones_biologicas h1 img{
+	margin: 0 10px 0 -5px;
+}
+div.colecciones_biologicas ul{
+	border:1px solid #ede2d7;
+	border-top:none;
+	background:#fef9f3;
+	padding:5px 0 25px;
+ 	min-height: 166px;
+}
+div.colecciones_biologicas ul li a{
+	color:#048c51;
+	font: 15px 'Source Sans Pro', sans-serif;
+	margin:0
+}
+div.colecciones_biologicas ul li {
+	padding-left: 30px;
+	margin-left: 22px;
+	color: rgba(0,0,0,0);
+	background:url(listas.png) no-repeat; 
+	border:none;
+	padding-top: 7px;
+}
+div.colecciones_biologicas > p{
+	background:#fef9f3;
+	margin:0;
+	border:1px solid #ede2d7;
+	border-bottom:none;
+	max-width: 288px;
+	padding: 15px 15px 5px;
+	line-height: 1.3;
+}
+/*********************			Modulo Geoinformacion   		*******************************/
+div.geoinformacion {
+	max-width:320px;
+	max-height: 325px;
+	width:320px;
+	height:325px;
+	float:left;
+	margin-left: 10px;
+	text-align: left;
+}
+div.geoinformacion h1{
+	background:#25b49b;
+	border:1px solid #359381;
+	padding: 8px 0;
+	color:rgba(255,255,255,1);
+	width:320px;
+}
+div.geoinformacion h1 img{
+	margin: 0 10px 0 -5px;
+}
+div.geoinformacion ul{
+	border:1px solid #d7e4dd;
+	border-top:none;
+	background:#f4fbfa;
+	padding:5px 0 25px;
+	width:320px;
+	height: 221px;
+}
+div.geoinformacion ul li a{
+	color:#048c51;
+	font: 15px 'Source Sans Pro', sans-serif;
+	margin:0
+}
+div.geoinformacion ul li {
+	padding-left: 30px;
+	margin-left: 22px;
+	color: rgba(0,0,0,0);
+	background:url(listas.png) no-repeat; 
+	border:none;
+	padding-top: 7px;
+}
+div.geoinformacion > p{
+	background:#f4fbfa;
+	margin:0;
+	border:1px solid #ede2d7;
+	border-bottom:none;
+	max-width: 288px;
+	padding: 15px 15px 5px;
+	line-height: 1.3;
+}
+
+#k2ModuleBox175 ul li{width: 235px;}
+
+/*********************			Modulo Sib Colombia   		*******************************/
+div.sib_colombia {
+	max-width:320px;
+	float:left;
+	margin:11px 0px 0 0;
+	text-align: left;
+}
+div.sib_colombia h1{
+	background:#3298ba;
+	border:1px solid #3e7e91;
+	padding: 8px 0;
+	color:rgba(255,255,255,1);
+}
+div.sib_colombia h1 img{
+	margin: 0 10px 0 -5px;
+}
+div.sib_colombia ul{
+	background:#f5fafb;
+	margin:0;
+	border:1px solid #d8e1df;
+	border-bottom: none;
+	max-width: 288px;
+	padding: 11px 15px;
+	line-height: 1.3;
+	min-height: 205px;
+}
+
+/*********************			Modulo Observatorio de politica    		*******************************/
+div.observatorio {
+	max-width:320px;
+	float:left;
+	margin: 11px 0px 0 10px;
+	text-align: left;
+}
+div.observatorio h1{
+	background:#f3523d;
+	border:1px solid #a94a3c;
+	padding: 8px 0;
+	color:rgba(255,255,255,1);
+}
+div.observatorio h1 img{
+	margin: 0 10px 0 -5px;
+}
+div.observatorio ul {
+	background:#fef6f5;
+	margin:0;
+	border:1px solid #e7dad3;
+	border-bottom: none;
+	max-width: 288px;
+	padding: 11px 15px;
+	line-height: 1.3;
+	min-height: 205px;
+}
+/*********************			Modulo IMAGEN CARTOGRAFIA DE SERVICIOS, IMAGEN PUBLICACIONES DE SERVICIOS    		*******************************/
+div.ser_cartografia img, div.ser_publicaciones img{
+	width:210px
+}
+
+/*********************			Modulo MENU SERVICIOS     		*******************************/
+.menu_servicios > ul.nav.menu li{
+	border-bottom:1px solid #cccccc;
+	width:88%;
+	padding: 6px 0 5px;
+	font-weight: bold;
+}
+.menu_servicios ul li:hover > a{
+	background:none;
+	color:#015330;
+	padding:0
+	
+}
+.menu_servicios ul.nav.menu {
+	margin: 23px 14px;
+} 
+.menu_servicios ul.nav.menu li ul li{
+	width:100%;
+	border:none;
+	font-size: 11px;
+	line-height: 1.7;
+}
+.menu_servicios ul li ul li:hover  a{
+	list-style:none;
+	text-decoration:none
+}
+.menu_servicios ul li ul{
+	display:none;
+	margin-left:15px;
+	transition:3s;
+	-webkit-transition:3s;	
+}
+.menu_servicios ul li:hover ul{
+	display:block;
+	transition:3s;
+	-webkit-transition:3s;
+}
+/*********************			TABS      		*******************************/
+.wk-slideshow-tabs .nav li {
+	font-size:11px;
+	line-height: 14px;
+	width: 15.95%;
+	text-shadow:none;
+	color:#ffffff;
+	background:#605952;
+	border:none;
+	border-radius:0;
+}
+.wk-slideshow-tabs .nav li:hover {
+	color:#605952;		
+}
+.wk-slideshow-tabs .nav li.active {
+	color:#605952;
+	border:1px solid #cec9c2;
+	border-bottom:0px solid;
+	background:none	
+}
+.wk-slideshow-tabs .nav span {
+	padding: 7px 0px 5px 0;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+	min-height: 29px;
+	font-weight:bold
+}
+.wk-slideshow-tabs .slides>li>article {
+	padding: 15px;
+	width:95%
+}
+.wk-slideshow-tabs .slides-container {
+	border: 0px solid #ddd;
+	background:none;
+	border-radius:0px;
+} 
+.wk-slideshow .slides{
+	height: 400px !important;
+}
+
+/*********************			BODY       		*******************************/
+body.men_servicios div.itemBody{
+	width:100%
+}
+body.men_servicios section#humboldtMainbody {
+	padding:0
+}
+body.men_servicios .article-tools{
+	border:none
+}
+/*********************			Modulo FOOTER      		*******************************/
+
+ul.nav.menu.menu_footer li{
+	width: 200px;
+	float: left;
+}
+ul.nav.menu.menu_footer{position: relative;}
+ul.nav.menu.menu_footer .item-102{position: relative; text-align: left;}
+ul.nav.menu.menu_footer li a{
+	width: 155px;
+	float: left;
+	margin-bottom: 11px;
+	border-bottom: 1px solid #cec9c2;
+	width: 82%;
+}
+ul.nav.menu.menu_footer li a{
+	background:none;
+}
+ul.nav.menu.menu_footer li ul li a{
+	border-bottom: none;
+	font-weight: normal;
+}
+
+ul.nav.menu.menu_footer li ul li{
+	line-height: 14px;
+}
+ul.nav.menu.menu_footer > li{
+	padding: 6px 0 5px;
+	font-weight: bold;
+	float:left;
+	margin-right:38px;
+	width: 12%;
+}
+ul.nav.menu.menu_footer > li:nth-child(3){
+	width:17%
+}
+ul.nav.menu.menu_footer > li:nth-child(3) ul li a, ul.nav.menu.menu_footer > li:nth-child(3) ul li{
+	width:100%
+}
+ul.nav.menu.menu_footer > li img{
+	display:none
+}
+ul.nav.menu.menu_footer > li a{
+	font-weight:bold;
+	color:#c5baac;
+}
+ul.nav.menu.menu_footer > li span{
+	color:#c5baac !important;
+	font-weight: 100;
+	border-bottom: 1px solid #cec9c2;
+	width: 53%;
+	margin-bottom: 10px;
+}
+ul.nav.menu.menu_footer > li:nth-child(1){
+	display:none
+}
+ul.nav.menu.menu_footer li.item-248 > a{
+	border-bottom: 1px solid #cec9c2;
+	font-weight:bold
+}
+/*********************			filtros        		*******************************/
+.palabras_claves{
+	margin-top:15px
+}
+.buscar_imagen input[type="text"]{
+	width:100%;
+}
+div .jg_search{
+	display:none
+}
+div.jg_pathway a img {
+	display:none
+}
+
+/*********************			menu multimedia        		*******************************/
+.menu_topright{
+	float: right;
+	position: absolute;
+}
+.menu_topright li{
+	float:left;
+	cursor:pointer
+}
+.menu_topright li span{
+	color: #ccc;
+	box-shadow:none;
+	font-size:13px;
+	text-transform:none;
+	text-shadow:none	
+}
+.menu_topright li ul{
+	visibility:hidden;
+	transition:ease-in .5s;
+	width: 125px;
+	
+}
+.menu_topright li a {
+	display:block
+}
+.menu_topright li.item-267:hover ul{	
+	visibility:visible;
+	transition:ease-in .5s;	
+	
+}
+ 
+/*********************			modulo mapa del sito        		*******************************/
+.mapa_sitio_4 li.item-267 span{
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(4, 140, 81, 0.14);
+	width: 64%;
+	margin: 15px 0 5px;
+	color: #048c51;
+	line-height: 2.0;
+	font-size: 14px;
+	font-weight: 100;
+	padding: 0;
+}
+body.men_mapasitio section#humboldtMainbodyTop > div:first-child {
+	width: 100%;	
+	margin:0;
+}
+body.men_mapasitio section#humboldtMainbodyTop > div:first-child ul li{
+	display:inline-table;
+	width:33%;
+}
+body.men_mapasitio section#humboldtMainbodyTop > div:first-child ul li.item-101{
+ 	display:none
+}
+body.men_mapasitio section#humboldtMainbodyTop > div:first-child ul li ul li{
+	width:100%;
+}
+body.men_mapasitio section#humboldtMainbodyTop > div {
+	width: 33%;	
+	margin-top: 30px;
+}
+body.men_mapasitio section#humboldtMainbodyTop > div:first-child img {
+	display:none
+}
+body.men_mapasitio section#humboldtMainbodyTop > div ul li ul{
+	margin-left:25px;
+}
+body.men_mapasitio section#humboldtMainbodyTop > div ul.nav.menu >li >a {
+	text-transform:uppercase;
+	border-bottom: 1px solid rgba(4, 140, 81, 0.14);
+	width: 64%;
+	margin: 15px 0 5px;
+}
+body.men_mapasitio section#humboldtMainbodyTop > div ul.nav.menu >li >span {
+	text-transform:uppercase;
+	border-bottom: 1px solid rgba(4, 140, 81, 0.14);
+	width: 70%;
+	margin: 15px 0 5px;
+	color:#048c51;
+	display:block;
+	cursor:pointer
+}
+/*********************			modulo buscar        		*******************************/
+form#mod-finder-searchform{
+	width: 243px;
+}
+form#mod-finder-searchform div.finder{
+	position:relative
+}
+form#mod-finder-searchform input{
+	height:32px;
+	width:200px;
+}
+form#mod-finder-searchform div.finder .btn-primary {
+	position:absolute;
+	right:0;
+	border-radius:0;
+	height: 32px;
+	background:#f47350;
+	border:1px solid #dbdad9;
+}
+
+/*********************			modulo Programas contenedor        		*******************************/
+div.proyectos_programas .even, div.proyectos_programas li.odd{
+	color: rgba(0,0,0,0);
+	background:url(../../humboldt/images/ui/bgs/listas.png) no-repeat; 	
+	background-position: 12px; 
+}
+
+.men_investigacion .centro_analisis_contenedor, .men_investigacion .proyectos_curso_contenedor, .men_investigacion .proyectos_ejecutados_container {
+	width: 465px;}
+.men_investigacion .centro_analisis_contenedor h1, .men_investigacion .proyectos_curso_contenedor h1, .men_investigacion .proyectos_curso_contenedor span.ver_todos, .men_investigacion .proyectos_ejecutados_container h1, .men_investigacion .proyectos_ejecutados_container span.ver_todos{
+	width: 465px;
+}
+
+.men_investigacion .proyectos_curso_contenedor{
+	float: left;
+}
+
+.men_investigacion .proyectos_ejecutados_container {
+	float: right;
+}
+
+.men_investigacion .proyectos_curso_contenedor, .men_investigacion .proyectos_ejecutados_container {margin-top:11px;}
+
+
+div.proyectos_curso .even, div.proyectos_curso li.odd{
+		width: 84%;
+}
+div.proyectos_programas{
+	width: 100%;
+	max-width: 465px;
+}
+div.proyectos_programas ul{
+	background:#f47350;
+	min-height:166px;
+	max-width:465px
+}
+div.proyectos_programas ul li a{
+	color:#ffffff;
+	font: 15px 'Source Sans Pro', sans-serif;
+	margin:0;
+	line-height: 17px;
+	padding: 13px 0;
+}
+div.proyectos_programas ul li a:hover{color:#395900 !important;}
+
+div.proyectos_programas ul li {
+	padding: 3.5px 22px 3.5px 59px;
+	color:rgba(153,153,153,0);
+	list-style:none;
+	border-bottom:1px solid #92554d;
+	border-top:1px solid #c54837;
+	background-position-y: 11px ;
+	height: 59px;
+}
+div.proyectos_programas ul li.clearList{display: none;}
+div.proyectos_programas ul li:first-child{
+	border-top:none
+}
+div.proyectos_programas ul li.lastItem{
+	border-bottom:none;
+}
+div.proyectos_programas_contenedor h1{
+	color:#ffffff;
+	background:#c95c3e;
+	margin:0;
+	width:465px;
+}
+div.proyectos_programas_contenedor h1 img{
+	position: relative;
+	left: -5px;
+	margin-right:21px
+}
+div.proyectos_programas_contenedor h1 span{
+	font-size: 21px;
+	position: relative;
+	top: 3px;
+	left: 22px;
+	color: #ffffff;
+}
+.proyectos_programas_contenedor{
+	width: 465px;
+	height: 250px;
+	float: right;
+	margin-bottom: 11px;
+}
+/*********************			Modulo Actualidad         		*******************************/
+div.actualidad .even, div.actualidad li.odd{
+		width: 84%;
+}
+div.actualidad{
+	width: 100%;
+}
+div.actualidad ul{
+	border: 1px solid #ede2d7;
+	background:#fef6f5;
+	padding:5px 0 0px;
+	min-height: 200px;
+	width:100%;
+	border-bottom:none;
+}
+div.actualidad ul li a{
+	font: 15px 'Source Sans Pro', sans-serif;
+	margin:0;
+	line-height: 19px;
+	padding: 4px 0;
+}
+div.actualidad ul li {
+	padding: 5px 0px 5px 22px;
+	color:rgba(255,255,255,1);
+	list-style:none;
+	background-position-y: 11px ;
+	background: url(listas.png) no-repeat;
+	margin-left: 22px;
+}
+div.actualidad ul li a:hover {
+	color:#047e49
+}
+div.actualidad ul li.clearList{display: none;}
+div.actualidad ul li:first-child{
+	border-top:none
+}
+
+div.actualidad .moduleItemIntrotext a.moduleItemImage{position: relative; width: auto; float: left;}
+
+div.actualidad_contenedor ul li.lastItem{
+	border-bottom:none;
+}
+div.actualidad_contenedor h1{
+	color:#ffffff;
+	background:#c95c3e;
+	margin:0;
+	padding: 8px 0;
+	border: 1px solid #a94a3c;
+}
+div.actualidad_contenedor h1 img{
+	position: relative;
+	left: -5px;
+	margin-right:21px
+}
+div.actualidad_contenedor h1 span{
+	font-size: 21px;
+	position: relative;
+	top: 3px;
+	left: 22px;
+}
+ 
+/*********************			Modulo Notas Humboldt         		*******************************/
+div.notas_humboldt .even, div.notas_humboldt li.odd{
+		width: 84%;
+}
+div.notas_humboldt{
+	width: 100%;
+}
+div.notas_humboldt ul{
+	border: 1px solid #ede2d7;
+	background:#fef6f5;
+	padding:5px 0 0px;
+	min-height: 200px;
+	width:100%;
+	border-bottom:none;
+}
+div.notas_humboldt ul li a{
+	font: 15px 'Source Sans Pro', sans-serif;
+	margin:0;
+	line-height: 22px;
+	padding: 4px 0;
+	
+}
+div.notas_humboldt ul li {
+	padding: 3.5px 33px;
+	color:rgba(255,255,255,1);
+	list-style:none;
+	background-position-y: 11px;
+	background: url(listas.png) no-repeat;
+	margin-left: 22px;
+}
+div.notas_humboldt ul li.clearList{display: none;}
+div.notas_humboldt ul li:first-child{
+	border-top:none
+}
+div.notas_humboldt_contenedor ul li.lastItem{
+	border-bottom:none;
+}
+div.notas_humboldt_contenedor h1{
+	color:#ffffff;
+	background:#c95c3e;
+	margin:0;
+	padding: 8px 0;
+	border: 1px solid #a94a3c;
+}
+div.notas_humboldt_contenedor h1 img{
+	position: relative;
+	left: -5px;
+	margin-right:21px
+}
+div.notas_humboldt_contenedor h1 span{
+	font-size: 21px;
+	position: relative;
+	top: 3px;
+	left: 22px;
+}
+ 
+
+/*********************			Modulo Boletines Comunicados          		*******************************/
+div.boletines_comunicados .even, div.boletines_comunicados li.odd{
+		width: 84%;
+}
+div.boletines_comunicados{
+	width: 100%;
+}
+div.boletines_comunicados ul{
+	border: 1px solid #ede2d7;
+	background:#fef6f5;
+	padding:5px 0 0px;
+	min-height: 200px; 
+	width:100%;
+	border-bottom:none;
+}
+div.boletines_comunicados ul li a{
+	font: 15px 'Source Sans Pro', sans-serif;
+	margin:0;
+	line-height: 22px;
+	padding: 4px 0;
+}
+div.boletines_comunicados ul li {
+	padding: 3.5px 33px;
+	color:rgba(255,255,255,1);
+	list-style:none;
+	background-position-y: 11px ;
+	background: url(listas.png) no-repeat;
+	margin-left: 22px;
+}
+div.boletines_comunicados ul li.clearList{display: none;}
+div.boletines_comunicados ul li:first-child{
+	border-top:none
+}
+div.boletines_comunicados .moduleItemIntrotext a.moduleItemImage{position: relative; width: auto; float: left;}
+
+div.boletines_comunicados .moduleItemIntrotext a.moduleItemImage img{width: 50px; height: auto;}
+
+div.boletines_comunicados_contenedor ul li.lastItem{
+	border-bottom:none;
+}
+div.boletines_comunicados_contenedor h1{
+	color:#ffffff;
+	background:#c95c3e;
+	margin:0;
+	padding: 8px 0;
+}
+div.boletines_comunicados_contenedor h1 img{
+	position: relative;
+	left: -5px;
+	margin-right:21px
+}
+div.boletines_comunicados_contenedor h1 span{
+	font-size: 21px;
+	position: relative;
+	top: 3px;
+	left: 22px;
+}
+ 
+/*********************			Modulo Eventos           	*******************************/
+div.eventos .even, div.eventos li.odd{
+		width: 84%;
+}
+div.eventos{
+	width: 100%;
+}
+div.eventos ul{
+	border: 1px solid #ede2d7;
+	background:#fef6f5;
+	padding:5px 0 0px;
+	min-height:200px;
+	width:100%;
+	border-bottom:none;
+}
+div.eventos ul li a{
+	font: 15px 'Source Sans Pro', sans-serif;
+	margin:0;
+	line-height: 22px;
+	padding: 4px 0;
+}
+div.eventos ul li {
+	padding: 3.5px 33px;
+	list-style:none;
+	background-position-y: 11px ;
+}
+div.eventos ul li.clearList{display: none;}
+div.eventos ul li:first-child{
+	border-top:none
+}
+div.eventos_contenedor ul li.lastItem{
+	border-bottom:none;
+}
+div.eventos_contenedor h1{
+	color:#ffffff;
+	background:#c95c3e;
+	margin:0;
+	padding: 8px 0;
+}
+div.eventos_contenedor h1 img{
+	position: relative;
+	left: -5px;
+	margin-right:21px
+}
+div.eventos_contenedor h1 span{
+	font-size: 21px;
+	position: relative;
+	top: 3px;
+	left: 22px;
+}
+ 
+/*********************			FECHAS LIMITES,            	*******************************/
+section.dateHumboldt{
+	position:relative;
+	width: 343px;
+	float: left;
+	margin: 0 15px 0 31px;
+}
+section.dateHumboldt time{
+	width:400px;
+	text-align: left;
+	padding: 0 15px;
+ 
+	right:2px;
+	margin-right:-25px
+}
+
+#k2Container header {
+	
+}
+body.men_oportunidades article#dateHumboldt, body.men_oportunidades section.dateHumboldt time{display:block;}
+body.men_oportunidades section.dateHumboldt time{
+	margin-bottom:10px;
+	background:#059f6d;
+	width: 100%;
+	font-size: 13px;
+}
+body.men_oportunidades section.dateHumboldt.Humdos time{
+	margin-bottom:30px;
+	background:#df5340;
+}
+#k2Container header h1 {
+	color:#615A52;
+	margin: 30px 0 0;
+}
+.men_oportunidades #k2Container article.itemView.groupLeading header h1, .men_oportunidades #k2Container article.itemView.groupPrimary header h1  {
+	font-size: 17px;
+}
+.men_oportunidades #k2Container article.itemView.groupLeading{
+	border-bottom:1px solid rgba(153,153,153,.6);
+	width:90%
+}
+.men_oportunidades #k2Container div.itemBody a.itemReadMore.button{
+	float:left;
+	margin-bottom: 40px;  
+}
+
+/*********************			VIDEOS            	*******************************/
+#tnt_pagination .active_tnt_link {
+	color:#048c51 !important;
+	border: 1px solid #00CC00 !important;
+	background-color: #A4DAB5 !important;
+	padding:8px !important;
+}
+#tnt_pagination a:link, #tnt_pagination a:visited {
+	color:#048c51 !important;
+	padding:8px !important;
+}
+#tnt_pagination a:hover {
+	background-color: #F5F5F5 !important;
+	border: 1px solid rgba(0,204,0,.5) !important;
+	box-shadow:0px 0px 4px .1px rgba(153,153,153,.3);
+}
+
+
+#iceMenu_269, #iceMenu_199{
+	cursor:pointer;
+}
+/*********************			imagen articulos            	*******************************/
+article#k2Container div.itemBody p img{
+	margin-left:30px
+}
+article#k2Container div.itemBody div.itemFullText .pfirst{
+	height: 271px;
+}
+
+/*----- Filter and Search ----*/
+
+ul.ja-k2filter li label, ul.ja-k2filter li label.radio, ul.ja-k2filter li label.checkbox {
+	color: #048c51;
+	font-weight:100	
+}
+ul.ja-k2filter li label:active  {
+	font-weight:bold;
+}
+ul.ja-k2filter li input[type=radio], ul.ja-k2filter li input[type=checkbox] {
+	position:relative;
+	top: -6px;
+}
+
+/*----Alert ---*/
+#system-message-container{
+	position: absolute;
+	top: 360px;
+	left: 50%;
+	margin-left:-195px !important;
+	z-index: 100;
+}
+
+.alert{
+	background:none !important;
+	border:0px solid !important;
+	color:#777 !important;
+}
+.alert h4{
+	color:#777 !important;
+}
+/**/
+
+.ja-k2filter .btn {
+	background:#f47350 !important;
+	color:rgba(255,255,255,1) !important;
+	text-shadow:none !important;
+}
+.result-text h2{
+	font-size:15px;
+	color:#5c554c;
+	margin:2px 0;
+}
+article header h1 a{
+	color:#048c51;
+}
+
+article header h1 a:hover{
+	text-decoration: none;
+}
+ 
+.ver_todo{
+	width:100%;
+	text-align:right;
+	border: 1px solid #ede2d7;
+	background: #fef6f5;
+	margin:0;
+	border-top:none;
+}
+.ver_todo a{
+	position: relative;
+	right: 6px;
+	bottom: 13px;
+	background: #059f6d;
+	color: rgba(255,255,255,1);
+	padding: 10px 13px;
+	transition:ease-in .2s
+}
+.ver_todo a:hover{
+	color:rgba(255,255,255,1);
+	text-decoration:none;
+	background:#0c4d38
+}
+body.men_noticiass .itemFullText > div{
+	display:inline-block;
+	width: 49%;
+	margin-right: 0%;
+	margin-bottom: 17px;
+}
+
+.boletines_comunicados_contenedor, .eventos_contenedor {float: right;}
+
+.men_noticias article.itemView{
+	border-bottom: 1px solid rgba(83, 87, 84, 0.3);
+	margin-bottom: 17px;
+}
+
+.ver_todo_sib{
+	background: #f5fafb;
+	border: 1px solid #d8e1df;
+	border-top:none;
+	margin:0;
+	text-align: right;
+}
+.ver_todo_sib a, .ver_todo_obs a{
+	position: relative;
+	right: 20px;
+	bottom: 10px;
+}
+.ver_todo_obs{
+	background: #fef6f5;
+	border: 1px solid #e7dad3;
+	border-top:none;
+	margin:0;
+	text-align: right;
+}
+
+div.proyectos_curso ul li a.moduleItemTitle:hover {
+	color:#fb5a29
+}
+article.abueno div.itemImageBlock a.itemImage{
+	cursor:default
+}
+div.jNewsRB div.jNewsLB form{
+	height:100px
+}
+
+
+
+.men_investigacion .article-tools, .men_investigacion article header, .men_noticiass article header, .men_noticiass article .article-tools {display: none;}
+td input[type="submit"]{
+	background: #f47350 !important;
+}
+li.item-239 span, li.item-245 span{
+	color:#048c51;
+	cursor:pointer;
+	display:block;
+}
+.contacto_footer h4{
+	color: #c5baab;
+	font-size: 11.9px;
+	font-weight:bold
+}
+.contacto_footer p{
+	color:#c5baab;
+	line-height: 0px;
+}
+.contacto_footer p:last-child{
+	line-height:20px
+}
+/*.contacto_footer{
+	width:64%
+}
+.links{
+	width:36%;
+	text-align:right;
+	position:relative;
+	right:0
+}
+.links, .contacto_footer{
+	 display:inline-table 
+}*/
+footer.humboldtFooter p:first-child a{
+	color:#c5baab;
+	font-size: 10px;
+	text-decoration:underline;
+	margin-left: 10px;
+}
+footer.humboldtFooter p:last-child a{
+	color:#c5baab;
+	position: relative;
+	top: -9px;
+	font-size: 10px;
+	text-decoration:underline;
+}
+footer.humboldtFooter p a img{
+	padding-top:15px
+}
+footer.humboldtFooter p:last-child a:hover{
+	color:#fb5a29
+}
+.centro_analisis_2 ul li{
+	float:left;
+	width:33%;
+}
+.lab_1_con, .lab_2_con, .lab_3_con{
+	width:31%;
+	float:left;
+	margin:1%
+}
+.lab_1_con h1, .lab_2_con h1, .lab_3_con h1{
+	font-size: 18px;
+	color:rgba(255,255,255,1);
+	padding: 8px 0;
+	text-align:left
+}
+
+.lab_1_con h1 img, .lab_2_con h1 img, .lab_3_con h1 img{
+	float:left;
+	margin-left: -5px;
+}
+.lab_1_con h1{background:#25b39b}
+.lab_2_con h1{background:#3198b9}
+.lab_3_con h1{background:#76bb2d}		
+	
+.lab_1_con ul li:first-child{background:#f5fbf7; border:1px solid #c0dbd7; padding: 6px 14px;min-height: 250px;}	
+.lab_2_con ul li:first-child{background:#f5f9fb; border:1px solid #bfd0d9; padding: 6px 14px;min-height: 250px;}	
+.lab_3_con ul li:first-child{background:#f9fcf5; border:1px solid #b6c3a4; padding: 6px 14px;min-height: 250px;}	
+	
+.lab_1_con ul li, .lab_2_con ul li, .lab_3_con ul li{
+	position:relative;
+}
+.lab_1_con ul li a, .lab_2_con ul li a, .lab_3_con ul li a{
+	position:absolute;
+	bottom:12px;
+	right:10px
+}
+div.span12 div.btn.btn-small p{
+	margin:0;
+}
+div.limit .input-mini {
+	width:70px
+}
+	
