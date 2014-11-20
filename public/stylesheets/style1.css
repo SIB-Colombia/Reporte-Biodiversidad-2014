@@ -19,13 +19,14 @@
 	.bar a:hover{ color: #fb5a29;}
 	.bar ul li { line-height: 1em;}
 	.bar >ul>li> a{ padding: 15px 10px; color: #7d7d7d; display: inline-block; position: relative;}
-	.bar  a > span{ font-size: 0.6em; color: #9d9d9d; text-transform: uppercase; display: block; line-height: 0.6em; letter-spacing: 1px; }
-	.bar >ul>li ul {border: 1px solid #c7c7c7; background-color: white; text-align: center; font-size: 0.8em; color: #7d7d7d; padding:6px; line-height: 1em; width: 120px; top: 40px; left: -20px;}
+	.bar a > span{ font-size: 0.6em; color: #9d9d9d; text-transform: uppercase; display: block; line-height: 0.6em; letter-spacing: 1px; }
+	.bar >ul>li ul {border: 1px solid #c7c7c7; background-color: white; text-align: center; font-size: 0.8em; color: #7d7d7d; padding:12px; line-height: 1em; width: 130px; top: 45px; left: -30px;}
 	.bar > ul li{ display: inline-block; position: relative;}
 	.bar a > ul li{border-bottom: 1px solid #c7c7c7; padding: 3px; list-style: none;}
-	.bar  ul li a{line-height: 1.3em !important; padding: 10px 5;}
+	.bar ul li a{line-height: 1.3em !important; padding: 10px 5;}
 	.bar >ul>li>ul{ display: none;}
-	.bar >ul>li>ul li{ margin: 5px 0;}
+	.bar >ul>li>ul li{ margin: 5px 0; display: block; border-bottom: 1px solid #c7c7c7; padding: 7px 0; }
+	.bar >ul>li>ul li:last-child{border-bottom: none; }
 	.bar >ul>li:hover>ul{  display: block; position: absolute; z-index: 1000; margin-top: 0px;}
 	.bar .separator{ border-left: solid 1px #c7c7c7; width: 1px; margin: 0 10px;}
 	#humboldtHeader select{ font-size: 1.8em; height: 50px; font-weight: bold; width: 100px; float: right; margin-top: -70px;}
@@ -74,6 +75,8 @@
 	.link_box:hover{ background: rgba(200,200,200,0.8);}
 	.link_box h5{ margin: 0px; }
 	.float_right{ float: right; margin-left: 20px;}
+	.float_left{ float: left; margin-right: 20px;}
+	.clear{ clear: both;}
 
 /* template.css */
 -webkit-::selection {

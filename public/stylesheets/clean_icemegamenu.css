@@ -1,0 +1,276 @@
+/**
+ * IceMegaMenu Extension for Joomla 3.0 By IceTheme
+ * 
+ * 
+ * @copyright	Copyright (C) 2012 IceTheme.com. All rights reserved.
+ * @license		GNU General Public License version 2
+ * 
+ * @Website 	http://www.icetheme.com/Joomla-Extensions/icemegamenu.html
+ *
+ */
+ 
+/* clear some styles */
+ul,li {
+	list-style-type:none;
+	list-style-image: none;
+	list-style: none;
+	padding:0;
+	margin:0} 
+ 
+ .collapse {
+  overflow: visible;}
+  
+
+.icemegamenu > ul {
+	position: relative;
+	margin:0;
+	padding:0;
+	z-index: 999;
+	clear: both;
+	width: 100%;
+	height:50px;
+	background: #f9f8f6;
+	border-top: 1px solid rgba(0,0,0,.25);
+	border-bottom: 1px solid rgba(0,0,0,.25);
+	text-align: center;
+	}
+	
+	.icemegamenu > ul > li {
+		position: relative;
+		display: block;
+		float: left;}
+		
+		.icemegamenu > ul > li  a.iceMenuTitle {
+			position: relative;
+			z-index: 9999;
+			display: block;
+			padding: 0px 17px;
+			height:45px;
+			line-height: 35px;
+		
+			color: #048c51;
+			text-decoration:none;
+			font-weight: bold;
+			-webkit-transition: all .25s ease-out;
+			-moz-transition: all .25s ease-out;
+			-ms-transition: all .25s ease-out;
+			-o-transition: all .25s ease-out;
+			transition: all .25s ease-out;}
+
+			
+			.icemegamenu ul > li  a.iceMenuTitle:hover,
+			.icemegamenu ul > li:hover > a.iceMenuTitle,
+			.icemegamenu ul > ul > li:hover >  a.iceMenuTitle,
+			ul.icesubMenu li.active a.iceMenuTitle  { 
+				color: #0c4d38;
+
+				
+				 }
+
+			.icemegamenu > ul > li  a.iceMenuTitle:first-child {
+				
+			}
+
+			
+			.icemegamenu ul > li  a.iceMenuTitle:hover,
+			.icemegamenu ul > li:hover > a.iceMenuTitle,
+			.icemegamenu ul > ul > li:hover >  a.iceMenuTitle,
+			ul.icesubMenu li.active a.iceMenuTitle  { 
+				color: #0c4d38;
+
+				
+				 }
+				
+	div.icemegamenu ul#icemegamenu  li.active a.icemega_active > span.icemega_title{ 
+				padding-top: 17px;
+				color: #0c4d38;
+
+				}		
+				
+			/* subtitles */
+			.icemegamenu > ul > li span.icemega_desc {
+				display:block;
+				font-size:10px;
+				font-family:Verdana, Geneva, sans-serif;
+				padding:0;
+				line-height:1.25em;
+				color:#048c51;
+				
+				margin-top:-8px;
+				text-align: center;
+				font-weight: normal;
+				font-style: italic;
+				text-shadow:none!important;
+			}
+
+ 				/* when dont have subtitle */
+				.icemegamenu > ul > li >  a.iceMenuTitle > span.icemega_nosubtitle {
+					display:block;
+				}
+					
+					
+				/* when is current */	
+				.icemegamenu > ul > li.active {
+					border-bottom: 5px solid #0c4d38;
+					}
+					
+					.icemegamenu > ul > li:first-child {
+						background: url(../../../../../templates/humboldt/images/ui/icon/iconhome.png)no-repeat;
+						background-position: 22px 10px;
+						font-size: 10px;
+						font-weight: normal;
+						font-style: italic;
+						}
+					#iceMenu_101 a span{padding-top: 17px;}
+
+
+					.icemegamenu > ul > li.active:first-child {
+						}
+
+
+
+#iceMenu_199, #iceMenu_269{height: 48px;background: #059f6d;border: 1px solid #69c5a7; float:right;}
+
+#iceMenu_199{width: 177px;}
+
+#iceMenu_199 a span{color: #ffffff; line-height: 17px; padding-top: 7px; text-shadow:1px 1px 1px rgba(0,0,0,.5);}
+#iceMenu_199 .icemega_active span{padding-top: 7px !important; margin: 0;}
+
+#iceMenu_269{width: 157px;}
+
+#iceMenu_269 a span{color: #ffffff; line-height: 17px; padding-top: 17px; text-shadow:1px 1px 1px rgba(0,0,0,.5);}
+
+#iceMenu_269.active, #iceMenu_199.active{background: #0c7b57;}
+
+#iceMenu_199.active a span, #iceMenu_199.active ul li div ul li a span, #iceMenu_269.active a span, #iceMenu_269.active ul li div ul li a span{color: #059f6d !important}
+#iceMenu_269.active a span, #iceMenu_199.active a span{color: #ffffff !important}
+
+#iceMenu_199 ul li div.iceCols ul li a span, #iceMenu_269 ul li div.iceCols ul li a span{color: #059f6d; text-shadow: 0 0 0 rgba(0,0,0, 0); }
+#iceMenu_199 ul li div.iceCols ul li a span:hover, #iceMenu_269 ul li div.iceCols ul li a span:hover{color: #096e4d; list-style: none}
+
+
+.ice-megamenu-toggle {
+    float: right;
+}
+.ice-megamenu-toggle {
+    display: none;
+}
+.ice-megamenu-toggle a {
+    background: url("../images/mobile_menu_btn.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 30px;
+    margin-top: 20px;
+    text-indent: -9999px;
+    width: 30px;
+}					
+
+ /* Submenu */
+ul.icesubMenu {
+    position: absolute;
+    width: 199px !important;
+    z-index: 600;
+	margin:0;
+    top: 100px;
+    left: -1px;
+    opacity: 0;
+    text-align: left;
+    visibility: hidden;
+	background:#f5f4f1;
+    border: 1px solid rgba(255,255,255,1);
+    border-radius: 0px;
+	-webkit-transition: all .25s ease-out;
+	-moz-transition: all .25s ease-out;
+	-ms-transition: all .25s ease-out;
+	-o-transition: all .25s ease-out;
+	transition: all .25s ease-out;
+}
+
+	ul.icesubMenu li{border-bottom: 1px solid #d1d1d1;}
+
+	ul.icesubMenu li div, .icesCols ul {width: 199px !important;}
+
+	ul.icesubMenu li div{line-height: 11px !important}
+
+	.iceCols ul li{height: 55px;}
+
+	.iceCols ul li a, .iceCols ul li a span{line-height: 14px !important;}
+
+	.iceCols ul li a{top: 11px;}
+	
+	.iceCols ul li#iceMenu_250 a, .iceCols ul li#iceMenu_251 a, .iceCols ul li#iceMenu_300 a, .iceCols ul li#iceMenu_301 a{top: 5px;}
+	
+	.iceCols ul li#iceMenu_286 a{width:155px;}
+	
+			
+		#icemegamenu > li:hover > ul.icesubMenu {
+			opacity: 1;
+			visibility: visible;
+			top: 50px;}
+			
+			ul.icesubMenu ul > li {
+				position:relative;}
+				
+				ul.icesubMenu > li a.iceMenuTitle {
+					height:auto;
+					display:block;
+					font-size:14px;
+					padding:0 0 0 7px;
+					margin:0 14px;
+					border-radius:0;			
+					border-bottom:1px dotted rgba(255,255,255,.2)!important;}
+	 
+	 
+				/* when is parent */
+				ul.icesubMenu li.parent {
+					background: url(../images/arrow.png) no-repeat 93% 45%;}
+				
+				
+				
+				
+				
+
+ 
+/* Second Level Dropdown */
+ul.sub_level_2,
+ul.sub_level_3,
+ul.sub_level_4,
+ul.sub_level_5 {
+	top: -1px;
+	left: 150px;
+	z-index:99999;
+	box-shadow:none;
+	border:1px solid #d1d1d1;
+	border-top-color:#d1d1d1;
+	margin: 0 0 0 20px;}
+	
+	
+	ul.icesubMenu ul > li:hover > ul {
+		opacity: 1;
+		visibility: visible;
+		left: 175px;}
+	
+ 
+ 
+ 
+ 
+ 
+/* Modules inside dropdown */
+.icesubMenu .icemega_cover_module {
+    padding: 10px 15px;
+	color:#999;
+}
+
+	.icesubMenu .icemega_cover_module span.iceModuleTile {
+		color:#fff;
+		font-size:18px;
+		text-shadow:1px 1px 1px #000;
+		margin-bottom:6px;
+		display:block;}
+
+.icesubMenu .icemega_cover_module a {
+	color:#F0C237}
+
+	.ice_righttoleft{
+		left:auto!important;
+		right:0;
+	}

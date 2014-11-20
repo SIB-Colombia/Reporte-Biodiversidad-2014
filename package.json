@@ -41,7 +41,8 @@
     "cron": "latest",
     "time": "latest", 
     "method-override": "latest", 
-    "errorhandler":"latest"
+    "errorhandler":"latest",
+    "forever":"latest"
   }, 
   "devDependencies": {
     "nodemon": "latest"

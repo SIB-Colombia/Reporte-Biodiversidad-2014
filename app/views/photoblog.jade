@@ -3,7 +3,7 @@ head(profile='http://gmpg.org/xfn/11')
   meta(name='description', content='description')
   meta(name='keywords', content='')
   link(rel='image_src', href='')
-  title Foto Blog SIB Colombia
+  title Reporte de Estado de la Biodiversidad - #{image.titulo}
 
   meta(http-equiv='content-type', content='text/html; charset=UTF-8')
   meta(name='title', content='')
@@ -21,7 +21,9 @@ head(profile='http://gmpg.org/xfn/11')
   script.
     var imageT='#{image.imagen_visualizador}';
     var prev_image='#{image.prev}';
+    console.log("imagen previa: "+prev_image);
     var next_image='#{image.next}';
+    console.log("imagen siguiente: "+next_image);
     if(prev_image == '') {
       prev_image = null;
       active = false;
@@ -30,8 +32,8 @@ head(profile='http://gmpg.org/xfn/11')
       next_image = null;
       active = false;
     }
-    var name_image='#{image.titulo_ficha}';
-    var desc_image='#{image.texto_informacion}';
+    var name_image='#{image.titulo}';
+    var desc_image='#{image.texto}';
 
 body(oncontextmenu='return false;')
   .wrapper
@@ -55,13 +57,13 @@ body(oncontextmenu='return false;')
       // Navigation
       #navigation
         if image.prev
-          a#prevslide.prev(href='/biodiversidad2014/visualizador/#{image.prev}') anterior_imagen
+          a#prevslide.prev(href='/biodiversidad2014/#{image.prev}') anterior_imagen
         else
           a#prevslide.prev anterior_imagen
         a#pauseplay.play(href='javascript://', onclick='change_class(this)')
           span Play
         if image.next
-          a#nextslide.next(href='/biodiversidad2014/visualizador/#{image.next}') siguiente_imagen
+          a#nextslide.next(href='/biodiversidad2014/#{image.next}') siguiente_imagen
         else
           a#nextslide.next siguiente_imagen
       // Footer

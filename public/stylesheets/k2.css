@@ -1,0 +1,1098 @@
+/*
+	Humboldt v1.0 - Joomla template 3x
+	Copyright: (C)iF Creative Studio. All Rights Reserved.
+	Website:  http://www.if-cs.com
+	
+ */
+
+.k2FeedIcon a,
+a.k2FeedIcon {
+	display: block;
+	height: 21px;
+	line-height: 21px;
+	padding: 0 0 0 32px;
+	float: left;
+	font-size: 12px;
+	color: #999;
+	background: url('../images/k2/rss.png') no-repeat 0 0;
+}
+.k2FeedIcon a:hover,
+a:hover.k2FeedIcon {
+	color: #222;
+}
+.k2FeedIcon a {
+	float: none;
+}
+/* item view */
+
+article header ul + ul {
+	border: 1px solid #e5e5e5;
+	border-left: none;
+	border-right: none;
+}
+article header ul + ul li {
+	line-height: 28px;
+}
+h1 > sup {
+	font-size: 12px;
+	font-weight: 400;
+	top: -2.5em;
+	color: #FB5A29;
+	padding: 2px 6px;
+}
+ul li.itemResizer a {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url('../images/k2/fonts.png') no-repeat 100% -1px;
+	text-indent: -9999em;
+}
+ul li.itemResizer span {
+	padding: 0 6px 0 0;
+}
+ul li.itemResizer #fontIncrease {
+	background-position: 0 -1px;
+}
+.smallerFontSize {
+	font-size: 90% !important;
+}
+.largerFontSize {
+	font-size: 115% !important;
+}
+.itemImageBlock {
+	position: relative;
+}
+.itemImage {
+	display: block;
+	line-height: 0;
+	overflow: hidden;
+}
+.itemImageBlock img {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	height: auto;
+	max-width: 100%;
+	padding: 0;
+}
+.itemImageCaption {
+	display: block;
+	color: #222;
+	padding: 8px 0 0;
+	text-align: right;
+	font-size: 11px;
+}
+.itemImageBlock > a {
+	display: block;
+	width: 100%;
+}
+.itemExtraFields ul li span.itemExtraFieldsValue,
+.itemLinks .itemCategory a,
+.itemLinks .itemAttachmentsBlock ul,
+.itemLinks .itemTagsBlock ul {
+	display: block;
+	margin: 0 0 0 27%;
+}
+.itemBottom .itemRatingBlock span,
+.itemBottom .itemRatingBlock .itemRatingList,
+.itemBottom .itemRatingBlock .itemRatingForm ul.itemRatingList li,
+.itemLinks .itemCategory span,
+.itemLinks .itemAttachmentsBlock > span,
+.itemExtraFields ul li span.itemExtraFieldsLabel,
+.itemLinks .itemTagsBlock span,
+.itemLinks .itemTagsBlock ul li,
+.latestView .itemsContainer {
+	float: left;
+}
+.itemBottom {
+	clear: both;
+	margin: 0 0 6px;
+}
+.itemLinks {
+	clear: both;
+	margin: 0;
+}
+.itemLinks .itemTagsBlock,
+.itemLinks .itemSocialSharing {
+	clear: both;
+	overflow: hidden;
+}
+.itemSocialSharing {
+	
+	padding: 11px 0 0 0;
+	
+	float:left;
+    width:50%;
+    float: left;
+    overflow:visible !important;
+}
+.itemExtraFields {
+	margin: 8px 0 24px;
+	font-size: 12px;
+}
+.itemExtraFields h3 {
+	padding: 0 0 8px;
+	font-size: 18px;
+}
+small.itemDateModified {
+	display: block;
+	text-align: right;
+	font-style: italic
+}
+.itemRatingBlock {
+	overflow: hidden;
+}
+.itemRatingBlock span {
+	float: left;
+}
+.itemRatingForm {
+	display: block;
+	vertical-align: middle;
+	line-height: 25px;
+	margin-left: 26%;
+}
+.itemRatingLog {
+	margin: -2px 0 0;
+	padding: 0 0 0 4px;
+	float: left;
+	line-height: 25px;
+}
+span#formLog {
+	display: block;
+	float: none;
+	clear: both;
+	color: white;
+	background: #fb5a29;
+	text-align: center;
+	margin: 10px 0;
+	position: relative;
+	top: 10px;
+}
+.itemRatingForm .formLogLoading {
+	background: url('../images/style1/loading.gif') no-repeat left center;
+	height: 25px;
+	padding: 0 0 0 20px;
+}
+.itemRatingList,
+.itemRatingList a:hover,
+.itemRatingList .itemCurrentRating {
+	background: url('../images/k2/star.png') left -1000px repeat-x;
+}
+.itemRatingList {
+	position: relative;
+	float: left;
+	width: 125px;
+	height: 25px;
+	overflow: hidden;
+	list-style: none;
+	margin: 0 6px !important;
+	padding: 0;
+	background-position: left top;
+}
+.itemRatingList li {
+	display: inline;
+	background: none;
+	padding: 0;
+	border: none !important;
+}
+.itemRatingList a,
+.itemRatingList .itemCurrentRating {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-indent: -1000px;
+	height: 25px;
+	line-height: 25px;
+	outline: none;
+	overflow: hidden;
+	border: none;
+	cursor: pointer;
+}
+.itemRatingList a:hover {
+	background-position: left center;
+}
+.itemRatingList a.one-star {
+	width: 20%;
+	z-index: 6;
+}
+.itemRatingList a.two-stars {
+	width: 40%;
+	z-index: 5;
+}
+.itemRatingList a.three-stars {
+	width: 60%;
+	z-index: 4;
+}
+.itemRatingList a.four-stars {
+	width: 80%;
+	z-index: 3;
+}
+.itemRatingList a.five-stars {
+	width: 100%;
+	z-index: 2;
+}
+.itemRatingList .itemCurrentRating {
+	z-index: 1;
+	background-position: 0 bottom;
+	margin: 0;
+	padding: 0;
+}
+.itemTags li a,
+.k2TagCloudBlock a,
+.moduleItemTags a {
+	
+	
+}
+.itemTags li a:hover,
+.moduleItemTags a:hover {
+	
+}
+.k2TagCloudBlock a {
+	background-image: none;
+	height: auto;
+	line-height: normal;
+}
+.k2TagCloudBlock a:hover {
+	background: #fb5a29;
+}
+.itemExtraFields ul li {
+	list-style: none;
+	padding: 5px 0;
+}
+.itemLinks ul li {
+	list-style: none;
+}
+.itemLinks .itemAttachmentsBlock ul li a span {
+	color: #676767;
+}
+.itemLinks .itemSocialSharing > div {
+	float: left;
+}
+.itemAuthorBlock {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	clear: both;
+	float: left;
+	width: 60%;
+}
+.userView .itemAuthorBlock {
+	float: none;
+	width: auto;
+	margin: 0 0 48px;
+	padding: 12px;
+	background: #FEF9F7
+}
+.itemAuthorBlock > .gkAvatar {
+	float: left;
+	padding: 12px;
+	max-width: 80px;
+}
+.itemAuthorBlock > .gkAvatar > img {
+	display: block;
+}
+.itemAuthorBlock .itemAuthorDetails {
+	margin: 0 24px 0 130px;
+	line-height: 1.7;
+}
+.itemAuthorBlock .itemAuthorDetails p {
+	margin: 0.5em 0;
+}
+.itemAuthorUrl,
+.itemAuthorEmail {
+	font-size: 12px;
+}
+.itemAuthorData {
+	overflow: hidden;
+	padding: 12px;
+	background: rgba(0,0,0,.025);
+}
+.itemAuthorData h3 {
+	font-size: 18px;
+}
+.itemAuthorData .itemAuthorContent {
+	width: 100%;
+	margin: 0;
+}
+.itemAuthorContent {
+	margin: 0 0 32px 0;
+	overflow: hidden;
+}
+.itemAuthorContent ul {
+	font-size: 13px;
+}
+.itemAuthorContent ul li {
+	list-style: inside;
+	line-height: 1.4;
+	padding: 5px 0;
+}
+.itemAuthorContent ul li a,
+.itemNavigation {
+	clear: both;
+	padding: 0;
+	font-size: 12px;
+	color: #7D7B7A;
+}
+.itemAuthorContent ul li a:hover {
+	color: #212121;
+}
+.itemCommentsForm label {
+	display: block;
+	clear: both;
+}
+.itemCommentsForm textarea,
+.itemCommentsForm .inputbox {
+	float: left;
+}
+.itemCommentsForm textarea.inputbox {
+	height: 200px;
+}
+.itemCommentsForm .inputbox {
+	width: 400px;
+}
+.itemCommentsForm #submitCommentButton {
+	clear: both;
+	margin: 20px 0 0;
+}
+.itemCommentsForm .itemCommentsFormNotes {
+	margin: 0 0 24px;
+	color: #999;
+	font-size: 10px;
+	font-style: italic;
+}
+#itemCommentsAnchor {
+	clear: both;
+	margin: 48px 0 0;
+}
+.itemComments h3 {
+	float: left;
+	padding: 0 20px;
+	height: 38px;
+	line-height: 38px;
+	background: #fb5a29;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+.itemComments .itemCommentsList,
+.itemComments .itemCommentsForm {
+	clear: both;
+	padding: 12px 0 0;
+}
+.itemComments .itemCommentsList li {
+	padding: 12px;
+	border-bottom: 1px solid #e5e5e5;
+	color: #999;
+}
+.itemComments .itemCommentsList li.odd {
+	background: #fbfbfb;
+}
+.itemComments .itemCommentsList li > span.gkAvatar {
+	float: left;
+	margin: 14px 12px 0 0;
+}
+.itemComments .itemCommentsList li > span > img {
+	display: block;
+}
+.itemComments .itemCommentsList li > div {
+	margin: 0 0 0 82px;
+}
+.itemComments .itemCommentsList li div div {
+	text-align: right;
+}
+.itemComments .itemCommentsList li div div span {
+	margin-left: 24px;
+	font-size: 11px;
+	color: #999;
+}
+.itemBackToTop {
+	float: right;
+}
+/* Items views */
+.itemList article header h2,
+.itemsContainerWrap article header h1 {
+	margin: 0 0 16px;
+	font-size: 36px;
+	line-height: 42px;
+}
+.itemList ul.itemTags {
+	clear: both;
+	padding: 12px 0 0 0;
+}
+.itemTags {
+	padding-left: 4px !important;
+}
+.itemList ul.itemTags li {
+	float: left;
+}
+.clr {
+	clear: both;
+}
+.itemListSubCategories {
+	overflow: hidden;
+}
+.userView article,
+.genericView article,
+.itemList article {
+	clear: both;
+	margin-bottom: 24px;
+}
+/*.itemListSubCategories h2*/
+.subCategoryContainer {
+	float: left;
+	margin-bottom: 32px;
+}
+.subCategoryContainer .subCategory {
+	margin: 0 32px 24px 0;
+}
+.itemContainer {
+	float: left;
+}
+.itemList article {
+	padding-bottom: 0px;
+}
+.itemContainerLast article {
+	margin: 0;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 22px;
+}
+#itemListLinks {
+	clear: both;
+}
+#itemListLinks ul {
+	margin: 12px 0 0 0;
+}
+#itemListLinks li {
+	background: url('../images/style1/typography/bullet-square2.png') no-repeat 0 6px;
+	padding-left: 24px;
+	font-size: 13px;
+}
+#itemListLinks a {
+	color: #737373;
+}
+#itemListLinks a:hover {
+	color: #212121;
+}
+/* Modules */
+/*----------------------------------------------------------------------
+Modules:  mod_k2_comments
+----------------------------------------------------------------------*/
+/* Latest Comments & Author module*/
+.k2LatestCommentsBlock .k2FeedIcon {
+	margin-top: 16px;
+}
+.k2LatestCommentsBlock ul li,
+.k2TopCommentersBlock ul li {
+	padding: 20px 0 !important;
+	list-style: none !important;
+	line-height: 1.5 !important;
+	border-bottom: 1px solid #e5e5e5;
+}
+.k2Avatar {
+	display: block !important;
+	float: left;
+	margin: 0 24px 0 0;
+}
+.k2CommentItem p {
+	margin: 0 0 8px;
+}
+.k2CommentItem span {
+	display: block;
+	font: bold 12px Verdana, Geneva, sans-serif;
+	padding: 0 0 12px;
+	color: #212121;
+}
+.k2CommentItem span a {
+	color: #212121;
+}
+.k2CommentItem a {
+	color: #737373;
+}
+.k2CommentItem a:hover {
+	color: #fb5a29;
+}
+.k2CommentItem span.lcCommentDate {
+	font-size: 10px;
+	font-weight: normal;
+	color: #999;
+}
+.k2AuthorsListBlock ul li {
+	border: none;
+	border-bottom: 1px solid #eee;
+	padding: 12px 0;
+}
+.k2AuthorsListBlock ul li a.abAuthorLatestItem {
+	display: block;
+	clear: both;
+	margin: 12px 0 0;
+	padding: 0 0 0 12px;
+	font-size: 11px;
+	line-height: 14px;
+}
+.k2AuthorsListBlock ul li a.abAuthorLatestItem span {
+	display: block;
+	font-size: 10px;
+	color: #777;
+}
+/* Restriction */
+#gkRight .k2Avatar,
+#gkLeft .k2Avatar {
+	border-color: #fff;
+}
+/* Top Commenters */
+.tcUsername {
+	font-size: 18px;
+	color: #333;
+}
+.tcLatestComment {
+	display: block;
+	margin: 6px 0;
+	font-size: 13px;
+	color: #737373;
+}
+.tcLatestCommentDate {
+	display: block;
+	font-size: 11px;
+	color: #999;
+}
+/*----------------------------------------------------------------------
+Modules:  mod_k2_content
+----------------------------------------------------------------------*/
+div .k2ItemsBlock ul {
+	margin-right: -20px;
+}
+div .k2ItemsBlock ul li {
+	margin: 0;
+	background: none !important;
+	/*padding: 12px 20px 12px 0 !important;*/
+	list-style: none !important;
+	width: 31.5%;
+	float: left;
+	margin-right: 2%;
+}
+div .k2ItemsBlock ul li:nth-child(3) {
+	margin: 0;
+	margin-right: 0%;
+	
+}
+div .k2ItemsBlock ul li ul li{
+	margin: 11px 0 0 70px;
+	list-style: none !important;
+	width: 250px;
+	
+}
+a.moduleItemTitle {
+	float: left;
+	margin-top:10px;
+	margin-left: 70px;
+	color: #17996f;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 17px;
+}
+a.moduleItemTitle:hover {
+	text-decoration: none;
+	color: #f47350 !important;
+}
+.moduleItemAuthor {
+	overflow: hidden;
+	margin: 0 0 16px;
+	font-size: 11px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.moduleItemAuthor a {
+	color: #212121;
+	display: block;
+	font: bold 12px Verdana, Geneva, sans-serif;
+	padding: 0 0 12px;
+}
+.moduleItemAuthor p {
+	clear: both;
+}
+.moduleItemIntrotext {
+	display: block;
+	padding: 12px 0 0;
+	line-height: 1.6;
+}
+.moduleItemIntrotext a.moduleItemImage{position: absolute; margin-top:0px; width: 70px;}
+
+
+.moduleItemIntrotext a.moduleItemImage img {
+	float: left;
+	width: 59px;
+	height: 75px;
+	overflow: hidden;
+	
+}
+.moduleItemDateCreated,
+.moduleItemCategory {
+	font: normal 10px Verdana, Geneva, sans-serif;
+	color: #999;
+}
+.moduleItemExtraFields ul li span.moduleItemExtraFieldsLabel {
+	display: block;
+	float: left;
+	font-weight: bold;
+	margin: 0 4px 0 0;
+}
+.moduleItemTags,
+.moduleAttachments {
+	overflow: hidden;
+	border-top: 1px solid #e5e5e5;
+	margin: 12px 0 0;
+	padding: 12px 0 0;
+}
+.moduleItemTags strong {
+	font-size: 12px;
+	color: #212121;
+}
+.moduleItemTags a {
+	float: right;
+}
+a.moduleItemComments {
+	font-size: 12px;
+}
+a:hover.moduleItemComments {
+	background-position: 0 100%;
+	color: #fff;
+}
+.k2ItemsBlock ul li span.moduleItemHits {
+	font-size: 90%;
+}
+.moduleItemImage {
+	display: block;
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 100%;
+}
+.moduleItemReadMore {
+	display: block;
+	clear: both;
+}
+/*---Modules:  mod_k2_login ---*/
+.k2LoginBlock fieldset.input {
+	margin: 0;
+	padding: 0 0 8px 0;
+}
+.k2LoginBlock fieldset.input p {
+	margin: 0;
+	padding: 0 0 4px 0;
+}
+.k2LoginBlock fieldset.input p label,
+.k2LoginBlock fieldset.input p input {
+	display: block;
+}
+.k2LoginBlock fieldset.input p#form-login-remember label,
+.k2LoginBlock fieldset.input p#form-login-remember input {
+	display: inline;
+}
+.k2UserBlock p.ubGreeting {
+	border-bottom: 1px dotted #eee;
+}
+.k2UserBlock .k2UserBlockDetails span.ubName {
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+}
+/* ---Modules:  mod_k2_tools ---*/
+/* ---Breadcrumbs ---*/
+.k2BreadcrumbsBlock span.bcTitle {
+	padding: 0 4px 0 0;
+	color: #999;
+}
+.k2BreadcrumbsBlock span.bcSeparator {
+	padding: 0 4px;
+	font-size: 14px;
+}
+/* ---Calendar ---*/
+.k2CalendarBlock {
+	margin-bottom: 8px;
+}
+/* use this height value so that the calendar height won't change on Month change via ajax */
+.k2CalendarLoader {
+	background: #fff;
+}
+.k2CalendarBlock table.calendar {
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+	border-collapse: collapse;
+	border-left: 1px solid #eee;
+}
+.k2CalendarBlock table.calendar tr td {
+	text-align: center;
+	vertical-align: middle;
+	padding: 3px;
+	border: 1px solid #eee;
+	background: #fff;
+}
+.k2CalendarBlock table.calendar tr td.calendarNavMonthPrev,
+.k2CalendarBlock table.calendar tr td.calendarNavMonthNext {
+	background: #fff;
+	text-align: center;
+	font-size: 15px !important;
+}
+.k2CalendarBlock table.calendar tr td.calendarDayName {
+	background: #f5f5f5;
+	font-size: 11px;
+	width: 14.2%;
+	color: #333;
+	font-weight: 600;
+}
+.k2CalendarBlock table.calendar tr td.calendarDateEmpty {
+	background: #fbfbfb;
+}
+.k2CalendarBlock table.calendar tr td.calendarDate {
+	font-size: 11px;
+}
+.k2CalendarBlock table.calendar tr td.calendarDateLinked {
+	padding: 0;
+}
+.k2CalendarBlock table.calendar tr td.calendarDateLinked a {
+	display: block;
+	padding: 2px;
+}
+.k2CalendarBlock table.calendar tr td.calendarDateLinked a:hover {
+	display: block;
+	background: #212121;
+	color: #fff !important;
+	padding: 2px;
+}
+.k2CalendarBlock table.calendar tr td.calendarToday {
+	background: #fb5a29;
+	color: #fff;
+}
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked {
+	background: #daa;
+	color: #fff;
+	padding: 0;
+}
+table.calendar tr td.calendarTodayLinked a {
+	display: block;
+	padding: 2px;
+	color: #fff !important;
+}
+.k2CalendarBlock table.calendar tr td.calendarTodayLinked a:hover {
+	display: block;
+	background: #252525;
+	color: #fff;
+	padding: 2px;
+}
+/* restriction */
+.gkColumns > aside .k2CalendarBlock table.calendar,
+.gkColumns > aside .k2CalendarBlock table.calendar tr td {
+	background: none;
+	border: none;
+	color: #fff;
+}
+.gkColumns > aside .k2CalendarBlock table.calendar tr td.calendarDateLinked a {
+	font-weight: 700;
+	font-size: 18px;
+}
+.gkColumns > aside .calendarNavMonthPrev,
+.gkColumns > aside .calendarCurrentMonth,
+.gkColumns > aside .calendarNavMonthNext {
+	background: #212121 !important;
+}
+.k2TagCloudBlock a {
+	background: #212121 !important;
+	
+	
+}
+.k2TagCloudBlock a:hover {
+	background: #fb5a29 !important;
+	
+}
+/* ---Category Tree Select Box ---*/
+.k2CategorySelectBlock form select {
+	width: auto;
+}
+/* ---Tag Cloud ---*/
+.k2TagCloudBlock {
+	padding: 8px 0 0 4px;
+	font-size: 15px;
+}
+.k2TagCloudBlock a {
+	float: left;
+	margin-bottom: 6px;
+}
+/* ---Google Search ---*/
+#k2Container .gsc-branding-text {
+	text-align: right;
+}
+#k2Container .gsc-control {
+	width: 100%;
+}
+#k2Container .gs-visibleUrl {
+	display: none;
+}
+/* ---Modules:  mod_k2_users ---*/
+a.ubUserFeedIcon,
+a.ubUserFeedIcon:hover {
+	display: inline-block;
+	margin: 0 2px 0 0;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+}
+a.ubUserFeedIcon span,
+a.ubUserFeedIcon:hover span {
+	display: none;
+}
+a.ubUserURL,
+a.ubUserURL:hover {
+	display: inline-block;
+	margin: 0 2px 0 0;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+}
+a.ubUserURL span,
+a.ubUserURL:hover span {
+	display: none;
+}
+span.ubUserEmail {
+	display: inline-block;
+	margin: 0 2px 0 0;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+span.ubUserEmail a {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	text-indent: -9999px;
+}
+.k2UsersBlock ul li h3 {
+	clear: both;
+	margin: 8px 0 0 0;
+	padding: 0;
+}
+.catCounter {
+	font-size: 11px;
+	font-weight: normal;
+}
+/* Rating form fix */
+article header .itemRatingBlock > span {
+	display: none;
+}
+article header .itemRatingBlock > div {
+	margin: 3px 0 0 0;
+}
+/* Fix for the categories view */
+.itemImageBlock {
+
+}
+.itemContainerLast:first-child .itemImageBlock,
+.clr + .itemContainerLast .itemImageBlock {
+	padding: 0;
+}
+.itemCommentsPagination ul li {
+	display: inline-block;
+	margin: 0 3px;
+	font-size: 80%;
+}
+.itemCommentsPagination ul {
+	text-align: right;
+}
+
+/* hide date block when more than 1 column */
+.itemView header ul li.itemDate,
+header ul li.item-date {
+	display: none;
+}
+.itemsContainerWrap time,
+.cols-2 time,
+.cols-3 time,
+.cols-4 time {
+	display: none;
+}
+.itemsContainerWrap time + header,
+.cols-2 time + header,
+.cols-3 time + header,
+.cols-4 time + header {
+	padding-left: 0!important;
+}
+.itemsContainer .itemsContainerWrap,
+.itemContainer .itemsContainerWrap {
+	margin: 0 0 0 20px;
+}
+.itemsContainer:first-child .itemsContainerWrap,
+.itemContainer:first-child .itemsContainerWrap {
+	margin: 0!important;
+}
+.itemsContainerWrap .itemView header ul li.itemDate,
+.itemsContainerWrap header ul li.item-date,
+.cols-2 header ul li.item-date,
+.cols-3 header ul li.item-date,
+.cols-4 header ul li.item-date {
+	display: block;
+}
+
+/* K2 Store */
+.product_container {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.product_attributeoptions {
+	float: left;
+	width: 36%;
+}
+.product_attributeoptions > div { 
+	border-bottom: 1px solid #e5e5e5; 
+	padding: 6px 0;
+}
+.product_quantity_input {
+	float: left;
+	width: 30%;
+}
+.product_price {
+	float: right;
+	width: 45%;
+	margin: 0 0 24px;
+	border-left: 1px solid #e5e5e5;
+	font-size: 28px;
+	line-height: 28px;
+	text-align: right;
+	color: #FB5A29;
+}
+.k2store_add_to_cart {
+	clear: both;
+	padding: 20px 0 0;
+	border-top: 1px solid #e5e5e5;
+	margin: 6px 0 0;
+}
+.product_quantity_input span.title { 
+	border: none;
+    color: inherit;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 ;
+    padding: 0;
+}
+.k2store_add_to_cart .k2store_cart_button {
+	float: right !important;
+}
+.k2store .row-fluid [class*="span"] {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+.product_quantity_input input {
+    width: auto !important;
+}
+table#carts {
+	font-size: 13px;
+}
+table#cart th, table#cart td { 
+	padding: 6px 12px !important;
+}
+table#cart th {
+	background: #212121 !important;
+}
+table#cart tr td { 
+	border: none !important; 
+	border-bottom: 1px solid #eee !important; 
+	background: #fff !important;
+}
+.cart_subtotal_price {
+	padding: 18px 0;
+	font-size: 22px;
+	line-height: 22px;
+	text-align: right;
+	color: #FB5A29;
+}
+.k2storeNewusers,
+.k2storeLogin {
+	background: none !important;
+}
+.shipping_address_form {
+	margin: 52px 0 0;
+}
+.shipping_address_form .key {
+	width: 20%;
+	color: #212121;
+	background: none
+}
+table.orders {
+	background: #fff !important;
+	width: 660px !important;
+}
+#payment_info { 
+	background: none !important;
+}
+table.orders td {
+	padding: 12px 24px !important;
+}
+.k2store_users .loginLinks {
+	border-top: 1px solid #eee;
+	width: 400px;
+	margin: 20px 0 40px;
+	padding: 6px 0 0;
+}
+.k2store_users .button,
+.k2storeNewusers .button {
+	float: none !important;
+	display: inline-block;
+}
+#sbox-window {
+	padding: 24px 32px 32px;
+}
+#sbox-content.sbox-content-iframe {
+	overflow: auto;
+}
+.itemBody .adminform {
+	margin: 32px 0 20px 0 !important;
+}
+.cart_subtotal td + td { 
+ 	font-size: 18px; 
+ 	color: #FB5A29;
+}
+#cart_order tfoot th { 
+ 	background: none; 
+ 	color: #212121;
+}
+.k2store .row-fluid div.k2store_login_form.span5,
+.k2store .row-fluid div.k2store_registration_form.span5,
+div.k2store_login_form,
+div.k2store_registration_form{
+    width:47% !important;
+	float:left;
+}
+div.k2store_login_form input[type="text"].inputbox,
+div.k2store_login_form input[type="password"],
+div.k2store_registration_form input[type="text"],
+div.k2store_registration_form input[type="password"] {
+    width:90% !important;
+}
+div.k2store_login_form input[type="submit"] {
+	float:none;
+}
+div.k2store_login_form input[type="password"] + label {
+	float:left;
+}
+div.k2store_registration_form input[type="submit"] {
+	margin-top:10px;
+}
+#k2Container header h1 {
+	clear: both;
+	line-height: 29px;
+	font-size: 22px;
+	color: #5c564e;
+}
+.itemAuthorContent { clear: both; }
+.itemIntroText ol,
+.itemFullText ol {
+	list-style:decimal;
+	list-style-position:inside;
+}

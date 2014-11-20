@@ -1,0 +1,510 @@
+/*
+	Humboldt v1.0 - Joomla template 3x
+	Copyright: (C)iF Creative Studio. All Rights Reserved.
+	Website:  http://www.if-cs.com
+	
+ */
+
+html {
+	
+}
+body {
+	background: transparent!important;
+	padding: 0 4px!important;
+}
+/*
+@media only screen and (max-device-width : 599px) and (-webkit-min-device-pixel-ratio: 1){}
+	#humboldtTopBg, #humboldtLogoText, #humboldtQuickLinks, #humboldtTopLinks{display: none;}
+
+	#humboldtPageWrap {padding-top: 0 !important;}
+}*/
+#humboldtTopBg, #humboldtLogoText, #humboldtQuickLinks, #humboldtTopLinks, #pageBg{display: none;}
+
+#humboldtPageWrap {padding-top: 0 !important;}
+
+#humboldtBottom3{display: none;}
+
+#humboldtFooterBg{height: 99px !important;}
+
+/*----- Gallery Home ----*/
+.wk-gallery-wall.polaroid {width: 100% !important; height: 299px !important;}
+.wk-gallery{background-position: 0 300px !important; background-size: 100% auto !important;}
+.wk-gallery-wall.polaroid a:nth-child(2), .wk-gallery-wall.polaroid a:nth-child(3), .wk-gallery-wall.polaroid a:nth-child(4){display: none;}
+
+/*Featured*/
+div.centro_analisis_contenedor h1 span{position: static !important;}
+
+/*Newsletter*/
+#wz_12{width: 199px !important; max-width: 199px !important;}
+
+/*---- Twitter module ----*/
+.twitter{width: 100% !important;}
+
+
+/*---- Tabs ----*/
+
+.noPageBg .nn_tabs{margin-top: 25px !important;}
+.noPageBg .nav-tabs li:first-child{margin-left: 0px !important;}
+.noPageBg .nn_tabs li{margin-right: 22px !important; float: left !important;}
+
+.allpub{margin-left: 211px !important;}
+
+div #k2ModuleBox140 ul li, div #k2ModuleBox146 ul li {width: 100% !important; margin-bottom: 17px !important;}
+div #k2ModuleBox140 ul li ul li, div #k2ModuleBox146 ul li ul li{width: 350px !important;}
+
+div #k2ModuleBox140 ul li ul li, div #k2ModuleBox146 ul li ul li{margin: 0 0 0 70px !important;}
+
+/*Bottom*/
+
+section#humboldtBottom1 div div.gkmod-2 div div p{margin-left: 5px !important;}
+.wk-slideset-default .sets{margin: 0 0 !important;}
+
+.noPageBg #humboldtBottom2{margin-top: 0px !important;}
+
+.link_externos img{height:33px !important; margin:0 2px !important;}
+
+
+
+
+
+#gkSidebar .box {
+	width: 100%;
+}
+#gkContent .box > div,
+#gkContent .box_menu > div,
+#gkContent .box_text > div {
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+#gkSidebar > div > .box {
+	float: none;
+	margin-top: 0!important;
+	margin-bottom: 12px!important;
+	width: 100%;
+}
+#gkSidebar > div > .box:nth-child(2n+1) {
+	clear: both!important;
+}
+#gkSidebar > div > .box:nth-child(odd) {
+	padding-right: 0px;	
+}
+#gkSidebar > div > .box:nth-child(even) {
+	padding-left: 0px;
+}
+
+/* Search area */
+#gkSearch {
+	float: right;
+	margin-top: 0!important;
+	padding-top: 10px;
+	text-align: right;
+	width: 60%;
+}
+#gkSearch .button {
+	display: none;
+}
+#gkSearch form {
+	display: inline-block;
+	padding-right: 10px;
+}
+#gkSearch #mod-search-searchword {
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	float: right;
+	margin: 0;
+	width: 90%;
+}
+#gkMainMenu {
+	margin-top: 2px!important;
+}
+
+/* top links */
+#gkTopLinks a {
+	font-size: 14px;
+}
+
+/* menu */
+#gkPageTop {
+	background: #fff;
+}
+#gkExtraMenu {
+	display: none!important;
+}
+#gkMainMenu {
+	border: none!important;
+	clear: none!important;
+	float: left;
+	text-indent: 15px;
+	width: 64px!important;
+}
+#gkMainMenu select {
+	width: 64px;
+	height: 45px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#gkMobileMenu {
+	display: block!important;
+	font-size: 18px;
+	height: 52px;
+	line-height: 44px;
+	position: relative;
+	width: 64px;
+	text-indent: -9999px;
+}
+
+/* footer adjustments */
+.gkFooter {
+	padding-top: 10px!important;
+}
+.gkFooter ul li {
+	float: none!important;	
+}
+.gkFooter ul li:before {
+	display: none!important;
+}
+.gkFooter ul + p {
+	border-top: 1px solid #959595;
+	line-height: 2.2;
+	padding-top: 10px;
+}
+
+/* limitation suffixes */
+.box.notablet {
+	display: block!important;
+}
+.box.nomobile {
+	display: none!important;
+}
+.box.onlytablet {
+	display: none!important;
+}
+.box.onlymobile {
+	display: block!important;
+}
+
+/* Fix for the user profile */
+.profile dt {
+	width: 100% !important;
+}
+
+/* Logo */
+#gkPageWrap {
+	padding-top: 0!important;
+}
+#gkLogo {
+	width: 100%!important;
+}
+
+/* top links */
+#gkTopLinks {
+	margin-right: 6px!important;
+	margin-top: -48px!important;
+}
+#gkTopLinks a {
+	border-left: 1px solid #fff;
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	display: block;
+	float: left;
+	height: 46px;
+	margin-left: 5px!important;
+	margin-top: 0;
+	text-indent: -9999px;
+	width: 38px;
+}
+#btnLogin {
+	background: transparent url('../images/top_icons.png') no-repeat -51px center;
+}
+#btnRegister {
+	background: transparent url('../images/top_icons.png') no-repeat -2px center;
+}
+#btnCart {
+	background: transparent url('../images/top_icons.png') no-repeat -99px center;
+}
+
+/* Fix for the contact page */
+.contact .contact-image {
+	float: left !important;
+}
+.contact .contact-address {
+	clear: both !important;
+	padding-top: 20px !important;
+}
+.contact .contact-form input,
+.contact .contact-form textarea {
+	width: 100% !important;
+}
+
+/* Fix for the search */
+fieldset.word #search-searchword,
+fieldset.word .inputbox {
+	width: 50%;
+}
+fieldset.phrases .ordering-box,
+fieldset.only input[type="checkbox"],
+fieldset.phrases input[type="radio"] {
+	clear: both;
+}
+
+/* Fix for the register */
+#member-registration dd {
+	clear: both !important;
+	display: block !important;
+}
+
+/* Fix for tables */
+fieldset {
+	-webkit-box-sizing: border-box!important;
+	-moz-box-sizing: border-box!important;
+	-ms-box-sizing: border-box!important;
+	-o-box-sizing: border-box!important;
+	box-sizing: border-box!important;
+	max-width: 100%!important;
+	width: 100%!important;
+	overflow: hidden;
+}
+#gkMainbody table:before {
+	content: "Scroll horizontally to view the whole table";
+	height: 14px;
+	width: 100%;
+	display: block;
+	font-size: 10px;
+	margin-top: -30px;
+	margin-bottom: 10px;
+	font-family: Arial, sans-serif;
+}
+#gkMainbody table {
+	width: 540px!important;
+	display: block!important;
+	padding: 30px 0 20px 0; /* padding for the scrollbars and the top message */
+	overflow:scroll;
+	-webkit-overflow-scrolling:touch;
+}
+#gkMainbody table tbody,
+#gkMainbody table thead,
+#gkMainbody table tfoot {
+	width: 540px!important;
+	display: table;
+}
+
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) and (-moz-max-device-pixel-ratio: 1.5), only screen and (max-device-width: 320px) and (-o-max-device-pixel-ratio: 1.5/1), only screen  and (max-device-width: 320px) and (-webkit-max-device-pixel-ratio: 1.5), only screen and (max-device-width: 320px) and (max-device-pixel-ratio: 1.5), only screen and (max-device-width: 640px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-device-width: 640px) and (-o-min-device-pixel-ratio: 2/1), only screen and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-device-width: 640px) and (min-device-pixel-ratio: 2) {
+	#gkMainbody table {
+		width: 260px!important;
+	}
+}
+
+@media only screen and (max-width: 480px) and (orientation:landscape), only screen and (max-device-width: 480px) and (-moz-max-device-pixel-ratio: 1.5) and (orientation:landscape), only screen and (max-device-width: 480px) and (-o-max-device-pixel-ratio: 1.5/1) and (orientation:landscape), only screen  and (max-device-width: 480px) and (-webkit-max-device-pixel-ratio: 1.5) and (orientation:landscape), only screen and (max-device-width: 480px) and (max-device-pixel-ratio: 1.5) and (orientation:landscape), only screen and (max-device-width: 960px) and (-moz-min-device-pixel-ratio: 2) and (orientation:landscape), only screen and (max-device-width: 960px) and (-o-min-device-pixel-ratio: 2/1) and (orientation:landscape), only screen and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 2) and (orientation:landscape), only screen and (max-device-width: 960px) and (min-device-pixel-ratio: 2) and (orientation:landscape) {
+	#gkMainbody table {
+		width: 420px!important;
+	}
+}
+
+/* top/bottom modules */
+.box.gkmod-1,
+.box.gkmod-2,
+.box.gkmod-3,
+.box.gkmod-4,
+.box.gkmod-more {
+	float: left!important;	
+}
+.box.gkmod-1,
+.box.gkmod-2,
+.box.gkmod-3,
+.box.gkmod-4,
+.box.gkmod-more {
+	width: 100%!important;
+}
+.box.gkmod-more.gkmod-last-1:last-child,
+.box.gkmod-more.gkmod-last-2:last-child,
+.box.gkmod-more.gkmod-last-2:nth-last-child(2),
+#gkPageWrap .box.gkmod-more.gkmod-last-3:last-child,
+#gkPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+#gkPageWrap .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 100%!important;
+}
+
+/* bottom3 */
+#gkBottom3 .box.gkmod-2 {
+	width: 50%!important;
+}
+#gkBottom3 .box.gkmod-3 {
+	width: 50%!important;
+}
+#gkBottom3 .box.gkmod-3:nth-child(3) {
+	clear: both!important;
+	width: 100%!important;
+}
+#gkBottom3 .box.gkmod-4,
+#gkBottom3 .box.gkmod-more {
+	width: 50%!important;
+}
+#gkBottom3 .box.gkmod-4:nth-child(2n+1),
+#gkBottom3 .box.gkmod-more:nth-child(2n+1) {
+	clear: both!important;
+}
+#gkBottom3 .box.gkmod-more.gkmod-last-1:last-child {
+	width: 100%!important;
+}
+#gkBottom3 .box.gkmod-more.gkmod-last-2:last-child,
+#gkBottom3 .box.gkmod-more.gkmod-last-2:nth-last-child(2) {
+	width: 50%!important;
+}
+#gkPageWrap #gkBottom3 .box.gkmod-more.gkmod-last-3:last-child {
+	width: 100%!important;
+}
+#gkPageWrap #gkBottom3 .box.gkmod-more.gkmod-last-3:nth-last-child(2),
+#gkPageWrap #gkBottom3 .box.gkmod-more.gkmod-last-3:nth-last-child(3) {
+	width: 50%!important;
+}
+
+/* bottom2 modules */
+#gkBottom2 .box.gkmod-1,
+#gkBottom2 .box.gkmod-2,
+#gkBottom2 .box.gkmod-3,
+#gkBottom2 .box.gkmod-4,
+#gkBottom2 .box.gkmod-more {
+	border-left: none!important;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#gkBottom2 .box.gkmod-1:nth-child(even),
+#gkBottom2 .box.gkmod-2:nth-child(even),
+#gkBottom2 .box.gkmod-3:nth-child(even),
+#gkBottom2 .box.gkmod-4:nth-child(even),
+#gkBottom2 .box.gkmod-more:nth-child(even) {
+	border-left: none!important;
+}
+
+/* article fix */
+#gkContent article > time {
+	display: none!important;
+}
+#gkContent article > time + header {
+	padding-left: 0!important;
+}
+#gkContent article header li.itemDate,
+#gkContent article header li.item-date {
+	display: block;
+}
+
+/* K2 adjustments */
+
+body.humboldtpublicaciones .itemContainer{width: 270px !important;}
+body.humboldtpublicaciones ul.itemTags li{position: relative !important; width: 100% !important; margin-left: 50px !important;}
+body.humboldtpublicaciones ul.titleTags{height: 90px !important;}
+body.humboldtpublicaciones ul.titleTags li:last-child{margin-top: 30px !important; padding-left: 0 !important;}
+body.humboldtpublicaciones #k2Container .itemHumboldt .itemExtraFields ul li:last-child{top: 321px !important; left:-22px !important;}
+body.humboldtpublicaciones .pagination ul li.counter{display: none !important;}
+
+.itemComments .itemCommentsList li div div {
+	overflow: hidden;
+}
+.itemComments .itemCommentsList li div div span {
+	clear: both;
+	display: block;
+	float: right;
+}
+.itemAuthorBlock,
+.itemAuthorContent {
+	clear: both;
+	float: none;
+	width: 100%!important;
+}
+.itemAuthorDetails {
+	margin-left: 112px!important;
+}
+.itemAuthorContent {
+	margin-top: 20px;
+}
+
+/* box alpha fix */
+body .box.alpha > div {
+	background: #fff!important;
+}
+
+/* Image Show adjustments */
+.gkIsWrapper-gk_bikestore figcaption {
+	display: none;
+}
+.gkIsWrapper-gk_bikestore .gkIsButtons {
+	bottom: 10px;
+	right: 50%;
+	margin-right: -32px;
+	padding: 0 16px!important;
+}
+
+/* NSP adjustments */
+.nspArtPage .nspArt {
+	border-top: 1px solid #eee!important;
+	border-left: none!important;
+	padding-bottom: 20px!important;
+	padding-top: 20px!important;
+	width: 100%!important;
+}
+.nspArtPage .nspArt:first-child {
+	border-top: none!important;
+}
+
+/* VM adjustments */
+.width50,
+.width40,
+.width33,
+.width25,
+.width20 {
+	width: 100%!important;
+}
+#gkPopupCart {
+	width: 300px!important;
+}
+.product-related-products, 
+.product-related-categories {
+	text-align: center;
+}
+.product-related-products > div, 
+.product-related-categories > div {
+	border-right: none!important;
+	margin: 0 auto;
+	float: none!important;
+	clear: both!important;
+}
+.orderby-displaynumber:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.orderby-displaynumber .display-number {
+	clear: both;
+	float: left;
+	margin-top: 10px;
+	min-width: 150px!important;
+	text-align: left;
+}
+.vertical-separator {
+	padding: 0!important;
+}
+.row .product,
+.row .category {
+	margin-bottom: 20px!important;
+}
+.width20:nth-child(odd),
+.width25:nth-child(odd) {
+	clear: both!important;
+	padding-left: 0!important;
+	padding-right: 0px!important;	
+}
+.width20:nth-child(even),
+.width25:nth-child(even) {
+	padding-left: 0px!important;
+	padding-right: 0!important;	
+}

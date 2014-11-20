@@ -16,6 +16,8 @@ module.exports = function(parent, options){
   var info=require('./../app/controllers/info');
   var annex=require('./../app/controllers/annex');
   var compl=require('./../app/controllers/compl');
+  var summary=require('./../app/controllers/summary');
+  var maps=require('./../app/controllers/maps');
 
   app.get('/biodiversidad2014/',index.index);
   app.get('/biodiversidad2014/capitulo/:_id',chapter.getChapter);
@@ -24,6 +26,8 @@ module.exports = function(parent, options){
   app.get('/biodiversidad2014/:_id',info.info);
   app.get('/biodiversidad2014/apendices/:_id',annex.getAnnex);
   app.get('/biodiversidad2014/complemento/:_id',compl.getCompl);
+  app.get('/biodiversidad2014/resumen/:_id',summary.getImage);
+  app.get('/biodiversidad2014/mapas/:_id',maps.getImage);
 
   app.use(function(req, res, next){
     res.status(404);

@@ -1,5 +1,6 @@
 exports.getCard= function(req, res) {
   var urlficha = req.params._id;
+  logger.info("Id card: "+urlficha);
   var docFicha = db_cards().filter({id_ficha: urlficha}).first();
 
   if(docFicha.titulo_ficha===undefined||docFicha.titulo_ficha===null){

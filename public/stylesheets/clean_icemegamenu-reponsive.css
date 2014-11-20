@@ -1,0 +1,161 @@
+
+/**
+ * IceMegaMenu Extension for Joomla 3.0 By IceTheme
+ * 
+ * 
+ * @copyright	Copyright (C) 2012 IceTheme.com. All rights reserved.
+ * @license		GNU General Public License version 2
+ * 
+ * @Website 	http://www.icetheme.com/Joomla-Extensions/icemegamenu.html
+ *
+ */
+
+.collapse {
+  overflow: hidden}
+
+@media (min-width: 980px) {
+	.icemegamenu > ul{
+	 height:50px!important;}
+}
+
+
+@media (max-width: 979px) {
+	
+.ice-megamenu-toggle {
+    float: right;}
+
+	.ice-megamenu-toggle a {
+		cursor:pointer;
+		background: url(../images/mobile_menu_btn.png) no-repeat scroll 0 0 transparent;
+		display: block;
+		height: 35px;
+		margin: -50px 0 0;
+		text-indent: -9999px;
+		width: 179px;}		
+
+
+.icemegamenu > ul { background:#eee; text-align: left; }
+
+  .ice-megamenu-toggle { display:inline-block; }
+  .icemegamenu > ul > li{ width: 100%; background:#eee }
+  
+  
+	#icemegamenu > li > ul.icesubMenu {
+		float: left;
+		opacity: 1;
+		position: relative;
+		padding:0;
+		top: 0!important;
+		visibility: visible;
+		width: 100% !important;
+		background:#eee}
+		
+			
+	#icemegamenu > li > ul.icesubMenu .iceCols{ width:100%!important;}
+	#icemegamenu > li > ul.icesubMenu li{
+		width:100%!important;
+		position: relative;
+		clear: both;
+		z-index: 10001;
+	
+	}
+	#icemegamenu .parent .icemodules{	}
+	
+	ul.icesubMenu{border:none}
+	
+	ul.icesubMenu li.parent{background:none;}		
+	
+	.icemegamenu > ul > li span.icemega_desc {text-align: left;}
+	
+	.icemegamenu > ul > li a.iceMenuTitle{
+		font-size:15px;
+		margin:0;
+		height:auto;
+		padding-left:15px;
+		border-bottom:1px dashed #ccc!important
+		}
+
+		ul.icesubMenu li{border-bottom: none;}
+		
+		.icemegamenu > ul > li > a.iceMenuTitle > span.icemega_nosubtitle {
+			padding-top:0}
+	
+	ul.icesubMenu > li a.iceMenuTitle{
+		font-size:12px;
+		margin:0px;
+		padding-left:5px 35px 5px;
+		background-position:20px 10px;
+		width: 100%;
+
+	}
+
+	ul.icesubMenu{left:50px;}
+	
+	.iceCols ul li{height: 25px;}
+
+	.ice_righttoleft{
+		left:100px !important;
+	}
+
+		
+	.icemegamenu > ul > li.active{
+		background:none}
+	
+		#icemegamenu > li > ul.icesubMenu li > ul{
+			float: left;
+			opacity: 1;
+			position: relative;
+			top: 0px!important;
+			visibility: visible;
+			width: 100% !important;
+			left: 100px;		
+			margin:0px;
+			margin-top:14px;
+			padding:0;
+			border:none;
+			background:#eee;}
+
+			ul.sub_level_2,
+ul.sub_level_3,
+ul.sub_level_4,
+ul.sub_level_5 {
+	left: 0px;
+	}
+			
+			/* level 2 */
+			ul.sub_level_2 li > a.iceMenuTitle {
+				padding-left: 55px!important;
+				background-position: 40px 10px!important;}
+				
+			/* level 3 */
+			ul.sub_level_3 li > a.iceMenuTitle {
+				padding-left: 75px!important;
+				background-position: 60px 10px!important;}
+				
+					
+
+		/* hide modules */
+		.icesubMenu .icemega_cover_module { width: auto !important;}
+
+		#iceMenu_199, #iceMenu_269{width: 100%; position: relative; background: #eee;border: none;}
+		#iceMenu_199, #iceMenu_269{height: auto;}
+		#iceMenu_199 a span, #iceMenu_269 a span{color: #059f6d; text-shadow:0 0 0;}
+
+		#icemegamenu a span{margin-bottom: 5px;}
+
+}
+
+
+@media (max-width: 480px){
+
+	ul.icesubMenu > li a.iceMenuTitle{
+		background:none!important;}
+		
+		#icemegamenu > li > ul.icesubMenu li > ul.sub_level_2,
+		#icemegamenu > li > ul.icesubMenu li > ul.sub_level_3,
+		#icemegamenu > li > ul.icesubMenu li > ul.sub_level_4{
+			left: 0px;}
+}
+
+
+

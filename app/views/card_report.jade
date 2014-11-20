@@ -2,23 +2,20 @@ extends layout_report
 
 block content
   section#contenido
-        nav.breadcrumb(2014="")
-          a(href='/biodiversidad2014/capitulo/'+'#{ficha.id_capitulo}') Capítulo #{ficha.id_capitulo}
-          |  &#62; 
-          a(href='/biodiversidad2014/ficha/'+'#{ficha.id_ficha}') Ficha #{ficha.id_ficha}
-
         h1 #{ficha.titulo_ficha}
         h2 #{ficha.sub_titulo_ficha}
-        img.float_right(src="#{ficha.imagen_ficha_s}") 
+        p
+        a.tema.float_left(href='/biodiversidad2014/visualizador/'+'#{ficha.id_ficha}')
+          img(src="#{ficha.imagen_ficha_s}")
+          strong VER FICHA
 
         - var fichaText=ficha.texto_informacion.split("[p]");
-
         each par in fichaText
           p
-            | #{par}
+            | #{par}  
 
         - var autores=ficha.autores.split(";");
-
+        
         h3 Autores
 
         each parAu in autores
@@ -26,21 +23,19 @@ block content
             | #{parAu}
             br
 
-        .rounded_box
-          h3 Información de la ficha
-          a.link_box(href='#{ficha.pdf_ficha}')
-            h5 Título de la ficha
+        .rounded_box.clear
+          h3 Informaci&#243;n de la ficha
+          a.link_box(href="#{ficha.pdf_ficha}")
+            img(src="/images/pdf.png")
+            h5 DESCARGAR LA FICHA
             span #{ficha.titulo_ficha}
-          a.link_box(href='#{ficha.pdf_ficha_metodologica}')
-            img(src='/images/pdf.png')
-            h5 Ficha metodológica
+          a.link_box(href="#{ficha.pdf_ficha_metodologica}")
+            img(src="/images/pdf.png")
+            h5 Ficha metodol&#243;gica
             span #{ficha.titulo_ficha_metodologica}
           a.link_box(href="#")
             h5 Bibliograf&#237;a
             span Ficha metodol&#243;gica # 30
-          a.link_box(href='/biodiversidad2014/visualizador/'+'#{ficha.id_ficha}')
-            h5 Visualizador
-            
 
         h3 Contenido asociado
 
@@ -48,5 +43,8 @@ block content
           a.link_box(href='#{cont.url}')
             h5 #{cont.title}
             span #{cont.text}
+
+        
+
 
         

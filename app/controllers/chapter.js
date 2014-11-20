@@ -1,6 +1,7 @@
 exports.getChapter= function(req, res) {
   
   var urlcap = req.params._id;
+  logger.info("Id chapter: "+urlcap);
   var doc = db_chapters().filter({id_capitulo: urlcap}).first();
 
   if(doc.titulo_capitulo===undefined||doc.titulo_capitulo===null){

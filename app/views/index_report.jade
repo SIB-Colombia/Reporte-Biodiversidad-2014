@@ -1,6 +1,14 @@
 extends layout_report
 
 block content
+  script.
+      $(document).ready(function(){
+        $('.slider').bxSlider({
+          video: true,
+          useCSS: false
+        });
+      });
+
   section#contenido
         .slider
           
@@ -13,13 +21,13 @@ block content
           
           
         h1 TEMAS
-        a.tema(href='#')
+        a.tema(href='/biodiversidad2014/capitulo/1')
           img(src='/images/img.png')
           strong ESTADO
-        a.tema(href='#')
+        a.tema(href='/biodiversidad2014/capitulo/2')
           img(src='/images/img.png')
           strong TRANSFORMACIONES
-        a.tema(href='#')
+        a.tema(href='/biodiversidad2014/capitulo/3')
           img(src='/images/img.png')
           strong GOBERNANZA
         h1 INTRODUCCIÓN

@@ -71,13 +71,13 @@
                 if (active_tab!='') {
                     return false;
                 }
-            	location = '/biodiversidad2014/visualizador/'+prev_image;
+            	location = '/biodiversidad2014/'+prev_image;
                 break;
             case 39:
                 if (active_tab!='') {
                     return false;
                 }
-                location = '/biodiversidad2014/visualizador/'+next_image;
+                location = '/biodiversidad2014/'+next_image;
                 break;
             case 27:
                 tab_min();
@@ -101,7 +101,7 @@
         //console.log("algo");
         //console.log(active);
 		if (active) {
-			window.location = '/biodiversidad2014/visualizador/'+next_image;
+			window.location = '/biodiversidad2014/'+next_image;
 		}
 	}
 
