@@ -18,6 +18,7 @@ module.exports = function(parent, options){
   var compl=require('./../app/controllers/compl');
   var summary=require('./../app/controllers/summary');
   var maps=require('./../app/controllers/maps');
+  var biblio=require('./../app/controllers/biblio');
 
   app.get('/biodiversidad2014/',index.index);
   app.get('/biodiversidad2014/capitulo/:_id',chapter.getChapter);
@@ -28,6 +29,7 @@ module.exports = function(parent, options){
   app.get('/biodiversidad2014/complemento/:_id',compl.getCompl);
   app.get('/biodiversidad2014/resumen/:_id',summary.getImage);
   app.get('/biodiversidad2014/mapas/:_id',maps.getImage);
+  app.get('/biodiversidad2014/literatura/:_id', biblio.getBiblio);
 
   app.use(function(req, res, next){
     res.status(404);

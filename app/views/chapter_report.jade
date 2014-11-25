@@ -2,15 +2,24 @@ extends layout_report
 
 block content
   section#contenido
-        h2 CAPÍTULO #{capitulo.id_capitulo}
+        
         h1 #{capitulo.titulo_capitulo}
-        h3 INTRODUCCIÓN
+        h3 #{capitulo.subtitulo_capitulo}
 
         - var strh=capitulo.texto_capitulo.split("[p]");
         
         each par in strh
           p
             | #{par}
+
+        p
+          strong
+            | #{capitulo.autor}
+          
+        | #{capitulo.cargo}
+
+        br
+        br
 
         h3 FICHAS
 

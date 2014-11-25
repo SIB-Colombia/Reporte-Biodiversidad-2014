@@ -11,7 +11,7 @@
 
 	#humboldtContent { width: 100%; }
 	#humboldtPageWrap { max-width: 1000px; z-index: 10; }
-	body { padding: 0px; margin: 0px; _background: url(res/bgTopMenu.jpg) repeat-x 0px -43px;}
+	body { padding: 0px; margin: 0px; _background: url(/images/sitio/bgTopMenu.jpg) repeat-x 0px -43px;}
 	.bar{ padding: 10px 0 0 0 ; border: 1px solid #c7c7c7; background-color: white; border-radius: 5px; text-align: center; font-size: 1.2em; color: #7d7d7d;}
 	nav.bar{display: block;width: 100%; margin-bottom: 25px; }
 	div.bar{display: inline-block; }
@@ -41,7 +41,7 @@
 	h2+h1{ margin: 0 0 20px 0;}
 	h4{ font-weight: 700; font-size: 1.1em; text-transform: uppercase;}
 	h5{ font-size: 1em; text-transform: uppercase; margin-top: 10px;}
-	.firma{ display: inline-block; width: 250px;}
+	.firma{ display: inline-block; width: 400px;}
 	a{ cursor: pointer; text-decoration: none !important;}
 	a{-webkit-transition:all 600ms ease;
 		-moz-transition:all 600ms ease;
@@ -92,7 +92,7 @@
 	color: #fff;
 }
 html {
-	background-image:  url(/images/bg.jpg);
+	background-image:  url(/images/sitio/bg.jpg);
 }
 body {
 	

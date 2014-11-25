@@ -26,23 +26,24 @@ block content
         .rounded_box.clear
           h3 Informaci&#243;n de la ficha
           a.link_box(href="#{ficha.pdf_ficha}")
-            img(src="/images/pdf.png")
+            img(src="/images/sitio/pdf.png")
             h5 DESCARGAR LA FICHA
             span #{ficha.titulo_ficha}
           a.link_box(href="#{ficha.pdf_ficha_metodologica}")
-            img(src="/images/pdf.png")
+            img(src="/images/sitio/pdf.png")
             h5 Ficha metodol&#243;gica
             span #{ficha.titulo_ficha_metodologica}
-          a.link_box(href="#")
-            h5 Bibliograf&#237;a
-            span Ficha metodol&#243;gica # 30
+          a.link_box(href='/biodiversidad2014/literatura/'+'#{ficha.id_ficha}')
+            h5 Literatura Citada
 
-        h3 Contenido asociado
+        if contInfo.length != 0
 
-        each cont in contInfo
-          a.link_box(href='#{cont.url}')
-            h5 #{cont.title}
-            span #{cont.text}
+          h3 Contenido asociado
+
+          each cont in contInfo
+            a.link_box(href='#{cont.url}')
+              h5 #{cont.title}
+              span #{cont.text}
 
         
 

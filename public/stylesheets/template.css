@@ -15,7 +15,7 @@ html.lightbg {background-position: center top;}
 
 body {
 	min-height: 100%;
-	background: transparent url(/images/bg_humboldt-illustrated.png) no-repeat center top;
+	background: transparent url(/images/sitio/bg_humboldt-illustrated.png) no-repeat center top;
 	background-position: 50% 150px;
 	font-size: 14px;
 	color: #777;
@@ -74,6 +74,7 @@ ul li {
 }
 p {
 	margin: 0.5em 0 1.5em;
+    text-align : justify;
 }
 
 /* Containers */

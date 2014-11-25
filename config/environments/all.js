@@ -15,7 +15,7 @@ module.exports = function(parent) {
 	parent.set('view engine', 'jade');
 	parent.set('jsonp callback', true );
 	//parent.use(express.compress());
-	parent.use(favicon(__dirname + '/public/sib.ico' ));
+	parent.use(favicon(__dirname + '/public/favicon.ico' ));
 	parent.use(bodyParser.urlencoded());
 	parent.use(bodyParser.json());
 	parent.use(methodOverride());
@@ -24,8 +24,7 @@ module.exports = function(parent) {
 	var env = process.env.NODE_ENV || 'development';
 
 	// Load configuration according to environment
-	console.log("Current node environment:");
-	console.log(process.env.NODE_ENV);
+	//logger.info("Current node environment:");
 	if(process.env.NODE_ENV == 'development') {
 		require('./development')(parent);
 	} else if(process.env.NODE_ENV == 'production') {
@@ -44,8 +43,7 @@ module.exports = function(parent) {
 	db_maps = TAFFY();
 
 	// Load data from google spreadsheet
-	logger.info("Initial load of data.");  
-	console.log("Initial load of data.");
+	logger.info("Initial load of data."); 
 	db_chapters().remove();
 	db_cards().remove();
 	db_cont().remove();
@@ -61,7 +59,7 @@ module.exports = function(parent) {
 	var counterCont = 1;
 	var counterPage = 1;
 	var counterMap = 1;
-	logger.info("load of data for chapters");
+	//logger.info("load of data for chapters");
 	parser.on('readable', function () {
 		var line = parser.read()
 		if(line!==null){
@@ -73,7 +71,7 @@ module.exports = function(parent) {
 		}
 	});
 
-	logger.info("load of data for cards");
+	//logger.info("load of data for cards");
 	parserCard.on('readable', function () {
 		var lineCa = parserCard.read();
 		if(lineCa!==null){
@@ -85,7 +83,7 @@ module.exports = function(parent) {
 		}
 	});
 
-	logger.info("load of data for content");
+	//logger.info("load of data for content");
 	parserCont.on('readable', function () {
 		var lineCont = parserCont.read();
 		if(lineCont!==null){
@@ -97,12 +95,11 @@ module.exports = function(parent) {
 		}
 	});
 
-	logger.info("load of data for pages");
+	//logger.info("load of data for pages");
 	parserPage.on('readable', function () {
 		var linePage = parserPage.read();
 		if(linePage!==null){
 			if(linePage.titulo_pagina) {
-				//console.log("La linea: "+JSON.stringify(linePage));
 				linePage.num = counterPage;
 				db_pages.insert(linePage);
 				counterPage++;
@@ -111,12 +108,11 @@ module.exports = function(parent) {
 	});
 
 
-	logger.info("load of data for maps");
+	//logger.info("load of data for maps");
 	parserMap.on('readable', function () {
 		var lineMap = parserMap.read();
 		if(lineMap!==null){
 			if(lineMap.titulo_mapa) {
-				console.log("La linea: "+JSON.stringify(lineMap));
 				lineMap.num = counterMap;
 				db_maps.insert(lineMap);
 				counterMap++;
@@ -134,7 +130,7 @@ module.exports = function(parent) {
 
 	
 	var job = new cronJob({
-		cronTime: '*/45 * * * * *',
+		cronTime: '0 0 * * * *',
 		onTick: function() {
 			// Load data from google spreadsheet
 			logger.info("Load of data with cronJob");
@@ -235,7 +231,5 @@ module.exports = function(parent) {
 	});
 	job.start();
 
-	/*
-	logger.info("Image blog sib initial configuration loaded.");
-	*/
+	
 };

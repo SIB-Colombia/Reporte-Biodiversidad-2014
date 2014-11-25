@@ -6,7 +6,7 @@ img{border:none;}
 body{overflow:hidden;background:#000;font-family:"Helvetica Neue",Arial,sans-serif;color:white;font-size:12px;}
 h1{font-size:18px;line-height:20px;text-shadow:0px 2px 0px #000;font-weight:bold;}
 button{font-family:"Helvetica Neue",Arial,sans-serif;color:white;text-shadow:0px 1px 0px #000;}
-#content{background:url('../images/bground.png');margin:0px auto;height:100%;width:175px;z-index:3;position:absolute;border-right:solid #333 1px;}
+#content{background:url('../images/sitio/bground.png');margin:0px auto;height:100%;width:175px;z-index:3;position:absolute;border-right:solid #333 1px;}
 #contentframe{overflow:hidden;height:100%;width:175px;text-align:left;z-index:3;}
 #logo{float:left;margin:20px;}
 #logo_min{position:absolute;top:20px;left:40px;}
@@ -26,13 +26,13 @@ button{font-family:"Helvetica Neue",Arial,sans-serif;color:white;text-shadow:0px
 #imagedesc .share a#totalcomments:hover{background-position:0 -16px;color:white;}
 .tabmenu{left:176px;position:absolute;}
 .tabmenu a{background-position:0 0;width:26px;height:21px;text-indent:-999em;position:absolute;z-index:3;}
-.tabmenu a:hover{background-position:0 -21px;}a.expand{background-image:url('../images/btn_shrink.png');top:42px;}
-a.shrink{background-image:url('../images/btn_shrink.png');top:42px;}
-a.catalog{background-image:url('../images/btn_catalog.png');top:21px;}
+.tabmenu a:hover{background-position:0 -21px;}a.expand{background-image:url('../images/visual/btn_shrink.png');top:42px;}
+a.shrink{background-image:url('../images/visual/btn_shrink.png');top:42px;}
+a.catalog{background-image:url('../images/visual/btn_catalog.png');top:21px;}
 a.comments{background-image:url('../images/btn_comments.png');top:0;}
 .credit{text-shadow:0px 1px 0px #000;font-size:12px;padding-top:10px;position:absolute;left:195px;bottom:10px;z-index:3;width:500px;}
 #navigation{position:absolute;left:20px;bottom:30px;margin:17px 18px 0 0;}
-#navigation a{float:left;height:44px;overflow:hidden;text-indent:-999em;background-repeat:no-repeat;background-image:url('../images/navbuttons.png');}
+#navigation a{float:left;height:44px;overflow:hidden;text-indent:-999em;background-repeat:no-repeat;background-image:url('../images/visual/navbuttons.png');}
 #navigation a.prev,#navigation a.next{width:44px;}
 #navigation a.play,#navigation a.pause{width:46px;}
 #navigation a.prev{background-position:0 0;margin-right:1px;}
@@ -49,7 +49,7 @@ a.comments{background-image:url('../images/btn_comments.png');top:0;}
   z-index: 3;
   width: 24px;
   height: 24px;
-  background-image: url(../images/progress.gif);
+  background-image: url(../images/visual/progress.gif);
   }
 .wrapper {
   position: fixed; 

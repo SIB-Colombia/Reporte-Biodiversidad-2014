@@ -10,6 +10,8 @@ exports.info = function(req, res) {
     res.render('prologue2_report', { title: 'Biodiversidad Y Desarrollo: perspectiva global' });
   }else if(urlinfo=='resumen'){
   	res.render('summary_report', { title: 'Panorama de la Biodiversidad, un llamado a la acción' });
+  }else if(urlinfo=='literatura'){
+    res.render('biblio_report', { title: 'Literatura' });
   }else {
   	res.status(404);
     if (req.accepts('html')) {
