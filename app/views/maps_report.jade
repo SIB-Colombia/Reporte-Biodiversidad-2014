@@ -1,37 +1,78 @@
 extends layout_report
 
 block content
+  script.
+      $(document).ready(function(){
+        var link_d="#{id_link}";
+        
+        $('#mapa1').on('click', function() {
+          ga('send', 'event', 'visualizador', 'click', 'Visualizador mapa1');
+        });
+
+        $('#mapa2').on('click', function() {
+          ga('send', 'event', 'visualizador', 'click', 'Visualizador mapa2');
+        });
+
+        $('#mapa3').on('click', function() {
+          ga('send', 'event', 'visualizador', 'click', 'Visualizador mapa3');
+        });
+
+        $('#mapa4').on('click', function() {
+          ga('send', 'event', 'visualizador', 'click', 'Visualizador mapa4');
+        });
+
+        $('#mapa5').on('click', function() {
+          ga('send', 'event', 'visualizador', 'click', 'Visualizador mapa5');
+        });
+
+        $('#mapa6').on('click', function() {
+          ga('send', 'event', 'visualizador', 'click', 'Visualizador mapa6');
+        });
+
+        $('#mapa7').on('click', function() {
+          ga('send', 'event', 'visualizador', 'click', 'Visualizador mapa7');
+        });
+
+        $('#mapa8').on('click', function() {
+          ga('send', 'event', 'visualizador', 'click', 'Visualizador mapa8');
+        });
+
+        $('#mapa9').on('click', function() {
+          ga('send', 'event', 'visualizador', 'click', 'Visualizador mapa9');
+        });
+      });
+
   section#contenido
         h1 MAPAS COMPLEMENTARIOS
         p
-          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id tempus nunc, quis interdum eros. Aliquam ac blandit sem. Mauris tincidunt aliquet molestie. Curabitur suscipit ipsum id viverra adipiscing. Donec sit amet massa vel sem volutpat laoreet. Vivamus sit amet sagittis leo. Vestibulum blandit ipsum sit amet ultricies vestibulum. Vivamus iaculis est nec tincidunt consectetur. Aenean a erat risus. Curabitur iaculis urna aliquam mattis fringilla.
+          | Los mapas que se encuentran a continuación y que fueron utilizados en la publicación impresa a modo de transparencias, dan cuenta de algunos de los contextos socio-geográficos que acompañan los análisis de "Biodiversidad 2014", y nos invitan a pensar las intersecciones entre las maneras que nuestro territorio existe y es organizado. 
         h3 MAPAS
-        a.tema(href="/biodiversidad2014/mapas/1")
-          img(src="/images/sitio/img.png")
+        a#mapa1.tema(href="/biodiversidad2014/mapas/1")
+          img(src="/images/sitio/th_maps/IAvH_Biodiversidad-2014-MAPA1.jpg")
           strong HIDROGRAF&#205;A
-        a.tema(href="/biodiversidad2014/mapas/2")
-          img(src="/images/sitio/img.png")
+        a#mapa2.tema(href="/biodiversidad2014/mapas/2")
+          img(src="/images/sitio/th_maps/IAvH_Biodiversidad-2014-MAPA2.jpg")
           strong &#193;REAS PROTEGIDAS
-        a.tema(href="/biodiversidad2014/mapas/3")
-          img(src="/images/sitio/img.png")
+        a#mapa3.tema(href="/biodiversidad2014/mapas/3")
+          img(src="/images/sitio/th_maps/IAvH_Biodiversidad-2014-MAPA3.jpg")
           strong BIOMAS CONTINENTALES
-        a.tema(href="/biodiversidad2014/mapas/4")
-          img(src="/images/sitio/img.png")
+        a#mapa4.tema(href="/biodiversidad2014/mapas/4")
+          img(src="/images/sitio/th_maps/IAvH_Biodiversidad-2014-MAPA4.jpg")
           strong ECOSISTEMAS ESTRAT&#201;GICOS
-        a.tema(href="/biodiversidad2014/mapas/5")
-          img(src="/images/sitio/img.png")
+        a#mapa5.tema(href="/biodiversidad2014/mapas/5")
+          img(src="/images/sitio/th_maps/IAvH_Biodiversidad-2014-MAPA5.jpg")
           strong ESTRATEGIAS DE CONSERVACI&#211;N
-        a.tema(href="/biodiversidad2014/mapas/6")
-          img(src="/images/sitio/img.png")
+        a#mapa6.tema(href="/biodiversidad2014/mapas/6")
+          img(src="/images/sitio/th_maps/IAvH_Biodiversidad-2014-MAPA6.jpg")
           strong TERRITORIOS COLECTIVOS
-        a.tema(href="/biodiversidad2014/mapas/7")
-          img(src="/images/sitio/img.png")
+        a#mapa7.tema(href="/biodiversidad2014/mapas/7")
+          img(src="/images/sitio/th_maps/IAvH_Biodiversidad-2014-MAPA7.jpg")
           strong SISTEMA DE CIUDADES
-        a.tema(href="/biodiversidad2014/mapas/8")
-          img(src="/images/sitio/img.png")
+        a#mapa8.tema(href="/biodiversidad2014/mapas/8")
+          img(src="/images/sitio/th_maps/IAvH_Biodiversidad-2014-MAPA8.jpg")
           strong INFRAESTRUCTURA VIAL
-        a.tema(href="/biodiversidad2014/mapas/9")
-          img(src="/images/sitio/img.png")
+        a#mapa9.tema(href="/biodiversidad2014/mapas/9")
+          img(src="/images/sitio/th_maps/IAvH_Biodiversidad-2014-MAPA9.jpg")
           strong T&#205;TULOS MINEROS 2013
 
         

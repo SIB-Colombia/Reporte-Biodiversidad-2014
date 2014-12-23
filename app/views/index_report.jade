@@ -7,6 +7,11 @@ block content
           video: true,
           useCSS: false
         });
+
+        
+        $('#libro').on('click', function() {
+          ga('send', 'event', 'download', 'click', 'Descarga libro completo');
+        });
       });
 
   section#contenido
@@ -18,7 +23,12 @@ block content
             img(src='/images/sitio/slider/cap2.jpg')
           .slide
             img(src='/images/sitio/slider/cap3.jpg')
-          
+          .slide
+            iframe(src='//www.youtube.com/embed/D-oRWNn-JtE', width='1000', height='425', frameborder='0', webkitallowfullscreen='webkitAllowFullScreen', mozallowfullscreen='mozallowfullscreen', allowfullscreen='allowFullScreen')
+        
+        div.fb-like(data-href='http://reporte.humboldt.org.co/biodiversidad2014/', data-layout='standard', data-action='like', data-show-faces='false', data-share='true') 
+
+        a.twitter-share-button(href='https://twitter.com/share', data-url='http://reporte.humboldt.org.co/biodiversidad2014/', data-text='Reporte de Estado de la Biodiversidad', data-via='inst_humboldt', data-lang='es', data-hashtags='Biodiversidad2014') Twittear
           
         h1 TEMAS
         a.tema(href='/biodiversidad2014/capitulo/1')
@@ -30,6 +40,11 @@ block content
         a.tema(href='/biodiversidad2014/capitulo/3')
           img(src='/images/sitio/th_cap/th_cap3.jpg')
           strong GOBERNANZA
+
+        a#libro.tema(href='https://s3.amazonaws.com/biodiversidad2014/IAvH_Biodiversidad_2014.pdf')
+          img(src='/images/sitio/th_portada.jpg')
+          strong LIBRO PARA DESCARGAR
+
         h1 INTRODUCCIÓN
 
         p

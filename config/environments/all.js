@@ -34,6 +34,7 @@ module.exports = function(parent) {
 	}
 
 	// load controllers
+	var regexp = /((ftp|http|https):\/)?(\/)?(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?(\.)([\w#!:.?+=&%@!\-\/])/
 	require('./../routers')(parent, { verbose: true });
 
 	db_chapters = TAFFY();

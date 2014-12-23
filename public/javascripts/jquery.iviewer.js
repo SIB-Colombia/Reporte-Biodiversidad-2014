@@ -296,17 +296,18 @@ $.widget( "ui.iviewer", $.ui.mouse, {
                             x: (ev.pageX || ev.originalEvent.pageX) - container_offset.left,
                             y: (ev.pageY || ev.originalEvent.pageX) - container_offset.top
                         };
-
-                    me.zoom_by(zoom, mouse_pos);
+                    //console.log("AlgoM");
+                    me.zoom_by(zoom, mouse_pos); //delta, zoomcenter
                     return false;
                 });
-
+            console.log(gesturesSupport);
             if (gesturesSupport) {
                 var gestureThrottle = +new Date();
                 var originalScale, originalCenter;
                 this.img_object.object()
                     // .bind('gesturestart', function(ev) {
                     .bind('touchstart', function(ev) {
+                        console.log("Algo1");
                         originalScale = me.current_zoom;
                         var touches = ev.originalEvent.touches,
                             container_offset;
@@ -758,7 +759,7 @@ $.widget( "ui.iviewer", $.ui.mouse, {
 
     /* update scale info in the container */
     update_status: function()
-    {
+    {   /*
         if(!this.options.ui_disabled)
         {
             var percent = Math.round(100*this.img_object.display_height()/this.img_object.orig_height());
@@ -767,6 +768,7 @@ $.widget( "ui.iviewer", $.ui.mouse, {
                 this.zoom_object.html(percent + "%");
             }
         }
+        */
     },
 
     /**
@@ -904,34 +906,11 @@ $.widget( "ui.iviewer", $.ui.mouse, {
     {
         var me=this;
 
-        $("<div>", { 'class': "iviewer_zoom_in iviewer_common iviewer_button"})
-                    .bind('mousedown touchstart',function(){me.zoom_by(1); return false;})
-                    .appendTo(this.container);
-
-        $("<div>", { 'class': "iviewer_zoom_out iviewer_common iviewer_button"})
-                    .bind('mousedown touchstart',function(){me.zoom_by(- 1); return false;})
-                    .appendTo(this.container);
-
-        $("<div>", { 'class': "iviewer_zoom_zero iviewer_common iviewer_button"})
-                    .bind('mousedown touchstart',function(){me.set_zoom(100); return false;})
-                    .appendTo(this.container);
-
-        $("<div>", { 'class': "iviewer_zoom_fit iviewer_common iviewer_button"})
-                    .bind('mousedown touchstart',function(){me.fit(this); return false;})
-                    .appendTo(this.container);
-
+        /*
         this.zoom_object = $("<div>").addClass("iviewer_zoom_status iviewer_common")
-                                    .appendTo(this.container);
+                                    .appendTo(this.container);*/
 
-        $("<div>", { 'class': "iviewer_rotate_left iviewer_common iviewer_button"})
-                    .bind('mousedown touchstart',function(){me.angle(-90); return false;})
-                    .appendTo(this.container);
-
-        $("<div>", { 'class': "iviewer_rotate_right iviewer_common iviewer_button" })
-                    .bind('mousedown touchstart',function(){me.angle(90); return false;})
-                    .appendTo(this.container);
-
-        this.update_status(); //initial status update
+        //this.update_status(); //initial status update
     }
 
 } );

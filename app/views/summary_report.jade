@@ -1,6 +1,17 @@
 extends layout_report
 
 block content
+  script.
+      $(document).ready(function(){
+        var link_d="#{id_link}";
+
+        $('#'+link_d).on('click', function() {
+          ga('send', 'event', 'download', 'click', 'Descarga '+link_d);
+        });
+      });
+
+      
+
   section#contenido
         h1 PANORAMA DE LA BIODIVERSIDAD, UN LLAMADO A LA ACCIÓN 
         p
@@ -18,7 +29,7 @@ block content
 
         .rounded_box
           h3 Descargar PDF
-          a.link_box(href="/pdfs/resumen/Resumen_ejecutivo_2014.pdf")
+          a.link_box(href="https://s3.amazonaws.com/biodiversidad2014/pdfs/resumen/Resumen_ejecutivo_2014.pdf", id=id_link)
             h5 Resumen ejecutivo
             span Panorama de la biodiversidad, un llamado a la acci&#243;n
 

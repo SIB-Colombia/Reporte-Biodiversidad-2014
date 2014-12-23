@@ -1,17 +1,15 @@
 doctype html
 html.noPageBg(prefix='og: http://ogp.me/ns#', lang='es-es')
   head
-    meta(property='fb:app_id', content='')
+    
     meta(http-equiv='X-UA-Compatible', content='IE=Edge,chrome=1')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=2.0')
     meta(http-equiv='content-type', content='text/html; charset=utf-8')
     meta(name='title', content='noItem')
-    meta(property='og:url', content='http://humboldt.org.co/')
-    meta(property='og:title', content='Instituto Humboldt')
-    meta(property='og:type', content='article')
+    meta(property='og:title', content='#{title}')
     meta(property='og:description', content=' ')
     meta(name='description', content=' ')
-    title Reporte de Estado de la Biodiversidad - #{title}
+    title #{title}
     link(href='res/favicon.ico', rel='shortcut icon', type='image/vnd.microsoft.icon')
     link(rel='stylesheet', href='/stylesheets/layout.css', type='text/css')
     link(rel='stylesheet', href='/stylesheets/template.css', type='text/css')
@@ -31,8 +29,25 @@ html.noPageBg(prefix='og: http://ogp.me/ns#', lang='es-es')
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-1418857-10', 'auto');
+      ga('send', 'pageview');
+
+      
   
 body(data-tablet-width='940', data-mobile-width='580')
+  #fb-root
+  script.
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
   #humboldtPageWrap
     section#humboldtPageTop
         a#humboldtLogo(href='http://humboldt.org.co/ ')
@@ -44,9 +59,6 @@ body(data-tablet-width='940', data-mobile-width='580')
           br
           | BIODIVERSIDAD
     section#humboldtHeader
-        select(onchange="if (this.value) window.location.href=this.value")
-          option(value="") Año
-          option(value="/biodiversidad2014") 2014
         nav.bar
           ul
             li

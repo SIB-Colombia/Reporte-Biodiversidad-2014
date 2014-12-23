@@ -26,7 +26,8 @@ button{font-family:"Helvetica Neue",Arial,sans-serif;color:white;text-shadow:0px
 #imagedesc .share a#totalcomments:hover{background-position:0 -16px;color:white;}
 .tabmenu{left:176px;position:absolute;}
 .tabmenu a{background-position:0 0;width:26px;height:21px;text-indent:-999em;position:absolute;z-index:3;}
-.tabmenu a:hover{background-position:0 -21px;}a.expand{background-image:url('../images/visual/btn_shrink.png');top:42px;}
+.tabmenu a:hover{background-position:0 -21px;}
+a.expand{background-image:url('../images/visual/btn_expand.png');top:42px;}
 a.shrink{background-image:url('../images/visual/btn_shrink.png');top:42px;}
 a.catalog{background-image:url('../images/visual/btn_catalog.png');top:21px;}
 a.comments{background-image:url('../images/btn_comments.png');top:0;}

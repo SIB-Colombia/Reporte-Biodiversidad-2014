@@ -21,38 +21,17 @@ exports.getImage = function(req, res){
     var numMap=db_maps().count();
 
     var image={}
-    console.log("numero del mapa actual: "+docMap.num);
-    console.log("Numero de mapas: "+numMap);
 
     if(db_maps().count()==1){
-      /*
-      docMap.prev="mapas/"+docMap.id_mapa;
-      docMap.next="mapas/"+docMap.id_mapa;
-      */
       image.prev="mapas/"+docMap.id_mapa;
       image.next="mapas/"+docMap.id_mapa;
     }else if(docMap.num ==1){
-      /*
-      console.log("condición 2");
-      docMap.prev="mapas/"+ids[numMap-1];
-      docMap.next="mapas/"+ids[1];
-      */
       image.prev="mapas/"+ids[numMap-1];
       image.next="mapas/"+ids[1];
     }else if(docMap.num==numMap){
-      /*
-      console.log("condición 3");
-      docMap.prev="mapas/"+ids[numMap-2];
-      docMap.next="mapas/"+ids[0];
-      */
       image.prev="mapas/"+ids[numMap-2];
       image.next="mapas/"+ids[0];
     }else{
-      /*
-      console.log("condición 4");
-      docMap.prev="mapas/"+ids[docMap.num-2];
-      docMap.next="mapas/"+ids[docMap.num];
-      */
       image.prev="mapas/"+ids[docMap.num-2];
       image.next="mapas/"+ids[docMap.num];
     }

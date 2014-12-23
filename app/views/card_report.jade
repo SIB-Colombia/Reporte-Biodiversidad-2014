@@ -1,11 +1,28 @@
 extends layout_report
 
 block content
+  script.
+      $(document).ready(function(){
+        var link_d="#{id_link}";
+        
+        $('#'+link_d+'_pdf').on('click', function() {
+          ga('send', 'event', 'download', 'click', 'Descarga pdf '+link_d);
+        });
+
+        $('#'+link_d+'_pdf_met').on('click', function() {
+          ga('send', 'event', 'download', 'click', 'Descarga pdf metodológica '+link_d);
+        });
+
+        $('#'+link_d+'_visual').on('click', function() {
+          ga('send', 'event', 'visualizador', 'click', 'Visualizador '+link_d);
+        });
+      });
+
   section#contenido
         h1 #{ficha.titulo_ficha}
         h2 #{ficha.sub_titulo_ficha}
         p
-        a.tema.float_left(href='/biodiversidad2014/visualizador/'+'#{ficha.id_ficha}')
+        a.tema.ver_ficha.float_left(href='/biodiversidad2014/visualizador/'+'#{ficha.id_ficha}', id=id_link+'_visual')
           img(src="#{ficha.imagen_ficha_s}")
           strong VER FICHA
 
@@ -23,13 +40,22 @@ block content
             | #{parAu}
             br
 
+        div
+          div.fb-share-button(data-href='/biodiversidad2014/ficha/101', data-layout='button_count') 
+          &nbsp; &nbsp; &nbsp;
+          
+
+          a.twitter-share-button(data-hashtags='Biodiversidad2014', data-lang='es', data-via='inst_humboldt', data-text='#{title}', data-url='http://reporte.humboldt.org.co/biodiversidad2014/ficha/'+'#{ficha.id_ficha}', href='https://twitter.com/share') Twittear
+
+        br
+
         .rounded_box.clear
           h3 Informaci&#243;n de la ficha
-          a.link_box(href="#{ficha.pdf_ficha}")
+          a.link_box(href="#{ficha.pdf_ficha}", id=id_link+'_pdf')
             img(src="/images/sitio/pdf.png")
             h5 DESCARGAR LA FICHA
             span #{ficha.titulo_ficha}
-          a.link_box(href="#{ficha.pdf_ficha_metodologica}")
+          a.link_box(href="#{ficha.pdf_ficha_metodologica}", id=id_link+'_pdf_met')
             img(src="/images/sitio/pdf.png")
             h5 Ficha metodol&#243;gica
             span #{ficha.titulo_ficha_metodologica}

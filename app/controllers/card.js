@@ -21,6 +21,6 @@ exports.getCard= function(req, res) {
       contInfo.push(cont);
     });
 
-  res.render('card_report', { ficha: docFicha, contInfo: contInfo, title: docFicha.titulo_ficha });
+  res.render('card_report', { ficha: docFicha, contInfo: contInfo, title: docFicha.titulo_ficha, id_link: 'ficha_'+id_fich });
   }
 };
